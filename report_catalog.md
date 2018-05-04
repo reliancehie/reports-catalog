@@ -1,4 +1,4 @@
-![](https://github.com/reliancehie/reports-catalog/blob/master/pictures/reliance_logo.png)
+![](pictures/reliance_logo.png)
 
 # Reliance Insight Report Catalog
 
@@ -60,9 +60,9 @@ Start Date, End Date, and Records to Display Below
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
 **Example Output**  
-![](https://github.com/reliancehie/reports-catalog/blob/master/pictures/diabetes_chart.png)  
+![](pictures/diabetes_chart.png)  
 **Column headings**  
-![](https://github.com/reliancehie/reports-catalog/blob/master/pictures/diabetes_fields.png)  
+![](pictures/diabetes_fields.png)  
 or in Markdown style:  
 
 | | | | | 
