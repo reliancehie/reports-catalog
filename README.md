@@ -45,8 +45,8 @@
 ## [D. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [HepC Dx and Hepatic Labs](#) | All patients with HepC, their diagnosis labs and liver function labs |
-| [Diabetes by Type](#) | Based on CCO incentive measure report but splits out Type 1 vs Type 2 | 
+| [Hepatitis C Diagnosis and Hepatic Labs](#) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
+| [Diabetes by Type](#) | This has two outputs.  The first is outpput is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second is outpput is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#) | Real time identification of pregnant population |  
 
 ## [E. Appendix](#appendix)
@@ -91,7 +91,24 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 ## Appendix
 
+
 ### Consolidated Patient Chart  
 The Consolidated Patient Chart (CPC) is a tool that allows users to more easily access patient records. CPC consists of three main sections: Summary, a quick overview of the patient; History, a timeline and charts of the patient's measurements; and Details, an in-depth analysis of the records.  
 
 ### Glossary 
+__Denominator__    
+The lower part of a fraction used to calculate a rate, proportion, or ratio. The denominator is associated with a given patient population that may be counted as eligible to meet a measure’s inclusion requirements.  The denominator is a subset of the initial patient population (IPP) and might be the same as the IPP.  
+__Exceptions__    
+The members of the denominator that were considered for membership in the numerator, but were rejected, and meet the logic required for the exception criteria.  
+__Exclusions__    
+The members of the denominator that should not be considered for inclusion in the numerator.  
+__Initial Patient Population__      
+The set of patients (or episodes of care) to be evaluated by the measure.    
+__Measurement Period__    
+The time period for which the eMeasure applies.  
+__Numerator__      
+A subset of the Denominator. The numerator criteria are the processes or outcomes expected for each patient, procedure, or other unit of measurement defined in the denominator.    
+__Performance Ratio__    
+Performance Ratio = Numerator Count / (Denominator Count – Exclusion Count – Exception Count)  
+
+
