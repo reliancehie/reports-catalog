@@ -46,7 +46,7 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
-| [Diabetes by Type](#) | This has two outputs.  The first is outpput is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second is outpput is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
+| [Diabetes by Type](#) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#) | Real time identification of pregnant population |  
 
 ## [E. Appendix](#appendix)
@@ -57,7 +57,6 @@
 ## OHA CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
 <http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
-Many of these reports are based off of the CMS 2017 Performance Period EP/EC eCQMs: <https://ecqi.healthit.gov/eligible-professional-eligible-clinician-ecqms/2017-performance-period-epec-ecqms>   
 The default measurement period for the following reports is Calendar Year 2017, but the user can choose a measurement period of their choice.
 
 ### Diabetes: HbA1c Poor Control
