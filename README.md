@@ -36,14 +36,20 @@
 | [Controlling High Blood Pressure](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
 | [Cervical Cancer Screening](#) | Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years |
 
-## [C. Custom Reports](#custom-reports)
+## [C. HEDIS Reports](#hedis-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Flu Vaccinations for Adults Ages 18-64](#) | The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed. |
+| [Flu Vaccinations for Adults Ages 65 and Older](#)      | Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  |
+
+## [D. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [HepC Dx and Hepatic Labs](#) | All patients with HepC, their diagnosis labs and liver function labs |
 | [Diabetes by Type](#) | Based on CCO incentive measure report but splits out Type 1 vs Type 2 | 
 | [Positive Pregnancy](#) | Real time identification of pregnant population |  
 
-## [D. Appendix](#appendix)
+## [E. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
 [Glossary](#glossary)
 
@@ -78,6 +84,8 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202017%20%28revised%20Feb%202017%29.pdf>
 
 ## QCDR Reports
+
+## HEDIS Reports
 
 ## Custom Reports
 
