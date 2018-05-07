@@ -9,9 +9,10 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
+| [Adolescent Well Care Visits](#)      | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Controlling Hypertension](#controlling-hypertension)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
-| [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ]()  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
-| [Childhood Immunization Status]()  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
+| [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
+| [Childhood Immunization Status](#)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
 | [Effective Contraceptive Use]()        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 
 ## [B. QCDR Reports](#qcdr-reports)
