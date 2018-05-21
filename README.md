@@ -9,7 +9,7 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
-| [Adolescent Well Care Visits](#)      | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
+| [Adolescent Well Care Visits](#adolescent-well-care-visits)      | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Alcohol and Drug Misuse (SBIRT)](#)      | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.         |
 | [Cervical Cancer Screening](#)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
 | [Childhood Immunization Status](#)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
@@ -81,6 +81,31 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202017%20%28revised%20Feb%202017%29.pdf>
+
+### Adolescent Well Care Visits
+**Measure Description**  
+Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.  
+**Denominator**  
+Members age 12-21 years as of December 31 of the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.
+ **Required exclusions for denominator:**  
+Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year. 
+**Numerator**  
+At least one comprehensive well-care visit during the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.
+
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/awc_chart.png)  
+**Column headings**  
+![](pictures/awc_fields.png)
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Adolescent-Well-Care-Visits-2017.pdf>
 
 ## QCDR Reports
 
