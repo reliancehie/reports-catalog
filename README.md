@@ -12,7 +12,7 @@
 | [Adolescent Well Care Visits](#adolescent-well-care-visits)      | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt))      | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.         |
 | [Cervical Cancer Screening](#cervical-cancer-screening)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
-| [Childhood Immunization Status](#)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
+| [Childhood Immunization Status](#childhood-immunization-status)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
 | [Chlamydia Screening in Women](#)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
 | [Cigarette Smoking Prevalence (Bundled Measure)](#)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
@@ -111,7 +111,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 
 ### Alcohol and Drug Misuse (SBIRT)
-**Measure Description**
+**Measure Description**  
 Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.  
 **Denominator**  
 Unique count of members age 12 years as of December 31 of the measurement year who received an outpatient service between January 1 - December 31 of the measurement year, as identified by the specified CPT codes for office or other outpatient visits, home visits, and preventative medicine. See OHA spec link below for details.  
@@ -146,7 +146,7 @@ Percentage of women 21-64 years of age who were screened for cervical cancer usi
 **Denominator**  
 Women 24-64 years of age as of December 31 of the measurement year. See HEDIS® 2017 Technical Specification for Health Plans (Volume 2) for details. 
 
-**Required exclusions for denominator:**  
+**Required exclusions for denominator**
  * Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year.
  * Exclude women with hysterectomy with no residual cervix, cervical agenesis or acquired absence of cervix (Absence of Cervix Value Set) any time during the member’s history through December 31 of the measurement year. 
 
@@ -170,11 +170,42 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Column headings**  
 `mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
-![](pictures/cervical_fields.png)
-
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cervical%20Cancer%20Screening%20-%202017%20(updated%20Oct%202017).pdf>
 
+### Childhood Immunization Status  
+**Measure Description**
+Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.  
+**Denominator**  
+Children who turn 2 years of age during the measurement year. See HEDIS® 2017 Technical Specification for Health Plans (Volume 2) for details.  
+**Required exclusions for denominator**  
+Patients with more than one gap in continuous enrollment of up to 45 days during the 12 months prior to child's 2nd birthday.  
+**Numerator**  
+OHA is using HEDIS® 2017 Combination 2 for the state performance measure: The number of children who turned 2 years of age in the measurement year and had all of the following specified vaccinations (minimum threshold in brackets): DTaP (4), IPV (3), MMR (1), HiB (3), HepB (3), VZV (1).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)
+
+**Example Output**  
+![](pictures/childimms_chart.png)
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        date_of_service_dtap |dtap_num | dtap count |
+        date_of_service_ipv | ipv_num | ipv count |
+        date_of_service_mmr | mmr_num | mmr count |
+        date_of_service_hib | hib_num | hib count |
+        date_of_service_hepb | hepb_num | hepB count |hepb_dx |
+        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
+        all_vacs |provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/childhood-immunizations-2017.pdf>
 ## QCDR Reports
 
 ## HEDIS Reports
