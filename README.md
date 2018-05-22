@@ -11,7 +11,7 @@
 | [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
 | [Adolescent Well Care Visits](#adolescent-well-care-visits)      | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt))      | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.         |
-| [Cervical Cancer Screening](#)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
+| [Cervical Cancer Screening](#cervical-cancer-screening)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
 | [Childhood Immunization Status](#)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
 | [Chlamydia Screening in Women](#)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
 | [Cigarette Smoking Prevalence (Bundled Measure)](#)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
@@ -82,13 +82,14 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202017%20%28revised%20Feb%202017%29.pdf>
 
+
 ### Adolescent Well Care Visits
 **Measure Description**  
 Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.  
 **Denominator**  
-Members age 12-21 years as of December 31 of the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.
+Members age 12-21 years as of December 31 of the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
 **Required exclusions for denominator:**  
-Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year. 
+Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year.  
 **Numerator**  
 At least one comprehensive well-care visit during the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.
 
@@ -108,6 +109,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Adolescent-Well-Care-Visits-2017.pdf>
 
+
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**
 Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.  
@@ -119,7 +121,7 @@ Unique counts of members age 12 years and older as of December 31 of the measure
 Exclude SBIRT screening and/or brief intervention services provided in emergency department settings. OHA uses the HEDIS Ambulatory care ED visits method to identify claims for exclusion.
 
 **Data Sources**  
-ADTs, CCDs, LABs, and Encounters   
+ADTs, CCDs, LABs, Encounters, and Claims   
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
@@ -133,6 +135,45 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Alcohol-and-Drug-Misuse-(SBIRT)-2017.pdf>
+
+
+### Cervical Cancer Screening
+**Measure Description**
+Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 
+* Women age 21-64 who had cervical cytology performed every 3 years 
+* Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years
+
+**Denominator**  
+Women 24-64 years of age as of December 31 of the measurement year. See HEDIS® 2017 Technical Specification for Health Plans (Volume 2) for details. 
+
+**Required exclusions for denominator:**  
+ * Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year.
+ * Exclude women with hysterectomy with no residual cervix, cervical agenesis or acquired absence of cervix (Absence of Cervix Value Set) any time during the member’s history through December 31 of the measurement year. 
+
+**Numerator**  
+* Step1: Women age 24-64 years of age as of December 31 of the measurement year who received cervical cytology (Cervical Cytology Value Set) during the measurement year or the two years prior to the measurement year.
+* Step2: From the women who did not meet step 1 criteria, identify women 30-64 years of age as of December 31
+of the measurement year who had cervical cytology (Cervical Cytology Value Set) and a human papillomavirus (HPV) test (HPV Tests Value Set) with service dates four or less day apart during the measurement year or the four years prior to the measurement year and who were 30-64 years of age on the date of both tests.  
+* Step3: Sum the events from steps 1 and 2 to obtain the rate.  
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+
+**Example Output**  
+![](pictures/cervical_chart.png)
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+![](pictures/cervical_fields.png)
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cervical%20Cancer%20Screening%20-%202017%20(updated%20Oct%202017).pdf>
 
 ## QCDR Reports
 
