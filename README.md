@@ -110,13 +110,12 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**
-Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.
-
-**Denominator**
-Unique count of members age 12 years as of December 31 of the measurement year who received an outpatient service between January 1 - December 31 of the measurement year, as identified by the specified CPT codes for office or other outpatient visits, home visits, and preventative medicine. See OHA spec link below for details.
-**Numerator**
-Unique counts of members age 12 years and older as of December 31 of the measurement year with one or more screening, brief intervention, and referral to treatment (SBIRT) services.
-**Required exclusions for numerator**
+Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.  
+**Denominator**  
+Unique count of members age 12 years as of December 31 of the measurement year who received an outpatient service between January 1 - December 31 of the measurement year, as identified by the specified CPT codes for office or other outpatient visits, home visits, and preventative medicine. See OHA spec link below for details.  
+**Numerator**  
+Unique counts of members age 12 years and older as of December 31 of the measurement year with one or more screening, brief intervention, and referral to treatment (SBIRT) services.  
+**Required exclusions for numerator**  
 Exclude SBIRT screening and/or brief intervention services provided in emergency department settings. OHA uses the HEDIS Ambulatory care ED visits method to identify claims for exclusion.
 
 **Data Sources**  
