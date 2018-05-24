@@ -13,7 +13,7 @@
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt))      | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.         |
 | [Cervical Cancer Screening](#cervical-cancer-screening)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
 | [Childhood Immunization Status](#childhood-immunization-status)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
-| [Chlamydia Screening in Women](#)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
+| [Chlamydia Screening in Women](#chlamydia-screening-in-women)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
 | [Cigarette Smoking Prevalence (Bundled Measure)](#)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
 | [Controlling Hypertension](#)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
@@ -206,6 +206,36 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/childhood-immunizations-2017.pdf>
+
+
+### Chlamydia Screening in Women
+**Measure Description**  
+Assesses women 16–24 years of age who were identified as sexually active and who had at least one test for chlamydia during the measurement year.   
+**Denominator**  
+Women 16-24 years of age as of December 31 of the measurement year, who are identified as ‘sexually active’ using either the claim/encounter data or the pharmacy data.   
+**Required exclusions for denominator**  
+OHA adopts the HEDIS® 2017 optional exclusion rule: Exclude members who qualified for the denominator based on a pregnancy test alone and who meet either of the following: 1) A pregnancy test (Pregnancy Tests Value Set) during the measurement year followed within seven days
+(inclusive) by a prescription for isotretinoin, or 2) A pregnancy test (Pregnancy Tests Value Set) during the measurement year followed within seven days (inclusive) by an x-ray (Diagnostic Radiology Value Set).  
+**Numerator**  
+At least one chlamydia test (Chlamydia Tests Value Set) during the measurement year.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/chlamydia_chart.png)  
+
+**Column headings**  
+` mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end `
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Chlamydia%20Screening%20-%202017%20(updated%20Oct%202017).pdf>  
+
+
 ## QCDR Reports
 
 ## HEDIS Reports
