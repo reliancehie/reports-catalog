@@ -14,7 +14,7 @@
 | [Cervical Cancer Screening](#cervical-cancer-screening)      |  Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years        |
 | [Childhood Immunization Status](#childhood-immunization-status)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
 | [Chlamydia Screening in Women](#chlamydia-screening-in-women)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
-| [Cigarette Smoking Prevalence (Bundled Measure)](#)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
+| [Cigarette Smoking Prevalence (Bundled Measure)](#cigarette-smoking-prevalence)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
 | [Controlling Hypertension](#)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
 | [Ambulatory care: Emergency department utilization](#)      | Rate of patient visits to an emergency department.         |
@@ -235,6 +235,50 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Chlamydia%20Screening%20-%202017%20(updated%20Oct%202017).pdf>  
 
+### Cigarette Smoking Prevalence  
+**Measure Description**  
+Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence.  
+
+**Rate 1**  
+**Denominator**  
+Unique Medicaid members 13 years old or older by the beginning of the measurement year, who had a qualifying visit with the provider during the measurement period.  
+**Numerator**  
+Unique members age 13 years or older who had a qualifying visit with the provider during the measurement period, who have their smoking and/or tobacco use status recorded as structured data. 
+
+**Rate 2**   
+**Denominator**  
+Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
+**Numerator**  
+Of patients in the Rate 2 denominator, those who are cigarette smokers. See below for additional information on identifying cigarette smoking in the numerator.  
+
+**Rate 3**  
+**Denominator**  
+Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
+**Numerator**  
+Of patients in the Rate 3 denominator, those who are cigarette smokers and/or tobacco users. See below for additional information on identifying tobacco use in the numerator.   
+
+**Required exclusions for numerator**  
+Members with missing smoking or tobacco use status will be excluded from rates 2 and 3. Note that e-cigarettes and marijuana (medical or recreational) should be excluded from both
+the cigarette smoking rate and the broader tobacco use rate.  In addition, the measure is focused on cigarette and tobacco use, not nicotine use.
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each rate, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/smoking_prevalence_chart.png)  
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
+        date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
+        meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cigarette%20Smoking%20Prevalence%20Bundle%20-%202017.pdf>  
 
 ## QCDR Reports
 
