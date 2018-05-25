@@ -15,7 +15,7 @@
 | [Childhood Immunization Status](#childhood-immunization-status)  | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday       |
 | [Chlamydia Screening in Women](#chlamydia-screening-in-women)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
 | [Cigarette Smoking Prevalence (Bundled Measure)](#cigarette-smoking-prevalence)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
-| [Colorectal Cancer Screening](#)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
+| [Colorectal Cancer Screening](#colorectal-cancer-screening)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
 | [Controlling Hypertension](#)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
 | [Ambulatory care: Emergency department utilization](#)      | Rate of patient visits to an emergency department.         |
 | [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
@@ -223,7 +223,7 @@ ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 
 **Example Output**  
@@ -279,6 +279,33 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cigarette%20Smoking%20Prevalence%20Bundle%20-%202017.pdf>  
+
+
+### Colorectal Cancer Screening
+**Measure Description**   
+Percent of adult members (ages 51-75) who had appropriate screening for colorectal cancer.  
+**Denominator**  
+Medicaid enrollees age 51-75 years as of December 31st of the measurement year.  
+**Numerator**  
+Unique number of individuals receiving at least one of the approved screenings for colorectal cancer either during the measurement year or years prior to the measurement year.  
+**Required exclusions for denominator**  
+Either of the following any time during the member’s history through December 31 of the measurement year: Colorectal Cancer Value Set or Total Colectomy Value Set.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/colorectal_chart.png)  
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/colorectal-cancer-screening-2017.pdf>  
 
 ## QCDR Reports
 
