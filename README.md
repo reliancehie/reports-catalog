@@ -77,7 +77,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/diabetes_chart.png)  
 **Column headings**  
-![](pictures/diabetes_fields.png)  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202017%20%28revised%20Feb%202017%29.pdf>
@@ -104,7 +104,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/awc_chart.png)  
 **Column headings**  
-![](pictures/awc_fields.png)
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Adolescent-Well-Care-Visits-2017.pdf>
@@ -131,7 +131,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/sbirt_chart.png)  
 **Column headings**  
-![](pictures/sbirt_fields.png)
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | meets_numerator_exception | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Alcohol-and-Drug-Misuse-(SBIRT)-2017.pdf>
