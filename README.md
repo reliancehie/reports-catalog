@@ -20,7 +20,7 @@
 | [Ambulatory care: Emergency department utilization](#emergency-department-utilization-beta)      | Rate of patient visits to an emergency department.         |
 | [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#emergency-department-utilization-for-individuals-experiencing-mental-illness-beta)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
 | [Screening for Clinical Depression and Follow-Up Plan](#sScreening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
-| [Developmental Screening in the First Three Years of Life ](#)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
+| [Developmental Screening in the First Three Years of Life](#developmental-screening-in-the-first-three-years-of-life)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
 | [Effective Contraceptive Use](#)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#)      |  Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
@@ -419,7 +419,7 @@ Any of the following criteria also remove patients from the denominator:
 * Patient reasons: Patient refuses to participate
 * Medical Reasons: Patient is in an urgent or emergent situation where time is of the essence and to delay treatment would jeopardize the patient’s health OR situations where the patient's functional capacity or motivation to improve may impact the accuracy of results of standardized depression assessment tools. For example: certain court appointed cases or cases of delirium
 status.  
- 
+
 **Numerator**  
 Patients screened for clinical depression on the date of the encounter, using an age appropriate standardized tool AND if positive, a follow-up plan is documented on the date of the positive screen.   
 **Required exclusions for numerator**  
@@ -440,6 +440,29 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Depression%20Screening%20-%202017%20(revised%20Feb%202017).pdf> 
+
+
+### Developmental Screening in the First Three Years of Life
+**Measure Description**   
+Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.  
+**Denominator**  
+Children who turn 1, 2, or 3 years of age in the measurement year and had continuous enrollment in a CCO for the 12 months prior to their birthdate in the measurement year, regardless if they had a medical/clinical visit or not in the measurement year. See Core Set of Children’s Health Care Quality Measures for details.   
+**Numerator**  
+Children in the denominator who had a claim with CPT code 96110 in the 12 months preceding the birthday in the measurement year. See new Clarification section below.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/developmental_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental%20Screening%20-%202017.pdf> 
 
 
 ## QCDR Reports
