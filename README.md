@@ -21,7 +21,7 @@
 | [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#emergency-department-utilization-for-individuals-experiencing-mental-illness-beta)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
 | [Screening for Clinical Depression and Follow-Up Plan](#sScreening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
 | [Developmental Screening in the First Three Years of Life](#developmental-screening-in-the-first-three-years-of-life)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
-| [Effective Contraceptive Use](#)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
+| [Effective Contraceptive Use](#effective-contraceptive-use)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#)      |  Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
 
@@ -463,6 +463,33 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental%20Screening%20-%202017.pdf> 
+
+
+### Effective Contraceptive Use
+**Measure Description**   
+Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm. 
+**Denominator**  
+ All women ages 15-50 as of December 31 of the measurement year who were continuously enrolled in a CCO for the 12-month measurement period.  
+**Required exclusions for denominator**   
+Remove from the denominator any women with history through December 31 of the measurement year for the following: Hysterectomy; Bilateral oophorectomy; Other female reproductive system removal, destruction, resection related to hysterectomy; natural menopause; premature menopause due to survey, radiation, or other factors; Congenital anomalies of female genital organs; Female infertility.         
+**Numerator**  
+Women in the denominator with evidence of one of the following methods of contraception during the measurement period: sterilization, IUD, implant, contraception injection, contraceptive pills, patch, ring, or diaphragm using the OHA Numerator Code Table, and the National Drug Codes (NDC) table (posted online separately).  
+**Required exclusions for numerator**  
+Among women in the denominator who were not numerator compliant, exclude those with a pregnancy diagnosis from the measure.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/contraceptive_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Effective%20Contraceptive%20Use%20-%202017%20(revised%20Sep%202017).pdf> 
 
 
 ## QCDR Reports
