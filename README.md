@@ -17,7 +17,7 @@
 | [Cigarette Smoking Prevalence (Bundled Measure)](#cigarette-smoking-prevalence)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#colorectal-cancer-screening)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
 | [Controlling High Blood Pressure](#controlling-high-blood-pressure)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
-| [Ambulatory care: Emergency department utilization](#)      | Rate of patient visits to an emergency department.         |
+| [Ambulatory care: Emergency department utilization](#emergency-department-utilization-for-individuals-experiencing-mental-illness)      | Rate of patient visits to an emergency department.         |
 | [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
 | [Screening for Clinical Depression and Follow-Up Plan](#)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
 | [Developmental Screening in the First Three Years of Life ](#)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
@@ -381,6 +381,30 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Link to Measure Specifications (note that Reliance report is a hybrid of these two specifications)**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Ambulatory%20Care%20-%20Outpatient%20and%20Emergency%20Dept%20Utilization%20-%202017%20(revised%20Sep%202017).pdf>  
+
+### Emergency Department Utilization for Individuals Experiencing Mental Illness (BETA)  
+**Measure Description**   
+Rate of visits to an emergency department among adult members experiencing mental illness.  
+**Denominator**  
+ 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator.  
+**Numerator**  
+Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
+**Required exclusions for numerator**  
+Mental health and chemical dependency services are excluded.   
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements (and also whether they are 'unengnaged', defined by whether they have not had an outpatient visit for more than 24 months).  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/ed_utilization_mi.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> 
 
 
 ## QCDR Reports
