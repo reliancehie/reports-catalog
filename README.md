@@ -22,7 +22,7 @@
 | [Screening for Clinical Depression and Follow-Up Plan](#sScreening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
 | [Developmental Screening in the First Three Years of Life](#developmental-screening-in-the-first-three-years-of-life)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
 | [Effective Contraceptive Use](#effective-contraceptive-use)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
-| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#)      |  Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents)      |  Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
 
 ## [B. QCDR Reports](#qcdr-reports)
@@ -490,6 +490,34 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Effective%20Contraceptive%20Use%20-%202017%20(revised%20Sep%202017).pdf> 
+
+
+### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
+**Measure Description**   
+Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported: 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation,  2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity, 3. Percentage of patients with counseling for physical activity.   
+**Denominator**  
+Patients 3-17 years of age with at least one outpatient visit with a primary care physician (PCP) or an obstetrician/gynecologist (OB/GYN) during the measurement period.    
+**Required exclusions for denominator**   
+ Patients who have a diagnosis of pregnancy during the measurement period or who were in hospice care during the measurement year.         
+**Numerator**  
+* Numerator 1: Patients who had a height, weight and body mass index (BMI) percentile recorded during the measurement period.
+* Numerator 2: Patients who had counseling for nutrition during a visit that occurs during the measurement period.
+* Numerator 3: Patients who had counseling for physical activity during a visit that occurs during the measurement period.  
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/child_bmi_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf> 
 
 
 ## QCDR Reports
