@@ -16,7 +16,7 @@
 | [Chlamydia Screening in Women](#chlamydia-screening-in-women)      |  Percentage of sexually active women (ages 16-24) who had a test for chlamydia infection.  |
 | [Cigarette Smoking Prevalence (Bundled Measure)](#cigarette-smoking-prevalence)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#colorectal-cancer-screening)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
-| [Controlling Hypertension](#)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
+| [Controlling High Blood Pressure](#controlling-high-blood-pressure)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
 | [Ambulatory care: Emergency department utilization](#)      | Rate of patient visits to an emergency department.         |
 | [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
 | [Screening for Clinical Depression and Follow-Up Plan](#)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
@@ -307,6 +307,32 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/colorectal-cancer-screening-2017.pdf>  
 
+
+### Controlling High Blood Pressure
+**Measure Description**   
+Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
+**Denominator**  
+Patients 18-85 years of age who had a diagnosis of essential hypertension within the first six months of the measurement period or any time prior to the measurement period and who received a qualifying outpatient service during the measurement period.  
+**Numerator**  
+Patients whose blood pressure at the most recent visit is adequately controlled (systolic blood pressure <140 mmHg and diastolic blood pressure <90 mmHg) during the measurement period.    
+**Required exclusions for denominator**  
+Patients with evidence of end stage renal disease, chronic kidney disease (Stage 5), dialysis or renal transplant before or during the measurement period, diagnosis of pregnancy during the measurement period.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/hypertension_chart.png)  
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Controlling%20Hypertension%20-%202017%20(revised%20Feb%202017).pdf>  
 ## QCDR Reports
 
 ## HEDIS Reports
