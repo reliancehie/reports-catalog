@@ -42,14 +42,34 @@
 | [Flu Vaccinations for Adults Ages 18-64](#) | The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed. |
 | [Flu Vaccinations for Adults Ages 65 and Older](#)      | Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  |
 
-## [D. Custom Reports](#custom-reports)
+## [D. Uniform Data System (UDS) Reports](#uds-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Cervical Cancer Screening](#) |	Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 1) Women age 21-64 who had cervical cytology performed every 3 years 2) Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  |
+| [Childhood Immunization Status](#) | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  | 
+| [Colorectal Cancer Screening](#) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |  
+| [Controlling High Blood Pressure](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period |  
+| [Coronary Artery Disease (CAD): Lipid Therapy (in-progress) ](#) | Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy   |  
+| [Dental Sealants for Children between 6-9 Years (in-progress) ](#) | Percentage of children, age 6-9 years, at moderate to high risk for caries who received a sealant on a first permanent molar during the measurement period. |  
+| [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#) | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c (HbA1c) greater than 9.0 percent during the measurement period. |  
+| [Early Entry into Prenatal Care (in-progress) ](#) | Percentage of prenatal care patients who entered prenatal care during their first trimester. |  
+| [HIV Linkage to Care ](#) | Percentage of patients newly diagnosed with HIV who were seen for follow-up treatment within 90 days of diagnosis. |  
+| [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#) | Percentage of patients aged 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), or who had a coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCIs) in the 12 months prior to the measurement period or who had an active diagnosis of IVD during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |  
+| [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
+| [Preventive Care and Screening: Screening for Depression and Follow-Up Plan](#) | Percentage of patients aged 12 years and older screened for depression on the date of the visit using an age appropriate standardized depression screening tool and if positive, a follow-up plan is documented on the date of the positive screen. |  
+| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. |  
+| [Use of Appropriate Medications for Asthma](#) | Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period |  
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
+
+
+## [E. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#) | Real time identification of pregnant population |  
 
-## [E. Appendix](#appendix)
+## [F. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
 [Glossary](#glossary)
 
