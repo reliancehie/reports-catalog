@@ -17,9 +17,9 @@
 | [Cigarette Smoking Prevalence (Bundled Measure)](#cigarette-smoking-prevalence)      | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee         |
 | [Colorectal Cancer Screening](#colorectal-cancer-screening)      | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.  |
 | [Controlling High Blood Pressure](#controlling-high-blood-pressure)  | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period.        |
-| [Ambulatory care: Emergency department utilization](#emergency-department-utilization-for-individuals-experiencing-mental-illness)      | Rate of patient visits to an emergency department.         |
-| [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
-| [Screening for Clinical Depression and Follow-Up Plan](#)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
+| [Ambulatory care: Emergency department utilization](#emergency-department-utilization-beta)      | Rate of patient visits to an emergency department.         |
+| [Disparity Measure: Emergency Department Utilization for Individuals Experiencing Mental Illness ](#emergency-department-utilization-for-individuals-experiencing-mental-illness-beta)  | Rate of visits to an emergency department among adult members experiencing mental illness.        |
+| [Screening for Clinical Depression and Follow-Up Plan](#sScreening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
 | [Developmental Screening in the First Three Years of Life ](#)      | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
 | [Effective Contraceptive Use](#)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#)      |  Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
@@ -405,6 +405,41 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> 
+
+
+### Screening for Clinical Depression and Follow-Up Plan
+**Measure Description**   
+Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.
+**Denominator**  
+All patients aged 12 years and older1 before the beginning of the measurement period, with at least one eligible encounter during the measurement period. Eligible encounters are identified through the Depression Screening Encounter Codes Grouping Value Set (2.16.840.1.113883.3.600.1916).  
+**Required exclusions for denominator**   
+Patients with active diagnosis for depression or diagnosis of bipolar disorder.  
+**Denominator Exceptions**  
+Any of the following criteria also remove patients from the denominator: 
+* Patient reasons: Patient refuses to participate
+* Medical Reasons: Patient is in an urgent or emergent situation where time is of the essence and to delay treatment would jeopardize the patient’s health OR situations where the patient's functional capacity or motivation to improve may impact the accuracy of results of standardized depression assessment tools. For example: certain court appointed cases or cases of delirium
+status.  
+ 
+**Numerator**  
+Patients screened for clinical depression on the date of the encounter, using an age appropriate standardized tool AND if positive, a follow-up plan is documented on the date of the positive screen.   
+**Required exclusions for numerator**  
+Mental health and chemical dependency services are excluded.   
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/depression_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
+        meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
+        date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Depression%20Screening%20-%202017%20(revised%20Feb%202017).pdf> 
 
 
 ## QCDR Reports
