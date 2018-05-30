@@ -98,7 +98,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/diabetes_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202017%20%28revised%20Feb%202017%29.pdf>
