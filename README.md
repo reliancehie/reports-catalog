@@ -503,7 +503,7 @@ Start Date, End Date, and Records to Display Below
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
-![](pictures/child_bmi_chart.png)  
+![](pictures/cco_adolescent_bmi_followup_chart.png)  
 **Column headings**  
 `mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
