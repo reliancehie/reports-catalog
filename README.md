@@ -28,7 +28,7 @@
 ## [B. QCDR Reports](#qcdr-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
+| [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#diabetes-hemoglobin-a1c-hba1c-poor-control-9)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
 | [Breast Cancer Screening](#) | Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer. |
 | [Colorectal Cancer Screening](#) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
@@ -546,7 +546,26 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 
 ## QCDR Reports
-
+### Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)
+**Measure Description**  
+Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
+**Denominator**  
+Patients 18-75 years of age with diabetes with a visit during the measurement period  
+**Numerator**  
+Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/qcdr_diabetes.png)  
+**Column headings**  
+` mpid | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | extract._4548-4 | organization | provider_name | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms122v5>  
 ## HEDIS Reports
 
 ## Custom Reports
