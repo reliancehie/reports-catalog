@@ -730,7 +730,7 @@ Percentage of women 21-64 years of age who were screened for cervical cancer usi
 
 **Denominator**  
 Women 23-64 years of age with a visit during the measurement period    
-**Required exclusions for denominator**
+**Required exclusions for denominator**  
 Women who had a hysterectomy with no residual cervix  
 **Numerator**  
 Women with one or more screenings for cervical cancer. Appropriate screenings are defined by any one of the following criteria:  
