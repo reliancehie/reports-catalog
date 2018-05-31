@@ -29,7 +29,7 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#diabetes-hemoglobin-a1c-hba1c-poor-control-9)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
-| [Breast Cancer Screening](#) | Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer. |
+| [Breast Cancer Screening](#breast-cancer-screening) | Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer. |
 | [Colorectal Cancer Screening](#) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
 | [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#) | Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |
@@ -566,6 +566,32 @@ All Data CSV Download (contains all column headings below)
 ` mpid | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | extract._4548-4 | organization | provider_name | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms122v5>  
+
+### Breast Cancer Screening
+**Measure Description**   
+Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer.  
+**Denominator**  
+Women 51-74 years of age with a visit during the measurement period.  
+**Numerator**  
+Women with one or more mammograms during the measurement period or the 15 months prior to the measurement period  
+**Required exclusions for denominator**  
+Women who had a bilateral mastectomy or who have a history of a bilateral mastectomy or for whom there is evidence of a right and a left unilateral mastectomy  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/qcdr_breast_cancer.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms125v5>  
+
+
 ## HEDIS Reports
 
 ## Custom Reports
