@@ -33,9 +33,9 @@
 | [Colorectal Cancer Screening](#colorectal-cancer-screening-1) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-1) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
 | [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#ischemic-vascular-disease-ivd-use-of-aspirin-or-another-antiplatelet) | Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |
-| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user. |
-| [Controlling High Blood Pressure](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
-| [Cervical Cancer Screening](#) | Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years |
+| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#preventive-care-and-screening-tobacco-use-screening-and-cessation-intervention) | Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user. |
+| [Controlling High Blood Pressure](#controlling-high-blood-pressure-1) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
+| [Cervical Cancer Screening](#cervical-cancer-screening-1) | Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years |
 
 ## [C. HEDIS Reports](#hedis-reports)
 | Report Name    | Description               |
@@ -696,6 +696,60 @@ All Data CSV Download (contains all column headings below).
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms138v5>  
 
+### Controlling High Blood Pressure
+**Measure Description**   
+Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period  
+**Denominator**  
+Patients 18-85 years of age who had a diagnosis of essential hypertension within the first six months of the measurement period or any time prior to the measurement period  
+**Numerator**  
+Patients whose blood pressure at the most recent visit is adequately controlled (systolic blood pressure <140 mmHg and diastolic blood pressure <90 mmHg) during the measurement period.    
+**Required exclusions for denominator**  
+Patients with evidence of end stage renal disease (ESRD), dialysis or renal transplant before or during the measurement period. Also exclude patients with a diagnosis of pregnancy during the measurement period.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/qcdr_hypertension.png)  
+
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms165v5>  
+
+### Cervical Cancer Screening
+**Measure Description**
+Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 
+* Women age 21-64 who had cervical cytology performed every 3 years 
+* Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  
+**Denominator**  
+Women 23-64 years of age with a visit during the measurement period    
+**Required exclusions for denominator**
+Women who had a hysterectomy with no residual cervix  
+**Numerator**  
+Women with one or more screenings for cervical cancer. Appropriate screenings are defined by any one of the following criteria:  
+* Cervical cytology performed during the measurement period or the two years prior to the measurement period for women who are at least 21 years old at the time of the test  
+* Cervical cytology/human papillomavirus (HPV) co-testing performed during the measurement period or the four years prior to the measurement period for women who are at least 30 years old at the time of the test  
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/qcdr_cervical.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms124v5> 
 
 ## HEDIS Reports
 
