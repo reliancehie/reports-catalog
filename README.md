@@ -643,7 +643,7 @@ Start Date, End Date, and Records to Display Below
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
-![](pictures/bmi_chart.png)  
+![](pictures/qcdr_bmi.png)  
 **Column headings**  
 `mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
@@ -672,6 +672,29 @@ All Data CSV Download (contains all column headings below).
 `mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms164v5>  
+
+### Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention
+**Measure Description**   
+Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user.
+**Denominator**  
+All patients aged 18 years and older seen for at least two visits or at least one preventive visit during the measurement period  
+**Numerator**  
+Patients who were screened for tobacco use at least once within 24 months AND who received tobacco cessation intervention if identified as a tobacco user  
+**Required exceptions for denominator**  
+Documentation of medical reason(s) for not screening for tobacco use (eg, limited life expectancy, other medical reason)  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/qcdr_tobacco.png)  
+**Column headings**  
+`mpid_CPC | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | provider_name | date_of_service_denom | meets_denominator | date_of_service_num | meets_numerator | smoker_status | date_of_service_cessation | smoke_cessation | meets_exception | measurement_period_begin | date_of_service_exception | measurement_period_end`  
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms138v5>  
 
 
 ## HEDIS Reports
