@@ -32,7 +32,7 @@
 | [Breast Cancer Screening](#breast-cancer-screening) | Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer. |
 | [Colorectal Cancer Screening](#colorectal-cancer-screening-1) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-1) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
-| [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#) | Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |
+| [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#ischemic-vascular-disease-ivd-use-of-aspirin-or-another-antiplatelet) | Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |
 | [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user. |
 | [Controlling High Blood Pressure](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
 | [Cervical Cancer Screening](#) | Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years |
@@ -50,11 +50,11 @@
 | [Childhood Immunization Status](#) | Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  | 
 | [Colorectal Cancer Screening](#) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |  
 | [Controlling High Blood Pressure](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period |  
-| [Coronary Artery Disease (CAD): Lipid Therapy (in-progress) ](#) | Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy   |  
-| [Dental Sealants for Children between 6-9 Years (in-progress) ](#) | Percentage of children, age 6-9 years, at moderate to high risk for caries who received a sealant on a first permanent molar during the measurement period. |  
+| [Coronary Artery Disease (CAD): Lipid Therapy (in progress) ](#) | Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy   |  
+| [Dental Sealants for Children between 6-9 Years (in progress) ](#) | Percentage of children, age 6-9 years, at moderate to high risk for caries who received a sealant on a first permanent molar during the measurement period. |  
 | [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#) | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c (HbA1c) greater than 9.0 percent during the measurement period. |  
-| [Early Entry into Prenatal Care (in-progress) ](#) | Percentage of prenatal care patients who entered prenatal care during their first trimester. |  
-| [HIV Linkage to Care ](#) | Percentage of patients newly diagnosed with HIV who were seen for follow-up treatment within 90 days of diagnosis. |  
+| [Early Entry into Prenatal Care (in progress) ](#) | Percentage of prenatal care patients who entered prenatal care during their first trimester. |  
+| [HIV Linkage to Care (in progress) ](#) | Percentage of patients newly diagnosed with HIV who were seen for follow-up treatment within 90 days of diagnosis. |  
 | [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#) | Percentage of patients aged 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), or who had a coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCIs) in the 12 months prior to the measurement period or who had an active diagnosis of IVD during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |  
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
 | [Preventive Care and Screening: Screening for Depression and Follow-Up Plan](#) | Percentage of patients aged 12 years and older screened for depression on the date of the visit using an age appropriate standardized depression screening tool and if positive, a follow-up plan is documented on the date of the positive screen. |  
@@ -649,6 +649,30 @@ All Data CSV Download (contains all column headings below).
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms069v5>
+
+### Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet
+**Measure Description**   
+Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period.  
+**Denominator**  
+Patients 18 years of age and older with a visit during the measurement period who had an AMI, CABG, or PCI during the 12 months prior to the measurement year or who had a diagnosis of IVD overlapping the measurement year  
+**Numerator**  
+Patients who had an active medication of aspirin or another antiplatelet during the measurement year  
+**Required exclusions for denominator**  
+Patients who had documentation of use of anticoagulant medications overlapping the measurement year  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/qcdr_ivd.png)  
+**Column headings**  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`  
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms164v5>  
+
 
 ## HEDIS Reports
 
