@@ -727,6 +727,7 @@ All Data CSV Download (contains all column headings below).
 Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 
 * Women age 21-64 who had cervical cytology performed every 3 years 
 * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  
+
 **Denominator**  
 Women 23-64 years of age with a visit during the measurement period    
 **Required exclusions for denominator**
@@ -734,7 +735,7 @@ Women who had a hysterectomy with no residual cervix
 **Numerator**  
 Women with one or more screenings for cervical cancer. Appropriate screenings are defined by any one of the following criteria:  
 * Cervical cytology performed during the measurement period or the two years prior to the measurement period for women who are at least 21 years old at the time of the test  
-* Cervical cytology/human papillomavirus (HPV) co-testing performed during the measurement period or the four years prior to the measurement period for women who are at least 30 years old at the time of the test  
+* Cervical cytology/human papillomavirus (HPV) co-testing performed during the measurement period or the four years prior to the measurement period for women who are at least 30 years old at the time of the test  xs
 
 **Data Sources**  
 ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
