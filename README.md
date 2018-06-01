@@ -564,7 +564,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/qcdr_diabetes.png)  
 **Column headings**  
-` mpid | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | extract._4548-4 | organization | provider_name | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
+` mpid | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | HbA1c | organization | provider_name | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms122v5>  
 
@@ -794,12 +794,12 @@ ADTs, CCDs, LABs, and Encounters
 Start Date, End Date, and Records to Display Below  
 **Output**  
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+Type I and Type II All Data CSV (contains all column headings below), Type I Diabetes Data CSV, Type II Diabetes Data CSV  
 **Example Output**  
-![](pictures/diabetes_bytype_chart.png)  
+![](pictures/type1_diabetes.png)  
+![](pictures/type2_diabetes.png)  
 **Column headings**  
-`mpid |  patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | extract._4548-4 | provider_name | ordering_provider |  meets_denominator_type1 |  meets_numerator_type1 |  race | ethnicity | measurement_period_begin | measurement_period_end`
-
+`mpid_CPC | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator_type1 | meets_numerator_type1 | meets_denominator_type2 | meets_numerator_type2 | measurement_period_begin | measurement_period_end`  
 ### Positive Pregnancy
 **Measure Description**  
 Patients that present with any sort of pregnancy diagnosis. Diagnosis set is defined by UMLS (2.16.840.1.113883.3.600.1.1623). Pregnancy terminations, miscarriages and live birth are excluded. 
