@@ -67,7 +67,7 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
-| [Diabetes by Type](#) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
+| [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#) | Real time identification of pregnant population |  
 
 ## [F. Appendix](#appendix)
@@ -762,17 +762,43 @@ These reports of interest do not conform to one of the major reporting programs 
 Returns demographic info and lab results for all patients with a diagnosis of Hepatitis C any time within the measurement period or any time prior. HepC Dx value sets: Chronic Hepatitis C (2.16.840.1.113762.1.4.1056.66)  
 **Labs (if present in database)**  
 `APRI, Fibrosis Stage, ALT SerPl-cCnc [IU/L] (LOINC 1742-6), AST SerPl-cCnc [IU/L] (LOINC 1920-8), Albumin [g/dL] in Serum or Plasma (LOINC 1751-7), Bilirubin.total [mg/dL] in Serum or Plasma (LOINC 1975-2), INR in Platelet poor plasma by Coagulation assay (LOINC 6301-6), Platelets [10^9/L] (LOINC 777-3), Hep C virus Ab Serum (LOINC 16128-1), Hep C virus RNA SerPl NAA+probe-Log IU [log 10 IU/mL] (LOINC 38180-6), Hep C virus RNA SerPl NAA+probe-aCnc [IU/mL] (LOINC 11011-4), Hep C virus genotype (32286-7)`  
+Additional info on [APRI](https://www.mdcalc.com/ast-platelet-ratio-index-apri)  
 **Data Sources**  
 ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
 **Input Parameters**  
 Start Date, End Date, and Records to Display Below     
 **Output**  
 List of patients that meet diagnosis criteria and their demographic and lab information.
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/hepC_chart.png)  
 **Column headings**  
 `mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
+
+
+### Diabetes by Type
+**Measure Description**  
+Percentage of patients with diabetes Type I or II who had hemoglobin A1c > 9.0% during the measurement period   
+**Denominator Type I**  
+Patients who had a diagnosis of diabetes Type I during or any time prior to the measurement period and who received a qualifying visit during the measurement period.  
+**Denominator Type II**  
+Patients who had a diagnosis of diabetes of diabetes Type II during or any time prior to the measurement period and who received a qualifying visit during the measurement period.  
+**Numerator Type I**  
+Patients with Type I diabetes whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Numerator Type II**  
+Patients with Type II diabetes whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/diabetes_bytype_chart.png)  
+**Column headings**  
+`mpid |  patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | extract._4548-4 | provider_name | ordering_provider |  meets_denominator_type1 |  meets_numerator_type1 |  race | ethnicity | measurement_period_begin | measurement_period_end`
+
 
 ## Appendix
 
