@@ -40,8 +40,8 @@
 ## [C. HEDIS Reports](#hedis-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Flu Vaccinations for Adults Ages 18-64](#) | The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed. |
-| [Flu Vaccinations for Adults Ages 65 and Older](#)      | Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  |
+| [Flu Vaccinations for Adults Ages 18-64](#flu-vaccinations-for-adults-ages-18-64) | The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed. |
+| [Flu Vaccinations for Adults Ages 65 and Older](#flu-vaccinations-for-adults-ages-65-and-older)      | Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  |
 
 ## [D. Uniform Data System (UDS) Reports](#uds-reports)
 | Report Name    | Description               |
@@ -56,11 +56,11 @@
 | [Early Entry into Prenatal Care (in progress) ](#) | **IN PROGRESS** <br/> Percentage of prenatal care patients who entered prenatal care during their first trimester. |  
 | [HIV Linkage to Care (in progress) ](#) | **IN PROGRESS** <br/> Percentage of patients newly diagnosed with HIV who were seen for follow-up treatment within 90 days of diagnosis. |  
 | [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), or who had a coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCIs) in the 12 months prior to the measurement period or who had an active diagnosis of IVD during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |  
-| [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
+| [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-2) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
 | [Preventive Care and Screening: Screening for Depression and Follow-Up Plan](#) | **IN PROGRESS** <br/> Percentage of patients aged 12 years and older screened for depression on the date of the visit using an age appropriate standardized depression screening tool and if positive, a follow-up plan is documented on the date of the positive screen. |  
 | [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. |  
-| [Use of Appropriate Medications for Asthma](#) | Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period |  
-| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
+| [Use of Appropriate Medications for Asthma](#use-of-appropriate-medications-for-asthma) | Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period |  
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
 
 
 ## [E. Custom Reports](#custom-reports)
@@ -508,8 +508,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf> 
-
+<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf>  
 
 ###  Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan
 **Measure Description**   
@@ -546,6 +545,10 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 
 ## QCDR Reports
+The Centers for Medicare & Medicaid Services (CMS) has accepted Reliance’s application to provide Qualified Clinical Data Registry (QCDR) for the 2018 performance period of the Merit-based Incentive Payment System (MIPS).   As the only authorized QCDR in Oregon, Reliance provides you with additional opportunities to optimize your EHR interface with Reliance and maximize your revenue.  
+For more information on the Reliance QCDR, MIPS Reporting, and the Quality Payment Program (QPP) please visit <http://reliancehie.org/reliance-accepted-as-a-cms-qualified-clinical-data-registry-qcdr/>  
+Reliance is authorized to support the following 8 clinical quality measures/eCQMs on behalf of participants who wish to use Reliance to submit MIPS reporting.  
+
 ### Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)
 **Measure Description**  
 Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
@@ -773,7 +776,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/flu_18.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
 
@@ -794,12 +797,99 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/flu_65.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
 
 
 ## UDS Reports
+Each year, health center grantees and look-alikes report on their performance using the measures defined in the Uniform Data System (UDS). The UDS is a standardized reporting system that provides consistent information about health centers and look-alikes.  
+See <https://bphc.hrsa.gov/datareporting/reporting/index.html> for detail.
+
+###  Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan
+**Measure Description**   
+Percentage of patients 18 and older who had one eligible encounter during the measurement year with a documented BMI during the encounter or during the previous twelve months, AND when the BMI is outside of normal parameters, a follow-up plan is documented during the encounter or during the previous twelve months of the current encounter.  
+**Denominator**  
+All patients 18 and older on the date of the encounter with at least one eligible encounter during the measurement period.  
+**Required exclusions for denominator**  
+Patients who are pregnant; or receiving palliative carem; or who refuse measurement of height and/or weight; or refuse follow-up.         
+**Denominator Exceptions**  
+
+Patients with a documented Medical Reason:  
+* Elderly Patients (65 or older) for whom weight reduction/weight gain would complicate other underlying health conditions such as the following examples: 
+     * Illness or physical disability
+     * Mental illness, dementia, confusion
+     * Nutritional deficiency, such as Vitamin/mineral deficiency
+* Patients in an urgent or emergent medical situation where time is of the essence and to delay treatment would jeopardize the patient's health status.  
+
+**Numerator**  
+Patients with a documented BMI during the encounter or during the previous six months, AND when the BMI is outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.    
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/uds_bmi_followup_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms069v5>  
+
+###  Use of Appropriate Medications for Asthma
+**Measure Description**   
+Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period  
+**Denominator**  
+Patients 5-64 years of age with persistent asthma and a visit during the measurement period.  
+**Required exclusions for denominator**  
+Patients with a diagnosis of emphysema, COPD, obstructive chronic bronchitis, cystic fibrosis or acute respiratory failure that overlaps the measurement period.  
+**Numerator**  
+Patients who were ordered at least one prescription for a preferred therapy during the measurement period.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements, and patient age stratification(ages 5-11, 12-18, 19-50, and 51-64).  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/uds_asthma_chart.png)  
+![](pictures/uds_asthma.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | patient_mrn | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms126v5>  
+
+### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
+**Measure Description**   
+Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported: 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation,  2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity, 3. Percentage of patients with counseling for physical activity.   
+**Denominator**  
+Patients 3-17 years of age with at least one outpatient visit with a primary care physician (PCP) or an obstetrician/gynecologist (OB/GYN) during the measurement period.    
+**Required exclusions for denominator**   
+Patients who have a diagnosis of pregnancy during the measurement period  
+**Numerator**  
+* Numerator 1: Patients who had a height, weight and body mass index (BMI) percentile recorded during the measurement period.
+* Numerator 2: Patients who had counseling for nutrition during a visit that occurs during the measurement period.
+* Numerator 3: Patients who had counseling for physical activity during a visit that occurs during the measurement period.  
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/uds_adolescent_bmi_followup_chart.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/ecqm/measures/cms155v5>  
 
 
 ## Custom Reports  
