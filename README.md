@@ -753,6 +753,54 @@ All Data CSV Download (contains all column headings below)
 <https://ecqi.healthit.gov/ecqm/measures/cms124v5> 
 
 ## HEDIS Reports
+HEDIS is a tool used by more than 90 percent of America's health plans to measure performance on important dimensions of care and service. Because so many plans collect HEDIS data, and because the measures are so specifically defined, HEDIS makes it possible to compare the performance of health plans on an "apples-to-apples" basis. Health plans also use HEDIS results themselves to see where they need to focus their improvement efforts.  
+See <http://www.ncqa.org/hedis-quality-measurement> for details.  
+
+### Flu Vaccinations for Adults Ages 18-64
+**Measure Description**  
+The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed.  
+**Denominator**  
+Patients 18 to 64 years as of July 1 of the measurement year.  
+**Numerator**  
+Patients that have had their flu shot or spray since July 1st of the measurement year.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/flu_18.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+**Link to Measure Specifications**  
+See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
+
+### Flu Vaccinations for Adults Ages 65 and Older  
+**Measure Description**  
+Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  
+**Denominator**  
+Patients 65 and Older as of July 1 of the measurement year.  
+**Numerator**  
+Patients that have had their flu shot or spray since July 1st of the measurement year.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/flu_65.png)  
+**Column headings**  
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+**Link to Measure Specifications**  
+See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
+
+
+## UDS Reports
+
 
 ## Custom Reports  
 These reports of interest do not conform to one of the major reporting programs like CMS eCQMs, CCO Incentive Metrics, or HEDIS. In addition, Reliance Insight offers the tools necessary to allow users to develop their own queries and reports to meet the business needs of the organization.  For those that have more complex reporting needs or prefer to rely on the expertise of Reliance, the Insight Team provides consultation and report building and works with the organization to validate the data and reporting outputs to ensure the accuracy and completeness of the data.  
