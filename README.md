@@ -799,6 +799,20 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Column headings**  
 `mpid |  patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | extract._4548-4 | provider_name | ordering_provider |  meets_denominator_type1 |  meets_numerator_type1 |  race | ethnicity | measurement_period_begin | measurement_period_end`
 
+### Positive Pregnancy
+**Measure Description**  
+Patients that present with any sort of pregnancy diagnosis. Diagnosis set is defined by UMLS (2.16.840.1.113883.3.600.1.1623). Pregnancy terminations, miscarriages and live birth are excluded. 
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients with a diagnosis of pregnancy.  
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/pregnancy_chart.png)  
+**Column headings**  
+`mpid_CPC | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 ## Appendix
 
