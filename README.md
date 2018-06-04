@@ -566,7 +566,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/qcdr_diabetes.png)  
 **Column headings**  
-` mpid | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | HbA1c | organization | provider_name | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
+` mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | HbA1c | organization | provider_name | ordering_provider | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms122v5>  
 
