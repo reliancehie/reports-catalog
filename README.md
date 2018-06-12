@@ -47,7 +47,7 @@
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Cervical Cancer Screening](#) |	**IN PROGRESS** <br/> Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 1) Women age 21-64 who had cervical cytology performed every 3 years 2) Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  |
-| [Childhood Immunization Status](#) | **IN PROGRESS** <br/> Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  | 
+| [Childhood Immunization Status](#childhood-immunization-status-cms) |  Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  | 
 | [Colorectal Cancer Screening](#) | **IN PROGRESS** <br/> Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |  
 | [Controlling High Blood Pressure](#) | **IN PROGRESS** <br/> Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period |  
 | [Coronary Artery Disease (CAD): Lipid Therapy (in progress) ](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy   |  
@@ -185,6 +185,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cervical%20Cancer%20Screening%20-%202017%20(updated%20Oct%202017).pdf>  
+
 ### Childhood Immunization Status  
 **Measure Description**
 Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.  
@@ -805,6 +806,44 @@ See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for detail
 ## UDS Reports
 Each year, health center grantees and look-alikes report on their performance using the measures defined in the Uniform Data System (UDS). The UDS is a standardized reporting system that provides consistent information about health centers and look-alikes.  
 See <https://bphc.hrsa.gov/datareporting/reporting/index.html> for detail.
+
+
+### Childhood Immunization Status (CMS)  
+**Measure Description**  
+Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  
+**Denominator**  
+Children who turn 2 years of age during the measurement period and who have a visit during the measurement period.  
+**Numerator**  	
+Children who have evidence showing they received recommended vaccines, had documented history of the illness, had a seropositive test result, or had an allergic reaction to the vaccine by their second birthday.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)
+
+**Example Output**  
+![](pictures/cms_childimms_chart.png)
+
+**Column headings**  
+`mpid | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator |
+        date_of_service_dtap |dtap_num | dtap count | dtap_dx |
+        date_of_service_ipv | ipv_num | ipv count | ipv_dx |
+        date_of_service_mmr | mmr_num | mmr count |mmr_dx |
+        date_of_service_hib | hib_num | hib count |hib_dx |
+        date_of_service_hepb | hepb_num | hepB count | hepb_dx |
+        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
+        date_of_service_pcv | pcv_num | pcv count | pcv_dx |
+        date_of_service_hepa | hepa_num | hepa count | hepa_dx |
+        date_of_service_rv_2dose | rv_2dose_num | rv_2dose_count | rv_dx |
+        date_of_service_rv_3dose | rv_3dose_num | rv_3dose_count |rv_num | flu_num |flu_dx |
+        all_vacs | organization | provider_name | race | ethnicity |measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://ecqi.healthit.gov/system/files/ecqm/measures/CMS117v5_2.html>
+
 
 ###  Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan
 **Measure Description**   
