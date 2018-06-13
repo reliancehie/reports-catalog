@@ -673,7 +673,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_ivd.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`  
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms164v5>  
 
