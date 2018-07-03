@@ -68,7 +68,7 @@
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
-| [Positive Pregnancy](#) | Real time identification of pregnant population |  
+| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |  
 
 ## [F. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
