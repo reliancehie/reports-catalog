@@ -62,15 +62,27 @@
 | [Use of Appropriate Medications for Asthma](#use-of-appropriate-medications-for-asthma) | Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period |  
 | [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
 
+## [E. Certified Community Behavioral Health Clinics (CCBHC) Measures](#)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Deaths by Suicide](#) | Percentage of consumers aged 12 years and older who died by suicide during the measurement year  |
+| [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-3) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-2)      |	**IN PROGRESS** <br/> Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
+| [Controlling High Blood Pressure](#) | **IN PROGRESS** <br/> Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period || [Deaths by Suicide ](#) | Percentage of consumers aged 12 years and older who died by suicide during the measurement year  |
+| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. | 
+| [Screening for Clinical Depression and Follow-Up Plan](#screening-for-clinical-depression-and-follow-up-plan-1)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
+| [Suicide Attempts](#) | The percentage of consumers aged 12 years and older who attempted suicide during the measurement year, where the suicide attempt resulted in injury requiring medical services  |
+| [Follow-Up After Emergency Department Visit for Mental Health](#) | **IN PROGRESS** <br/> The percentage of emergency department (ED) visits for consumers 6 years of age and older with a primary diagnosis of mental illness, who had an outpatient visit, an intensive outpatient encounter or a partial hospitalization for mental illness. Two rates are reported: 1. The percentage of ED visits for which the consumer received follow-up within 30 days of the ED visit. 2. The percentage of ED visits for which the consumer received follow-up within 7 days of the ED visit.  |
+| [Diabetes Care For People With Serious Mental Illness: Hemoglobin A1c (HbA1c) Poor Control (>9.0%) ](#)        | **IN PROGRESS** <br/> The percentage of consumers 18–75 years of age with a serious mental illness and diabetes (type 1 and type 2) whose most recent Hemoglobin A1c (HbA1c) level during the measurement year is >9.0%         |
 
-## [E. Custom Reports](#custom-reports)
+## [F. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |  
 
-## [F. Appendix](#appendix)
+## [G. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
 [Glossary](#glossary)
 
