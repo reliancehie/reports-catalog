@@ -40,7 +40,7 @@
 | [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
 | [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
-| [Timeliness of Prenatal and Postpartum Care](#)        | Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.         |
+| [Timeliness of Prenatal and Postpartum Care](#timeliness-of-prenatal-and-postpartum-care)        | Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.         |
 
 ## [C. QCDR Reports](#qcdr-reports)
 | Report Name    | Description               |
@@ -893,6 +893,31 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf>  
+
+
+### Timeliness of Prenatal and Postpartum Care  
+**Measure Description**   
+Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.  
+**Denominator**  
+All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria. OHA will identify the live birth deliveries from administrative data and provide CCOs with a sampling frame for the chart review.  s
+**Required exclusions for denominator**   
+See HEDIS® 2018 Technical Specifications for Health Plans (Volume 2) for details.  
+**Numerator**  
+A prenatal visit in the first trimester or within 42 days of enrollment, depending on the date of enrollment in the organization and the gaps in enrollment during the pregnancy. Include only visits that occur while the member was enrolled.  
+**Required exclusions for numerator*
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![]()  
+**Column headings**  
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Timeliness%20of%20Prenatal%20and%20Postpartum%20Care%20-%202018.pdf>  
 
 ## QCDR Reports
 The Centers for Medicare & Medicaid Services (CMS) has accepted Reliance’s application to provide Qualified Clinical Data Registry (QCDR) for the 2018 performance period of the Merit-based Incentive Payment System (MIPS).   As the only authorized QCDR in Oregon, Reliance provides you with additional opportunities to optimize your EHR interface with Reliance and maximize your revenue.  
