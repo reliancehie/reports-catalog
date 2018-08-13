@@ -795,8 +795,8 @@ Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c >
 OHA 2017 Benchmark Measure Ratio (total numerator hits/total denominator hits) is 19%.  
 **Denominator**  
 Patients 18-75 years of age who had a diagnosis of diabetes during or any time prior to the measurement period and who received a qualifying outpatient service during the measurement period.  
-**Required exclusions for denominator**  
-Patients who were in hospice care during the measurement year
+**Required exclusions for denominator**    
+Patients who were in hospice care during the measurement year  
 **Numerator**  
 Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
 **Data Sources**  
