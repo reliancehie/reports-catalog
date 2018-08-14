@@ -899,22 +899,24 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Measure Description**   
 Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.  
 **Denominator**  
-All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria. OHA will identify the live birth deliveries from administrative data and provide CCOs with a sampling frame for the chart review.  s
+All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria.
 **Required exclusions for denominator**   
 See HEDIS® 2018 Technical Specifications for Health Plans (Volume 2) for details.  
 **Numerator**  
-A prenatal visit in the first trimester or within 42 days of enrollment, depending on the date of enrollment in the organization and the gaps in enrollment during the pregnancy. Include only visits that occur while the member was enrolled.  
-**Required exclusions for numerator*
+A prenatal visit in the first trimester. Reliance Insight does not currently have the necessary data elements to perform enrollment logic.
+**Required exclusions for numerator**
 **Data Sources**  
 ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
 **Input Parameters**  
 Start Date, End Date, and Records to Display Below     
 **Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+Total denominator hits, total numerator hits, measure ratios (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
-![]()  
+![](pictures/cco_prenatal_postpartum_chart.png)    
 **Column headings**  
+`mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | meets_denominator | sending_facility_delivery | delivery_date | first_trimester_end | non_live_birth | sending_facility_num | prenatal_visit_provider | date_of_service_num | pregnancy_dx | meets_prenatal_numerator | sending_facility_pp | postpartum_visit_provider | meets_postpartum_numerator | measurement_period_begin | measurement_period_end`
+
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Timeliness%20of%20Prenatal%20and%20Postpartum%20Care%20-%202018.pdf>  
