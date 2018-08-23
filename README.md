@@ -97,7 +97,8 @@
 | -------------  |-------------              |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
-| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |  
+| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
+| [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search| 
 
 ## [H. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
@@ -1352,6 +1353,8 @@ Type I and Type II All Data CSV (contains all column headings below), Type I Dia
 ![](pictures/type2_diabetes.png)  
 **Column headings**  
 `mpid_CPC | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator_type1 | meets_numerator_type1 | meets_denominator_type2 | meets_numerator_type2 | measurement_period_begin | measurement_period_end`  
+
+
 ### Positive Pregnancy
 **Measure Description**  
 Patients that present with any sort of pregnancy diagnosis. Diagnosis set is defined by UMLS (2.16.840.1.113883.3.600.1.1623). Pregnancy terminations, miscarriages and live birth are excluded. 
@@ -1366,6 +1369,23 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/pregnancy_chart.png)  
 **Column headings**  
 `mpid_CPC | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
+
+
+### Homeless
+**Measure Description**  
+Patients that present with clinical codes and text phrases (eg "lives in car") associated with homelessness.   
+**Data Sources**  
+ADTs, CCDs, LABs, Transcriptions, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients with a potential indication of homelessness.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/homeless_chart.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 ## Appendix
 
