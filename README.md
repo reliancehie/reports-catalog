@@ -98,7 +98,8 @@
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
-| [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search| 
+| [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
+| [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
 
 ## [H. Appendix](#appendix)
 [Consolidated Patient Chart](#consolidated-patient-chart)  
@@ -1386,6 +1387,23 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/homeless_chart.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
+
+
+### Food Insecurity
+**Measure Description**  
+Patients that present with clinical diagnosis codes and text phrases associated with food insecurity. Please see this [guide](http://www.frac.org/wp-content/uploads/Overview_of_Food_Insecurity_Coding_Report_Final-1.pdf) for codes utilized in the report.  
+**Data Sources**  
+ADTs, CCDs, LABs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients with a potential indication of homelessness.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/food_insecurity_chart.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 ## Appendix
 
