@@ -378,7 +378,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Measure Description**   
 Rate of patient visits to an emergency department.  
 **Denominator**  
-1,000 member month of the adult members enrolled with the organization. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits are identified for inclusion in the denominator.  
+Estimated 1,000 member month of the adult members enrolled with the organization. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
 **Numerator**  
 Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
 **Required exclusions for numerator**  
@@ -394,17 +394,17 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/ed_utilization.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
 
 
-### Emergency Department Utilization for Individuals Experiencing Mental Illness (BETA)  
+### Emergency Department Utilization for Individuals Experiencing Mental Illness 
 **Measure Description**   
 Rate of visits to an emergency department among adult members experiencing mental illness.  
 **Denominator**  
- 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator.  
+ Estimated 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
 **Numerator**  
 Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
 **Required exclusions for numerator**  
@@ -419,7 +419,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/ed_utilization_mi.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> 
@@ -594,7 +594,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Measure Description**   
 Rate of patient visits to an emergency department.  
 **Denominator**  
-1,000 member month of the adult members enrolled with the organization. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits are identified for inclusion in the denominator.  
+Estimated 1,000 member month of the adult members enrolled with the organization. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
 **Numerator**  
 Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
 **Required exclusions for numerator**  
@@ -610,7 +610,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/ed_utilization.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
@@ -830,7 +830,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Measure Description**   
 Rate of visits to an emergency department among adult members experiencing mental illness.  
 **Denominator**  
- 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator.  
+ Estimated 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
 **Numerator**  
 Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
 **Required exclusions for numerator**  
