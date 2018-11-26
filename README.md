@@ -10,7 +10,8 @@
 **E. [Uniform Data System (UDS) Reports](#e-uniform-data-system-uds-reports)**  
 **F. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#f-certified-community-behavioral-health-clinics-ccbhc-measures)**  
 **G. [Custom Reports](#g-custom-reports)**  
-**H. [Appendix](#h-appendix)**  
+**H. [Notification Reports](#h-notification-reports)**  
+**I. [Appendix](#i-appendix)**  
 
 ### Click on a report name below for a detailed description 
 
@@ -121,10 +122,26 @@
 | [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
 
-## [H. Appendix](#appendix)
-[Consolidated Patient Chart](#consolidated-patient-chart)  
-[Glossary](#glossary)
+## [H. Notification Reports](#notification-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Alcohol and Drug Misuse (SBIRT)](#) | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
+| [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
+| [Diabetes Management](#) | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 7.0%. |
+| [Homeless](#) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
+| [Hypertension](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure exceeded (<125/90mmHg). |
+| [Depression Screen](#) | This report provides a list of patients aged 12 and older screened for clinical depression on the encounter date, using an age appropriate standardized depression screening tool and documenting a follow-up on the date of the positive screen. |
+| [Disparity measure: Emergency department utilization among members with mental illness](#) | Rate of visits to an emergency department among adult members experiencing mental illness. |
+| [ED visit](#) | This report provides a list of patients that have visited the Emergency Department. |
+| [Opioid Use + Positive Pregnancy](#) | This report provides a list of patients identified as pregnant and have a history or current diagnosis of opioid abuse. |
+| [Alerts for lab results](#) | This report lists patients that have received a new lab result for their organization. |
 
+
+
+## [I. Appendix](#appendix)
+[Community Health Record](#community-health-record)  
+[Glossary](#glossary)
+ 
 
 ## OHA 2017 CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
@@ -1417,7 +1434,7 @@ ADTs, CCDs, LABs, Claims and Encounters
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-List of patients with a potential indication of homelessness.
+List of patients with a potential indication of food insecurity.
 
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
@@ -1425,11 +1442,31 @@ All Data CSV Download (contains all column headings below)
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
+## Notification Reports  
+These reports are to be included for all ADT contributors with access to the Reliance Community Health Record.  
+
+### Tobacco
+**Measure Description**  
+This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use.  
+**Data Sources**  
+ADTs, CCDs, LABs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients aged 13 and older that screened as tobacco users during the start and end date given.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/tobacco_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
 ## Appendix
 
 
-### Consolidated Patient Chart  
-The Consolidated Patient Chart (CPC) is a tool that allows users to more easily access patient records. CPC consists of three main sections: Summary, a quick overview of the patient; History, a timeline and charts of the patient's measurements; and Details, an in-depth analysis of the records.  
+### Community Health Record  
+The Community Health Record (CHR) is a tool that allows users to more easily access patient records.  The CHR gives users access to to their entire patient population and facilities a patient has visited across the entire health information exchange. The CHR consists of following main sections: Patient Lookup, the initial patient search that must be completed before viewing a patient.  Lastname or Medical Record Number (MRN) are required to search for a patient.  A combination of Lastname and minimum first three letters of a patient name is also allowed; Patient Info, patient demographics only if the patient is not a member of the users organization or patient demographics and a list of providers, problems, medications, allergies, procedures, and medical insurance information;  Patient Summary, a quick overview of the patient with the five most recent Admits/Discharges/Registrations, Labs, Radiology, Transcribed Reports, Medications List, and Filled Medication messages; Admits/Discharges/Registrations, all ADT messages associated with a patient; Labs, all lab messages associated with a patient; Transcribed Reports, all transcription messages associated with a patient; Radiology, all radiology messages associated with a patient; CCDs, all Continuity of Care Documents (CCDs) associated with a patient; Medications List, all medications associated with a patient from either HL7 or CCD messages; Filled Medications, all filled medications associated with a patient from National Council for Prescription Drug Programs (NCPDP) messages; Observation/Vitals, all vitals associated with a patient; and All, a combination of all HL7 and CCD messages associated with a patient.  
+Note that all grids and sections in the CHR are displayed in reverse chronological order.  All tabs display information for the last two years, but this can be changes by clicking the filter icon to search for any date range.  
 
 ### Glossary 
 __Denominator__    
