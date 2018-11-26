@@ -1477,6 +1477,22 @@ All Data CSV Download (contains all column headings below)
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
 
+### Pregnancy with opioid Abuse
+**Measure Description**  
+The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have indications of pregnancy with opioid abuse diagnosis.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/opioidpregnancy_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
 ## Appendix
 
 
