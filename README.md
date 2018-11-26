@@ -1461,6 +1461,22 @@ All Data CSV Download (contains all column headings below)
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
 
+### Homeless
+**Measure Description**  
+The purpose of this report is to identify patients that may be homeless. We use a combination of diagnosis codes and text based searches to identify possible homeless patients.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have indications of homeless.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/homeless_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
 ## Appendix
 
 
