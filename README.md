@@ -125,7 +125,7 @@
 ## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
+| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt-1) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
 | [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c > 9.0%. |
 | [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
