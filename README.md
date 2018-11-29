@@ -125,16 +125,16 @@
 ## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Alcohol and Drug Misuse (SBIRT)](#) | Percentage of members (ages 12 and older) who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
+| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
-| [Diabetes Management](#) | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 7.0%. |
-| [Homeless](#) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
-| [Hypertension](#) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure exceeded (<125/90mmHg). |
-| [Depression Screen](#) | This report provides a list of patients aged 12 and older screened for clinical depression on the encounter date, using an age appropriate standardized depression screening tool and documenting a follow-up on the date of the positive screen. |
-| [Disparity measure: Emergency department utilization among members with mental illness](#) | Rate of visits to an emergency department among adult members experiencing mental illness. |
-| [ED visit](#) | This report provides a list of patients that have visited the Emergency Department. |
-| [Opioid Use + Positive Pregnancy](#) | This report provides a list of patients identified as pregnant and have a history or current diagnosis of opioid abuse. |
-| [Alerts for lab results](#) | This report lists patients that have received a new lab result for their organization. |
+| [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c > 9.0%. |
+| [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
+| [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure exceeded 125/90mmHg. |
+| [Depression Screen](#depression-screening) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
+| [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> |
+| [>30 day re-admit](#30-day-readmit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
+| [Opioid Use + Positive Pregnancy](#opoid-use-positive-pregnancy) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
+| [Alerts for lab results](#alerts-for-lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 
 
 
@@ -1445,6 +1445,23 @@ All Data CSV Download (contains all column headings below)
 ## Notification Reports  
 These reports are to be included for all ADT contributors with access to the Reliance Community Health Record.  
 
+### Alcohol and Drug Misuse (SBIRT)
+**Measure Description**  
+Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.  
+**Data Sources**  
+ADTs, CCDs, LABs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients aged 12 and older that received appropriate SBIRT for alcohol or other substance abuse.  
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/sbirt_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
+
 ### Tobacco
 **Measure Description**  
 This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use.  
@@ -1453,13 +1470,29 @@ ADTs, CCDs, LABs, Claims and Encounters
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-List of patients aged 13 and older that screened as tobacco users during the start and end date given.
+List of patients aged 13 and older that screened as tobacco users during the start and end date given.  
 
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/tobacco_notification.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
+### Diabetes Management
+**Measure Description**  
+Patients 18-75 years of age with who had hemoglobin A1c > 9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients aged 18-75 with an HbA1c > 9.0%  
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/diabetes_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | last_HbA1c | attending | ordering`
 
 ### Homeless
 **Measure Description**  
@@ -1477,6 +1510,70 @@ All Data CSV Download (contains all column headings below)
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
 
+### Hypertension
+**Measure Description**  
+Patients 18-85 years of age whose blood pressure exceeded 125/90mmHg.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients 18-85 years of age whose blood pressure exceeded 125/90mmHg. 
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/hypertension_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | bp_systolic | bp_diastolic | attending`
+
+### Depression Screen
+**Measure Description**  
+This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients aged 12 and older screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen.  
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/depression_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service_pos | meets_num_pos_fol`
+
+### ED Visits
+**Measure Description**  
+This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf>  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have visited the emergency department.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/ed_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | admit_time | chief_complaint | mental_illness_indicated | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending | count`
+
+### >30 day re-admit
+**Measure Description**  
+This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital.   
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of readmissions that occured less than 30 days before last discharge from a hospital.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/readmit_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | index_time | index_facility | readmission_time | readmission_facility | days_since_discharge | attending`
+
 ### Pregnancy with opioid Abuse
 **Measure Description**  
 The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse.  
@@ -1492,6 +1589,22 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/opioidpregnancy_notification.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+
+### Alerts for lab results
+**Measure Description**  
+The purpose of this report is to identify if patient results are available for viewing.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have results available.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/results_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | result_name | result_status | result_type | attending | ordering`
 
 ## Appendix
 
