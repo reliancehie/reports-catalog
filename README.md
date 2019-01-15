@@ -1365,7 +1365,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/hepC_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
+`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | hiv_positive | type2_dx | APRI | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
 
 
 ### Diabetes by Type
