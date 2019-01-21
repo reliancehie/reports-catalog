@@ -1,4 +1,4 @@
-![](pictures/reliance_logo.png)
+﻿![](pictures/reliance_logo.png)
 
 # Reliance Insight Report Catalog
 
@@ -743,7 +743,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/colorectal_chart_2018.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_VHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Colorectal-Cancer-Screening-2018.pdf>  
