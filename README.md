@@ -1459,7 +1459,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/sbirt_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 
 ### Tobacco
@@ -1476,7 +1476,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/tobacco_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Diabetes Management
 **Measure Description**  
@@ -1492,7 +1492,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/diabetes_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | last_HbA1c | attending | ordering`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | last_HbA1c | attending | ordering`
 
 ### Homeless
 **Measure Description**  
@@ -1508,7 +1508,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/homeless_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_street_address | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Hypertension
 **Measure Description**  
@@ -1524,7 +1524,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/hypertension_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | bp_systolic | bp_diastolic | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | bp_systolic | bp_diastolic | attending`
 
 ### Depression Screen
 **Measure Description**  
@@ -1540,7 +1540,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/depression_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service_pos | meets_num_pos_fol`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service_pos | meets_num_pos_fol`
 
 ### ED Visits
 **Measure Description**  
@@ -1556,7 +1556,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/ed_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | admit_time | chief_complaint | mental_illness_indicated | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending | count`
+`mpid | sending_facility | patient_date_of_birth | patient_age | admit_time | chief_complaint | mental_illness_indicated | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending | count`
 
 ### >30 day re-admit
 **Measure Description**  
@@ -1572,7 +1572,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/readmit_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | index_time | index_facility | readmission_time | readmission_facility | days_since_discharge | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | index_time | index_facility | readmission_time | readmission_facility | days_since_discharge | attending`
 
 ### Pregnancy with opioid abuse
 **Measure Description**  
@@ -1588,7 +1588,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/opioidpregnancy_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Alerts for lab results
 **Measure Description**  
@@ -1604,7 +1604,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/results_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | result_name | result_status | result_type | attending | ordering`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | result_name | result_status | result_type | attending | ordering`
 
 ### Opioid abuse
 **Measure Description**  
@@ -1620,7 +1620,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/opioid_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### HIV
 **Measure Description**  
@@ -1636,7 +1636,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/hiv_notification.png)  
 **Column headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | patient_phone  | date_of_service | attending`
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 
 ## Appendix
