@@ -127,9 +127,9 @@
 | -------------  |-------------              |
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt-1) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
-| [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c > 9.0%. |
+| [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c greater than the user defined threshold (Default: 7.0%). |
 | [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
-| [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure exceeded 125/90mmHg. |
+| [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure is greater than the user defined threshold (Default: 125/90mmHg).. |
 | [Depression Screen](#depression-screen) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
 | [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> |
 | [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
@@ -1480,7 +1480,7 @@ All Data CSV Download (contains all column headings below)
 
 ### Diabetes Management
 **Measure Description**  
-Patients 18-75 years of age with who had hemoglobin A1c > 9.0%.  
+Patients 18-75 years of age with who had hemoglobin A1c greater than the user defined threshold (Default: 7.0%).  
 **Data Sources**  
 ADTs, CCDs, LABs, Claims and Encounters   
 **Input Parameters**   
@@ -1512,7 +1512,7 @@ All Data CSV Download (contains all column headings below)
 
 ### Hypertension
 **Measure Description**  
-Patients 18-85 years of age whose blood pressure exceeded 125/90mmHg.  
+Patients 18-85 years of age whose blood pressure is greater than the user defined threshold (Default: 125/90mmHg).  
 **Data Sources**  
 ADTs, CCDs, LABs, TRANs, Claims and Encounters   
 **Input Parameters**   
