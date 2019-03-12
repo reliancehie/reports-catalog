@@ -3,14 +3,14 @@
 # Reliance Insight Report Catalog
 
 ## Table of Contents
-**A. [OHA 2018 CCO Incentive and Performance Reports](#b-oha-2018-cco-incentive-and-performance-reports)**  
-**B. [QCDR Reports](#c-qcdr-reports)**  
-**C. [HEDIS Reports](#d-hedis-reports)**  
-**D. [Uniform Data System (UDS) Reports](#e-uniform-data-system-uds-reports)**  
-**E. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#f-certified-community-behavioral-health-clinics-ccbhc-measures)**  
-**F. [Custom Reports](#g-custom-reports)**  
-**G. [Notification Reports](#h-notification-reports)**  
-**H. [Appendix](#i-appendix)**  
+**A. [OHA 2018 CCO Incentive and Performance Reports](#a-oha-2018-cco-incentive-and-performance-reports)**  
+**B. [QCDR Reports](#b-qcdr-reports)**  
+**C. [HEDIS Reports](#c-hedis-reports)**  
+**D. [Uniform Data System (UDS) Reports](#d-uniform-data-system-uds-reports)**  
+**E. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#e-certified-community-behavioral-health-clinics-ccbhc-measures)**  
+**F. [Custom Reports](#f-custom-reports)**  
+**G. [Notification Reports](#g-notification-reports)**  
+**H. [Appendix](#h-appendix)**  
 
 ### Click on a report name below for a detailed description 
 
