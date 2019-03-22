@@ -115,6 +115,7 @@
 | [Alerts for lab results](#alerts-for-lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
+| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is "Inpatient" or "Emergency" to identify patient discharges.  |
 
 ## [H. Appendix](#appendix)
 [Community Health Record](#community-health-record)  
@@ -1170,6 +1171,23 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/hiv_notification.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
+
+### Hospital Discharge
+**Measure Description**  
+The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event 
+and patient class is "Inpatient" or "Emergency" to identify patient discharges.  
+**Data Sources**  
+ADTs 
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have been discharged from and emergency or inpatient visit.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/discharge_notification.png)  
+**Column headings**  
+`mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_street_address | patient_age | patient_sex | discharge_time | diagnosis_info | attending_provider | primary_care_provider'`
 
 
 ## Appendix
