@@ -99,6 +99,7 @@
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
 | [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
+| [Sexual Orientation and Gender Identity](#sexual-orientation-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
 
 ## [G. Notification Reports](#notification-reports)
 | Report Name    | Description               |
@@ -975,6 +976,23 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/food_insecurity_chart.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
+
+### Sexual Orientation and Gender Identity
+**Measure Description**  
+The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. Please note this report only returns patients that have reported their preferences in their medical records.
+**Data Sources**  
+ADTs, CCDs
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients with their gender identity and a list of patients with their sexual orientation.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/sexual_preference_gender_identity.png)  
+**Column headings**  
+`mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | gender_identity | date_of_service`
+`mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ## Notification Reports  
 These reports are to be included for all ADT contributors with access to the Reliance Community Health Record.  
