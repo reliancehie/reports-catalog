@@ -887,7 +887,7 @@ These reports of interest do not conform to one of the major reporting programs 
 
 ### Current Patient List  
 **Measure Description**
-Identifies current patients or only currently eligible Medicaid patients
+Identifies current patients or only currently eligible Medicaid patients  
 **Data Sources**  
 Reliance Patient Summary store or Medicaid Patient store   
 **Input Parameters**  
