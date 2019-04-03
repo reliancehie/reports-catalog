@@ -886,7 +886,7 @@ All Data CSV Download (contains all column headings below).
 These reports of interest do not conform to one of the major reporting programs like CMS eCQMs, CCO Incentive Metrics, or HEDIS. In addition, Reliance Insight offers the tools necessary to allow users to develop their own queries and reports to meet the business needs of the organization.  For those that have more complex reporting needs or prefer to rely on the expertise of Reliance, the Insight Team provides consultation and report building and works with the organization to validate the data and reporting outputs to ensure the accuracy and completeness of the data.  
 
 ### Current Patient List  
-**Measure Description**
+**Measure Description**  
 Identifies current patients or only currently eligible Medicaid patients  
 **Data Sources**  
 Reliance Patient Summary store or Medicaid Patient store   
