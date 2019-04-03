@@ -99,7 +99,7 @@
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
 | [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
-| [Sexual Orientation and Gender Identity](#sexual-orientation-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
+| [Sexual Orientation and Gender Identity](#sexual-orientation-and-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
 
 ## [G. Notification Reports](#notification-reports)
 | Report Name    | Description               |
@@ -991,7 +991,6 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/sexual_preference_gender_identity.png)  
 **Column headings**  
-`mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | gender_identity | date_of_service`
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ## Notification Reports  
