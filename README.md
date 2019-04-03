@@ -94,6 +94,7 @@
 ## [F. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
+| [Current Patient List](#current-patient-list) | Identifies current patients or only currently eligible Medicaid patients. |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
@@ -147,7 +148,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/awc_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Adolescent-Well-Care-Visits-2018.pdf>
@@ -172,7 +173,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/ed_utilization.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
@@ -199,7 +200,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/childimms_chart.png)
 
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | 
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
         sending_facility | date_of_service_denom | meets_denominator | 
         date_of_service_dtap |dtap_num | dtap count |
         date_of_service_ipv | ipv_num | ipv count |
@@ -250,7 +251,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/smoking_prevalence_chart.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
         date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
         meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
 
@@ -304,7 +305,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/hypertension_chart.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Controlling-Hypertension-2018.pdf>  
@@ -334,7 +335,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/depression_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
         meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
 
@@ -358,7 +359,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/developmental_chart_2018.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental%20Screening%20-%202018.pdf> 
@@ -383,7 +384,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 **Example Output**  
 ![](pictures/diabetes_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202018.pdf>
@@ -407,7 +408,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/ed_utilization_mi.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> 
@@ -436,7 +437,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/contraceptive_chart_2018.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Effective%20Contraceptive%20Use%20-%202018.pdf> 
@@ -463,7 +464,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/cco_adolescent_bmi_followup_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf>  
@@ -540,7 +541,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_breast_cancer.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms125v5>  
@@ -567,7 +568,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_colorectal.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms130v5>  
 
@@ -599,7 +600,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_bmi.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms069v5>
@@ -623,7 +624,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_ivd.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms164v5>  
 
@@ -646,7 +647,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_tobacco.png)  
 **Column headings**  
-`mpid_CPC | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | provider_name | date_of_service_denom | meets_denominator | date_of_service_num | meets_numerator | smoker_status | date_of_service_cessation | smoke_cessation | meets_exception | measurement_period_begin | date_of_service_exception | measurement_period_end`  
+`mpid_CHR | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | provider_name | date_of_service_denom | meets_denominator | date_of_service_num | meets_numerator | smoker_status | date_of_service_cessation | smoke_cessation | meets_exception | measurement_period_begin | date_of_service_exception | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms138v5>  
 
@@ -671,7 +672,7 @@ All Data CSV Download (contains all column headings below).
 ![](pictures/qcdr_hypertension.png)  
 
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms165v5>  
@@ -701,7 +702,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/qcdr_cervical.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms124v5> 
@@ -727,7 +728,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/flu_18.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
 
@@ -748,7 +749,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/flu_65.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
 
@@ -823,7 +824,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/uds_bmi_followup_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms069v5>  
@@ -848,7 +849,7 @@ All Data CSV Download (contains all column headings below).
 ![](pictures/uds_asthma_chart.png)  
 ![](pictures/uds_asthma.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | patient_mrn | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | patient_mrn | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms126v5>  
@@ -875,7 +876,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/uds_adolescent_bmi_followup_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms155v5>  
@@ -883,6 +884,21 @@ All Data CSV Download (contains all column headings below).
 
 ## Custom Reports  
 These reports of interest do not conform to one of the major reporting programs like CMS eCQMs, CCO Incentive Metrics, or HEDIS. In addition, Reliance Insight offers the tools necessary to allow users to develop their own queries and reports to meet the business needs of the organization.  For those that have more complex reporting needs or prefer to rely on the expertise of Reliance, the Insight Team provides consultation and report building and works with the organization to validate the data and reporting outputs to ensure the accuracy and completeness of the data.  
+
+### Current Patient List  
+**Measure Description**
+Identifies current patients or only currently eligible Medicaid patients
+**Data Sources**  
+Reliance Patient Summary store or Medicaid Patient store   
+**Input Parameters**  
+Records to Display Below and Medicaid Only checkbox   
+**Output**  
+List of current patients or only Medicaid patients if Medicaid Only checkbox is checked.
+All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/current_patients.png)  
+**Column headings**  
+`mpid_CHR | medicaid_id | patient_first_name | patient_last_name | patient_sex | patient_date_of_birth | provider_name`
 
 ### Hepatitis C Diagnosis and Hepatic Labs  
 **Measure Description**
@@ -900,7 +916,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/hepC_chart.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | hiv_positive | type2_dx | APRI | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | hiv_positive | type2_dx | APRI | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
 
 
 ### Diabetes by Type
@@ -925,7 +941,7 @@ Type I and Type II All Data CSV (contains all column headings below), Type I Dia
 ![](pictures/type1_diabetes.png)  
 ![](pictures/type2_diabetes.png)  
 **Column headings**  
-`mpid_CPC | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator_type1 | meets_numerator_type1 | meets_denominator_type2 | meets_numerator_type2 | measurement_period_begin | measurement_period_end`  
+`mpid_CHR | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator_type1 | meets_numerator_type1 | meets_denominator_type2 | meets_numerator_type2 | measurement_period_begin | measurement_period_end`  
 
 
 ### Positive Pregnancy
@@ -941,7 +957,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/pregnancy_chart.png)  
 **Column headings**  
-`mpid_CPC | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
+`mpid_CHR | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 
 ### Homeless
