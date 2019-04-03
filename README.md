@@ -893,7 +893,7 @@ Reliance Patient Summary store or Medicaid Patient store
 **Input Parameters**  
 Records to Display Below and Medicaid Only checkbox   
 **Output**  
-List of current patients or only Medicaid patients if Medicaid Only checkbox is checked.
+List of current patients or only Medicaid patients if Medicaid Only checkbox is checked.  
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/current_patients.png)  
