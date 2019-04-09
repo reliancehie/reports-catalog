@@ -114,7 +114,7 @@
 | [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> |
 | [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
 | [Opioid Use + Positive Pregnancy](#pregnancy-with-opioid-abuse) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
-| [Alerts for lab results](#alerts-for-lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
+| [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
 | [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is "Inpatient" or "Emergency" to identify patient discharges.  |
@@ -1157,13 +1157,13 @@ All Data CSV Download (contains all column headings below)
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
-### Alerts for lab results
+### Lab results
 **Measure Description**  
 The purpose of this report is to identify if patient results are available for viewing.  
 **Data Sources**  
 ADTs, CCDs, LABs, TRANs, Claims and Encounters   
 **Input Parameters**   
-Start Date, End Date, and Records to Display Below  
+Result Type, Start Date, End Date, Final Result Status, Include Transcriptions, and Records to Display Below  
 **Output**  
 List of patients that have results available.
 
