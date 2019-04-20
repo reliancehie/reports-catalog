@@ -10,7 +10,7 @@
 **E. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#e-certified-community-behavioral-health-clinics-ccbhc-measures)**  
 **F. [Custom Reports](#f-custom-reports)**  
 **G. [Notification Reports](#g-notification-reports)**  
-**H. [Appendix](#h-appendix)**  
+**H. [Appendix](#h-appendix)**  	
 
 ### Click on a report name below for a detailed description 
 
@@ -340,7 +340,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Depression%20Screening%20-%202018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Depression-Screening-2018.pdf> 
 
 ### Developmental Screening in the First 36 months of Life
 **Measure Description**   
@@ -362,7 +362,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental%20Screening%20-%202018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental-Screening-2018.pdf> 
 
 ### Diabetes: HbA1c Poor Control
 **Measure Description**  
@@ -387,7 +387,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes%20HbA1c%20Poor%20Control%20-%202018.pdf>
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes-HbA1c-Poor-Control-2018.pdf>
 
 ### Emergency Department Utilization for Individuals Experiencing Mental Illness
 **Measure Description**   
@@ -440,7 +440,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Effective%20Contraceptive%20Use%20-%202018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/2018-specs-(Effective-Contraceptive-Use)-FINAL-V2-20190305.pdf> 
 
 ### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
 **Measure Description**   
@@ -467,7 +467,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight%20Assessment%20and%20Counseling%20-%202018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight-Assessment-Counseling-2018.pdf>  
 
 
 ### Timeliness of Prenatal and Postpartum Care  
@@ -494,7 +494,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Timeliness%20of%20Prenatal%20and%20Postpartum%20Care%20-%202018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Timeliness-Prenatal-Postpartum-Care-2018.pdf>  
 
 ## QCDR Reports
 The Centers for Medicare & Medicaid Services (CMS) has accepted Reliance’s application to provide Qualified Clinical Data Registry (QCDR) for the 2018 performance period of the Merit-based Incentive Payment System (MIPS).   As the only authorized QCDR in Oregon, Reliance provides you with additional opportunities to optimize your EHR interface with Reliance and maximize your revenue.  
