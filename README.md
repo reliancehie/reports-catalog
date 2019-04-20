@@ -308,7 +308,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Controlling-Hypertension-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Controlling-hbp-2018.pdf>  
 
 ### Depression screening and follow up plan
 **Measure Description**   
