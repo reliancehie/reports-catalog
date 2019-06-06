@@ -111,7 +111,7 @@
 | [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
 | [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure is greater than the user defined threshold (Default: 125/90mmHg).. |
 | [Depression Screen](#depression-screen) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
-| [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> |
+| [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> |
 | [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
 | [Opioid Use + Positive Pregnancy](#pregnancy-with-opioid-abuse) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
@@ -151,7 +151,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Adolescent-Well-Care-Visits-2018.pdf>
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Adolescent-Well-Care-Visits.pdf>
 
 ### Ambulatory care: Emergency Department utilization  
 **Measure Description**   
@@ -211,7 +211,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
         all_vacs |provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/childhood-immunizations-2018.pdf>
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Childhood-Immunization-Status.pdf>
 
 ### Cigarette Smoking Prevalence  
 **Measure Description**  
@@ -256,7 +256,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
         meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Cigarette-Smoking-Prevalence-Bundle-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Cigarette-Smoking-Prevalence-Bundle.pdf>  
 
 ### Colorectal Cancer Screening
 **Measure Description**   
@@ -282,7 +282,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_VHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Colorectal-Cancer-Screening-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Colorectal-Cancer-Screening.pdf>  
 
 ### Controlling High Blood Pressure
 **Measure Description**   
@@ -308,7 +308,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Controlling-hbp-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Controlling-High-Blood-Pressure.pdf>  
 
 ### Depression screening and follow up plan
 **Measure Description**   
@@ -340,7 +340,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Depression-Screening-2018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Depression-Screening.pdf> 
 
 ### Developmental Screening in the First 36 months of Life
 **Measure Description**   
@@ -362,7 +362,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Developmental-Screening-2018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Developmental-Screening.pdf> 
 
 ### Diabetes: HbA1c Poor Control
 **Measure Description**  
@@ -387,7 +387,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Diabetes-HbA1c-Poor-Control-2018.pdf>
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Diabetes-HbA1c-Poor-Control.pdf>
 
 ### Emergency Department Utilization for Individuals Experiencing Mental Illness
 **Measure Description**   
@@ -411,7 +411,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<http://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
 
 ### Effective contraceptive use among women at risk of unintended pregnancy
 
@@ -440,7 +440,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/2018-specs-(Effective-Contraceptive-Use)-FINAL-V2-20190305.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Effective-Contraceptive-Use.pdf> 
 
 ### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
 **Measure Description**   
@@ -467,7 +467,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Weight-Assessment-Counseling-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Weight-Assessment-Counseling.pdf>  
 
 
 ### Timeliness of Prenatal and Postpartum Care  
@@ -494,7 +494,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Timeliness-Prenatal-Postpartum-Care-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Timeliness-Prenatal-Postpartum-Care.pdf>  
 
 ## QCDR Reports
 The Centers for Medicare & Medicaid Services (CMS) has accepted Reliance’s application to provide Qualified Clinical Data Registry (QCDR) for the 2018 performance period of the Merit-based Incentive Payment System (MIPS).   As the only authorized QCDR in Oregon, Reliance provides you with additional opportunities to optimize your EHR interface with Reliance and maximize your revenue.  
