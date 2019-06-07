@@ -1111,7 +1111,8 @@ All Data CSV Download (contains all column headings below)
 
 ### ED Visits
 **Measure Description**  
-This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf>    
+This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf>  
+  
 The output of this report is ordered by patients with the most ED visits and most recent admit times.  
 **Data Sources**  
 ADTs, CCDs, LABs, TRANs, Claims and Encounters   
