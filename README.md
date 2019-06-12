@@ -1155,8 +1155,6 @@ Start Date, End Date, and Records to Display Below
 List of patients that have indications of pregnancy.
 
 All Data CSV Download (contains all column headings below)  
-**Example Output**  
-![](pictures/opioidpregnancy_notification.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
