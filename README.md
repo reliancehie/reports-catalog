@@ -113,6 +113,7 @@
 | [Depression Screen](#depression-screen) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
 | [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> |
 | [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
+| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
 | [Opioid Use + Positive Pregnancy](#pregnancy-with-opioid-abuse) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
@@ -1142,6 +1143,22 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/readmit_notification.png)  
 **Column headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | index_time | index_facility | readmission_time | readmission_facility | days_since_discharge | attending`
+
+### Positive Pregnancy
+**Measure Description**  
+The purpose of this report is to identify patients with a positive pregnancy screening.  
+**Data Sources**  
+ADTs, CCDs, LABs, TRANs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of patients that have indications of pregnancy.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+![](pictures/opioidpregnancy_notification.png)  
+**Column headings**  
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Pregnancy with opioid abuse
 **Measure Description**  
