@@ -1,46 +1,67 @@
-﻿![](pictures/reliance_logo.png)
+![](pictures/reliance_logo.png)
 
 # Reliance Insight Report Catalog
 
 ## Table of Contents
 **A. [OHA 2018 CCO Incentive and Performance Reports](#a-oha-2018-cco-incentive-and-performance-reports)**  
-**B. [QCDR Reports](#b-qcdr-reports)**  
-**C. [HEDIS Reports](#c-hedis-reports)**  
-**D. [Uniform Data System (UDS) Reports](#d-uniform-data-system-uds-reports)**  
-**E. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#e-certified-community-behavioral-health-clinics-ccbhc-measures)**  
-**F. [Custom Reports](#f-custom-reports)**  
-**G. [Notification Reports](#g-notification-reports)**  
-**H. [Appendix](#h-appendix)**  	
+**B. [OHA 2018 CCO Incentive and Performance Reports](#b-oha-2018-cco-incentive-and-performance-reports)**  
+**C. [QCDR Reports](#c-qcdr-reports)**  
+**D. [HEDIS Reports](#d-hedis-reports)**  
+**E. [Uniform Data System (UDS) Reports](#e-uniform-data-system-uds-reports)**  
+**F. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#f-certified-community-behavioral-health-clinics-ccbhc-measures)**  
+**G. [Custom Reports](#g-custom-reports)**  
+**H. [Notification Reports](#h-notification-reports)**  
+**I. [Appendix](#i-appendix)**  	
 
 ### Click on a report name below for a detailed description 
 
-## [A. OHA 2018 CCO Incentive and Performance Reports](#oha-2018-cco-incentive-and-performance-reports)
+## [A. OHA 2019 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Adolescent well-care visits](#adolescent-well-care-visits)        | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
-| [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization)        | Rate of patient visits to an emergency department.         |
+| [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization)        | **IN PROGRESS** <br/> Rate of patient visits to an emergency department.         |
 | [Childhood immunization status](#childhood-immunization-status)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
 | [Cigarette smoking prevalence ](#cigarette-smoking-prevalence)        | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee.         |
 | [Colorectal cancer screening](#colorectal-cancer-screening)        | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.         |
 | [Controlling high blood pressure](#controlling-high-blood-pressure)        | Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.         |
+| [Dental Sealants on Permanent Molars for Children](#dental-sealants-on-permanent-molars-for-children)        | Percentage of children ages 6-14 who received a dental sealant during the measurement year.         |
 | [Depression screening and follow up plan](#depression-screening-and-follow-up-plan)        | Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.         |
 | [Developmental screening in the first 36 months of life](#developmental-screening-in-the-first-36-months-of-life)        | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
 | [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
-| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
+| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | **IN PROGRESS** <br/>Rate of visits to an emergency department among adult members experiencing mental illness.         |
 | [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
-| [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
+| [Oral Evaluation for Adults with Diabetes](#oral-evaluation-for-adults-with-diabetes)        | Percentage of adult CCO members identified as having diabetes who received at least one dental service within the reporting year.         |
 | [Timeliness of Prenatal and Postpartum Care](#timeliness-of-prenatal-and-postpartum-care)        | Percentage of women with live births who received a prenatal care visit within the first trimester and percentage of women receiving postpartum care within 21-56 days of delivery.         |
+| [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
 
-## [B. QCDR Reports](#qcdr-reports)
+
+## [B. OHA 2018 CCO Incentive and Performance Reports](#oha-2018-cco-incentive-and-performance-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Adolescent well-care visits](#adolescent-well-care-visits-1)        | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
+| [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization-1)        | Rate of patient visits to an emergency department.         |
+| [Childhood immunization status](#childhood-immunization-status-1)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
+| [Cigarette smoking prevalence ](#cigarette-smoking-prevalence-1)        | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee.         |
+| [Colorectal cancer screening](#colorectal-cancer-screening-1)        | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.         |
+| [Controlling high blood pressure](#controlling-high-blood-pressure-1)        | Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.         |
+| [Depression screening and follow up plan](#depression-screening-and-follow-up-plan-1)        | Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.         |
+| [Developmental screening in the first 36 months of life](#developmental-screening-in-the-first-36-months-of-life-1)        | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
+| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control-1)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
+| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
+| [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy-1)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
+| [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
+| [Timeliness of Prenatal and Postpartum Care](#timeliness-of-prenatal-and-postpartum-care-1)        | Percentage of women with live births who received a prenatal care visit within the first trimester and percentage of women receiving postpartum care within 21-56 days of delivery.         |
+
+## [C. QCDR Reports](#qcdr-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Diabetes: Hemoglobin A1c (HbA1c) Poor Control (>9%)](#diabetes-hemoglobin-a1c-hba1c-poor-control-9)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.         |
 | [Breast Cancer Screening](#breast-cancer-screening) | Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer. |
-| [Colorectal Cancer Screening](#colorectal-cancer-screening-1) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
+| [Colorectal Cancer Screening](#colorectal-cancer-screening-2) | Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan) | Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous six months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the current encounter.  Normal Parameters: Age 18 years and older BMI => 18.5 and < 25 kg/m2 |
 | [Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet](#ischemic-vascular-disease-ivd-use-of-aspirin-or-another-antiplatelet) | Percentage of patients 18 years of age and older who were diagnosed with acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous coronary interventions (PCI) in the 12 months prior to the measurement period, or who had an active diagnosis of ischemic vascular disease (IVD) during the measurement period, and who had documentation of use of aspirin or another antiplatelet during the measurement period. |
 | [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#preventive-care-and-screening-tobacco-use-screening-and-cessation-intervention) | Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user. |
-| [Controlling High Blood Pressure](#controlling-high-blood-pressure-1) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
+| [Controlling High Blood Pressure](#controlling-high-blood-pressure-2) | Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period. |
 | [Cervical Cancer Screening](#cervical-cancer-screening) | Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: * Women age 21-64 who had cervical cytology performed every 3 years * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years |
 | [Documentation of Current Medications in the Medical Record](#) | **IN PROGRESS** <br/> Percentage of visits for patients aged 18 years and older for which the eligible professional or eligible clinician attests to documenting a list of current medications using all immediate resources available on the date of the encounter. This list must include ALL known prescriptions, over-the-counters, herbals, and vitamin/mineral/dietary (nutritional) supplements AND must contain the medications' name, dosage, frequency and route of administration. |
 | [Anti-depressant Medication Management](#) | **IN PROGRESS** <br/> Percentage of patients 18 years of age and older who were treated with antidepressant medication, had a diagnosis of major depression, and who remained on an antidepressant medication treatment. Two rates are reported. a. Percentage of patients who remained on an antidepressant medication for at least 84 days (12 weeks). b. Percentage of patients who remained on an antidepressant medication for at least 180 days (6 months). |
@@ -53,13 +74,13 @@
 | [Use of High-Risk Medications in the Elderly ](#) | **IN PROGRESS** <br/> Percentage of patients 65 years of age and older who were ordered high-risk medications. Two rates are reported. a. Percentage of patients who were ordered at least one high-risk medication. b. Percentage of patients who were ordered at least two of the same high-risk medications. |
 | [Children Who Have Dental Decay or Cavities](#) | **IN PROGRESS** <br/> Percentage of children, age 0-20 years, who have had tooth decay or cavities during the measurement period. |
 
-## [C. HEDIS Reports](#hedis-reports)
+## [D. HEDIS Reports](#hedis-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Flu Vaccinations for Adults Ages 18-64](#flu-vaccinations-for-adults-ages-18-64) | The percentage of commercial and Medicaid members 18–64 years of age who received an influenza vaccination between July 1 of the measurement year and the date when the CAHPS 5.0H survey was completed. |
 | [Flu Vaccinations for Adults Ages 65 and Older](#flu-vaccinations-for-adults-ages-65-and-older)      | Description The percentage of Medicare members 65 years of age and older who received an influenza vaccination between July 1 of the measurement year and the date when the Medicare CAHPS survey was completed.  |
 
-## [D. Uniform Data System (UDS) Reports](#uds-reports)
+## [E. Uniform Data System (UDS) Reports](#uds-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Cervical Cancer Screening](#) |	**IN PROGRESS** <br/> Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 1) Women age 21-64 who had cervical cytology performed every 3 years 2) Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  |
@@ -76,14 +97,14 @@
 | [Preventive Care and Screening: Screening for Depression and Follow-Up Plan](#) | **IN PROGRESS** <br/> Percentage of patients aged 12 years and older screened for depression on the date of the visit using an age appropriate standardized depression screening tool and if positive, a follow-up plan is documented on the date of the positive screen. |  
 | [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. |  
 | [Use of Appropriate Medications for Asthma](#use-of-appropriate-medications-for-asthma) | Percentage of patients 5-64 years of age who were identified as having persistent asthma and were appropriately ordered medication during the measurement period |  
-| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-2) | Percentage of patients 3 -17 years of age who had a medical visit and who had evidence of height, weight, and body mass index (BMI) percentile documentation and who had documentation of counseling for nutrition and who had documentation of counseling for physical activity during the measurement year |  
 
-## [E. Certified Community Behavioral Health Clinics (CCBHC) Measures](#)
+## [F. Certified Community Behavioral Health Clinics (CCBHC) Measures](#)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Deaths by Suicide](#) | Percentage of consumers aged 12 years and older who died by suicide during the measurement year  |
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-2) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
-| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-2)      |	**IN PROGRESS** <br/> Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
+| [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-3)      |	**IN PROGRESS** <br/> Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
 | [Controlling High Blood Pressure](#) | **IN PROGRESS** <br/> Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period || [Deaths by Suicide ](#) | Percentage of consumers aged 12 years and older who died by suicide during the measurement year  |
 | [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. | 
 | [Screening for Clinical Depression and Follow-Up Plan](#screening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
@@ -91,7 +112,7 @@
 | [Follow-Up After Emergency Department Visit for Mental Health](#) | **IN PROGRESS** <br/> The percentage of emergency department (ED) visits for consumers 6 years of age and older with a primary diagnosis of mental illness, who had an outpatient visit, an intensive outpatient encounter or a partial hospitalization for mental illness. Two rates are reported: 1. The percentage of ED visits for which the consumer received follow-up within 30 days of the ED visit. 2. The percentage of ED visits for which the consumer received follow-up within 7 days of the ED visit.  |
 | [Diabetes Care For People With Serious Mental Illness: Hemoglobin A1c (HbA1c) Poor Control (>9.0%) ](#)        | **IN PROGRESS** <br/> The percentage of consumers 18–75 years of age with a serious mental illness and diabetes (type 1 and type 2) whose most recent Hemoglobin A1c (HbA1c) level during the measurement year is >9.0%         |
 
-## [F. Custom Reports](#custom-reports)
+## [G. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Current Patient List](#current-patient-list) | Identifies current patients or only currently eligible Medicaid patients. |
@@ -102,7 +123,7 @@
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
 | [Sexual Orientation and Gender Identity](#sexual-orientation-and-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
 
-## [G. Notification Reports](#notification-reports)
+## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
@@ -118,12 +139,78 @@
 | [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
-| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is "Inpatient" or "Emergency" to identify patient discharges.  |
+| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is "inpatient" or "Emergency" to identify patient discharges.  |
 
-## [H. Appendix](#appendix)
+## [I. Appendix](#appendix)
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
  
+## OHA 2019 CCO Incentive and Performance Reports  
+The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
+<http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
+The default measurement period for the following reports is Calendar Year 2019, but the user can choose a measurement period of their choice.
+
+### Adolescent Well Care Visits
+**Measure Description**  
+Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.  
+
+### Ambulatory care: Emergency Department utilization  
+**Measure Description**   
+Rate of patient visits to an emergency department.  
+
+### Childhood Immunization Status  
+**Measure Description**
+Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.  
+
+### Cigarette Smoking Prevalence  
+**Measure Description**  
+Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence.  
+
+### Colorectal Cancer Screening
+**Measure Description**   
+Percent of adult members (ages 51-75) who had appropriate screening for colorectal cancer.  
+
+### Controlling High Blood Pressure
+**Measure Description**   
+Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
+
+### Controlling High Blood Pressure
+**Measure Description**   
+Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
+
+### Dental Sealants on Permanent Molars for Children
+**Measure Description**   
+Percentage of children ages 6-14 who received a dental sealant during the measurement year.  
+
+### Depression screening and follow up plan
+**Measure Description**   
+Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.
+
+### Developmental Screening in the First 36 months of Life
+**Measure Description**   
+Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.  
+
+### Diabetes: HbA1c Poor Control
+**Measure Description**  
+Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
+
+### Effective contraceptive use among women at risk of unintended pregnancy
+**Measure Description**   
+Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.   
+
+### Oral Evaluation for Adults with Diabetes  
+**Measure Description**  
+Percentage of adult CCO members identified as having diabetes who received at least one dental service within the reporting year.  
+
+### Timeliness of Prenatal and Postpartum Care  
+**Measure Description**   
+Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.  
+
+### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
+**Measure Description**   
+Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported: 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation,  2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity, 3. Percentage of patients with counseling for physical activity.   
+
+
 ## OHA 2018 CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
 <http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
@@ -415,7 +502,6 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
 
 ### Effective contraceptive use among women at risk of unintended pregnancy
-
 **Measure Description**   
 Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.   
 **Denominator**  
