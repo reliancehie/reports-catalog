@@ -593,7 +593,7 @@ All live birth deliveries between November 6 of the year prior to the measuremen
 **Required exclusions for denominator**   
 Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
 **Numerator**  
-A prenatal visit in the first trimester. Reliance Insight does not currently have the necessary data elements to perform enrollment logic.
+A prenatal visit in the first trimester. Reliance Insight does not currently have the necessary data elements to perform enrollment logic.  
 **Required exclusions for numerator**
 **Data Sources**  
 ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
