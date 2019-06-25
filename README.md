@@ -639,7 +639,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Weight-Assessment-Counseling.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Weight-Assessment-and-Counseling.pdf>  
 
 
 ## OHA 2018 CCO Incentive and Performance Reports  
