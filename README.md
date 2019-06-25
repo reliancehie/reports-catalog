@@ -115,7 +115,7 @@
 ## [G. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Current Patient List](#current-patient-list) | Identifies current patients or only currently eligible Medicaid patients. |
+| [Current Patient List](#current-patient-list) | Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients. |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
 | [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
@@ -1405,7 +1405,7 @@ These reports of interest do not conform to one of the major reporting programs 
 
 ### Current Patient List  
 **Measure Description**  
-Identifies current patients or only currently eligible Medicaid patients  
+Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients.   
 **Data Sources**  
 Reliance Patient Summary store or Medicaid Patient store   
 **Input Parameters**  
