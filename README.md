@@ -160,7 +160,7 @@ Members age 12-21 years as of December 31 of the measurement year.
 **Required exclusions for denominator:**  
 Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
 **Numerator**  
-At least one comprehensive well-care visit during the measurement year.
+At least one comprehensive well-care visit during the measurement year.  
 **Data Sources**  
 ADTs, CCDs, LABs, and Encounters   
 **Input Parameters**   
