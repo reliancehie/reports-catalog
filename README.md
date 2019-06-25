@@ -152,63 +152,494 @@ The default measurement period for the following reports is Calendar Year 2019, 
 
 ### Adolescent Well Care Visits
 **Measure Description**  
-Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.  
+Members age 12-21 years as of December 31 of the measurement year. See HEDIS® 2019 Technical Specifications for Health Plans (Volume 2) for details.  
+**2019 Measure Benchmark**  
+65.2% (administrative data only); 2018 National Medicaid 75th percentile.  
+**Denominator**  
+Members age 12-21 years as of December 31 of the measurement year.  
+**Required exclusions for denominator:**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
+**Numerator**  
+At least one comprehensive well-care visit during the measurement year.
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+
+**Example Output**  
+![](pictures/awc_chart_2019.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Adolescent-Well-Care-Visits.pdf>  
 
 ### Ambulatory care: Emergency Department utilization  
 **Measure Description**   
 Rate of patient visits to an emergency department.  
+**2019 Measure Benchmark**  
+43.1 / 1,000 member months; 2018 national Medicaid 90th percentile  
+**Denominator**  
+1,000 Member Months  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
+**Numerator for Emergency Department Visits**  
+Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit.  
+Do not include ED visits that result in an inpatient stay (Inpatient Stay Value Set).  
+HEDIS 2019 General Guideline 44: When an ED or observation visit and an inpatient stay are billed on separate claims, the visit results in an inpatient stay when the ED/observation date of service occurs on the day prior to the admission date or any time during the admission (admission date through discharge date). An ED or observation visit billed on the same claim as an inpatient stay is considered a visit that resulted in an inpatient stay.  
+**Numerator for Outpatient Visits**  
+Count multiple codes with the same practitioner on the same date of service as a single visit. Count visits with different practitioners separately (count visits with different providers on the same date of service as different visits).  
+**Required exclusions for numerator**  
+Mental health and chemical dependency services are excluded, using the following codes. Note OHA began applying the exclusions at the claim line level in measurement year 2016. OHA keeps all paid claim lines (i.e., unless the entire claim was denied, the paid lines pass through the algorithm and are picked up for this exclusion).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Custom Modifications**  
+'Unengaged' column indicates whether or not a patient has not had outpatient visit for more than 24 months.  
+**Example Output**  
+![](pictures/ed_utilization_2019.png)  
+
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Ambulatory-Care-Outpatient-ED-Utilization.pdf>  
 
 ### Childhood Immunization Status  
 **Measure Description**
 Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.  
+**2019 Measure Benchmark**  
+81.9% 2018 National Medicaid 90th percentile (Combo 2)  
+**Denominator**  
+Children who turn 2 years of age during the measurement year. See HEDIS® 2019 Technical Specification for Health Plans (Volume 2) for details.  
+**Required exclusions for denominator**  
+OHA excludes members who are known to be deceased at the time of metric reporting.  
+* Note this is a clarification of ongoing practice for OHA’s immunization metrics production, given the ALERT IIS does not provide immunization records for deceased individuals.  
+
+**Numerator**  
+OHA is using HEDIS® 2019 Combination 2 for the state performance measure: The number of children who turned 2 years of age in the measurement year and had all of the following specified vaccinations (minimum threshold in brackets): DTaP (4), IPV (3), MMR (1), HiB (3), HepB (3), VZV (1).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)  
+**Custom Modifications**  
+Indications of alternative schedule or vaccination refusal in date_of_service_alt_schedule, alternative_schedule, date_of_service_refusal, and vaccination_refusal columns.  
+Alternative Schedule Clinical Codes:  
+ICD-10-CM: Z28.1,Z28.21,Z28.82 HCPCS: G8483,G8866  
+Vaccination Refusal Clinical Codes:  
+ICD-10-CM: Z91.89 ICD-9-CM: V15.89 SNOMED: 140571000119108  
+Record type of denominator hit in denom_record_type column. Records types include HL7 messages (ADTs and Transcriptions), CCDs, and Claims.  
+CSV export of all immunizations per patient by date of service. This export includes the sending facility of the immunization received and whether the immunization came from clinical data, claims data, or both. Filtering by yes in the from_both column will indicate an immunization that has both clinical and claims data for the same immunization on the same date of service.  
+**Example Output**  
+![](pictures/childimms_chart_2019.png)
+
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
+        meets_denominator_exclusion | 
+        date_of_service_dtap |dtap_num | dtap count |
+        date_of_service_ipv | ipv_num | ipv count |
+        date_of_service_mmr | mmr_num | mmr count |
+        date_of_service_hib | hib_num | hib count |
+        date_of_service_hepb | hepb_num | hepB count |hepb_dx |
+        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
+        all_vacs |provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Childhood-Immunization-Status.pdf>
 
 ### Cigarette Smoking Prevalence  
 **Measure Description**  
 Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence.  
+**2019 Measure Benchmark**  
+25%, Metrics and Scoring Committee consensus.  
+**Rate 1**  
+**Denominator**  
+Unique Medicaid members 13 years old or older by the beginning of the measurement year, who had a qualifying visit with the provider during the measurement period.  
+**Numerator**  
+Unique members age 13 years or older who had a qualifying visit with the provider during the measurement period, who have their smoking and/or tobacco use status recorded as structured data. 
+
+**Rate 2**   
+**Denominator**  
+Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
+**Numerator**  
+Of patients in the Rate 2 denominator, those who are cigarette smokers. See below for additional information on identifying cigarette smoking in the numerator.  
+
+**Rate 3**  
+**Denominator**  
+Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
+**Numerator**  
+Of patients in the Rate 3 denominator, those who are cigarette smokers and/or tobacco users. See below for additional information on identifying tobacco use in the numerator.   
+
+**Required exclusions for numerator**  
+Members with missing smoking or tobacco use status will be excluded from rates 2 and 3. Note that e-cigarettes and marijuana (medical or recreational) should be excluded from both
+the cigarette smoking rate and the broader tobacco use rate.  In addition, the measure is focused on cigarette and tobacco use, not nicotine use.
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each rate, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/smoking_prevalence_chart_2019.png)  
+
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
+        date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
+        meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Cigarette-Smoking-Prevalence-Bundle.pdf>  
 
 ### Colorectal Cancer Screening
 **Measure Description**   
 Percent of adult members (ages 51-75) who had appropriate screening for colorectal cancer.  
+**2019 Measure Benchmark**  
+61.1%, 2018 national commercial 50th percentile.  
+**Denominator**  
+Medicaid enrollees age 51-75 years as of December 31st of the measurement year. OHA will provide CCOs with the sampling frame for the chart review.  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
+Exclude Medicare members 66 years of age and older as of December 31 of the measurement year who are enrolled in an Institutional SNP (I-SNP), or living long-term in an institution any time during the measurement year. OHA will exclude Institutional SNP (I-SNP) members when drawing the sample list (see footnote1 for OHA’s data source and method). OHA will also update the chart review data submission template for 2019, to allow CCOs to indicate additional I-SNP members who are identified in
+the chart review process.  
+Exclude members 66 years of age and older as of December 31 of the measurement year with frailty (Frailty Value Set) and advanced illness during the measurement year.  
+Exclude members with either colorectal cancer or total colectomy.  
+**Numerator**  
+Unique number of individuals receiving at least one of the approved screenings for colorectal cancer either during the measurement year or years prior to the measurement year.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/colorectal_chart_2019.png)  
+
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Colorectal-Cancer-Screening.pdf>  
 
 ### Controlling High Blood Pressure
 **Measure Description**   
 Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
+**2019 Measure Benchmark**  
+71.0%, 2018 national Medicaid 90th percentile.  
+**Denominator**  
+Patients 18-85 years of age who had a diagnosis of essential hypertension within the first six months of the measurement period or any time prior to the measurement period and who received a qualifying outpatient service during the measurement period.  
+**Required exclusions for denominator**  
+* Patients with evidence of end stage renal disease (ESRD), dialysis or renal transplant before or
+during the measurement period.
+* Also exclude patients with a diagnosis of pregnancy during the measurement period.
+* Exclude patients whose hospice care overlaps the measurement period.  
 
-### Controlling High Blood Pressure
-**Measure Description**   
-Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
+**Numerator**  
+Patients whose blood pressure at the most recent visit is adequately controlled (systolic blood pressure <140 mmHg and diastolic blood pressure <90 mmHg) during the measurement period.    
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, Include Transcriptions, Include Urgent (DX and BPs from urgent care settings), and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/hypertension_chart_2019.png)  
+
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Controlling-High-Blood-Pressure.pdf>  
 
 ### Dental Sealants on Permanent Molars for Children
 **Measure Description**   
 Percentage of children ages 6-14 who received a dental sealant during the measurement year.  
+**2019 Measure Benchmark**  
+26.8%, 2017 CCO 90th percentile  
+**Denominator**  
+Total unduplicated number of individuals ages 6-9 and 10-14 years of age as of December 31 of the measurement year. Note the cited measures include two age ranges, 6-9 and 10-14. OHA will measure and report each of these age ranges separately, but the rates will be combined (creating a weighted average by adding numerators and denominators, rather than averaging the rates) for comparison to the benchmark and for calculating the incentive payment.  
+The CCO incentive measure does not incorporate the Dental Quality Alliance criteria for identifying children at elevated caries risk the denominator. The Dental Quality Alliance is currently the specifications.  
+For CMS Medicaid Child Core Set measure reporting which adopts the Dental Quality Alliance specifications for age 6-9, OHA is required to only report the members with elevated caries risk in the denominator. Elevated caries risk is determined as follows:  
+* Any children with a visit with D0602 or D0603 during the measurement year; OR
+* Any children with a service code among those in Table 1 in the measurement year; OR
+* Any children with a service code among those in Table 1 in any of the three years prior to the measurement year (Note the child does not need to be continuously enrolled for any of these three years, this is simply a look back for any claims history).  
+* The EPSDT Form CMS-416 specifications use the Federal Fiscal Year (FFY); OHA’s specifications will use the calendar year.  
+* The EPSDT Form CMS-416 specifications also use September 30th as the date to determine age; OHA’s specifications will use December 31st.  
+
+**Numerator**  
+Unduplicated number of children ages 6-9 and 10-14 who received a sealant on a permanent molar tooth, as defined by HCPCS code D1351 (CDT code D1351), during the measurement year. Sealants can be placed by any dental professional for whom placing a sealant is within his or her scope of practice.  
+As the majority of the dental sealant services are submitted to MMIS in the dental claim format, per EPSDT Form CMS-416 specification, only sealant services on permanent molars (including the third molars, also known as the wisdom teeth), as identified by teeth numbered 1, 2, 3, 14, 15, 16, 17, 18, 19, 30, 31, 32 will count towards the numerator.  
+For the dental sealant services submitted through medical professional or facility claims, the tooth number information is not available on the claim form and therefore not required for inclusion in the numerator; any sealant code D1351 submitted through medical professional or facility claims will be included in the numerator. This is a deviation from the EPSDT Form CMS-416 specification.  
+**Deviations from cited specifications for numerator**  
+To encourage CCOs integration of medical practice with oral health, OHA accepts dental sealant services submitted through the medical claims format, and the CDT code D1351 alone is valid for the numerator without the tooth number specified (see numerator data requirement above). Note that while dental sealant services can be provided in medical or community-based settings and submitted through medical claims, sealants can only be placed by qualified dental providers. See the Dental Sealant Guidance Document for additional information on which provider types can provide sealants. http://www.oregon.gov/oha/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx  
+The Dental Quality Alliance specifications (and the CMS Child Core Set specifications) require determining the numerator claims from dental providers, using provider taxonomy codes (see the cited specifications for more detail). OHA CCO incentive measure specifications align with EPSDT Form CMS416 and do not use taxonomy codes in the calculation.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each rate, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+
+**Example Output**  
+![](pictures/dental_sealants_2019.png)  
+**Column Headings**  
+`mpid | patient_name | patient_date_of_birth | sex | medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator organization | provider_name | race | ethnicity | measurement_period_begin | measurement_period_end `  
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Dental-Sealants.pdf>  
+
 
 ### Depression screening and follow up plan
 **Measure Description**   
-Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.
+Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.  
+**2019 Measure Benchmark**  
+N/A. Because of specification changes from 2018 to 2019, there is no performance benchmark for 2019. CCOs must report data meeting minimum population threshold for this measure in order to receive 100% of their quality pool payment.  
+**Denominator**  
+All patients aged 12 years and older before the beginning of the measurement period, with at least one eligible encounter during the measurement period. Eligible encounters are identified through the Depression Screening Encounter Codes Grouping Value Set (2.16.840.1.113883.3.600.1916).  
+**Required exclusions for denominator**   
+Patients with active diagnosis for depression or diagnosis of bipolar disorder.  
+**Denominator Exceptions**  
+Any of the following criteria also remove patients from the denominator: 
+* Patient reasons: Patient refuses to participate
+* Medical Reasons: Patient is in an urgent or emergent situation where time is of the essence and to delay treatment would jeopardize the patient’s health OR situations where the patient's functional capacity or motivation to improve may impact the accuracy of results of standardized depression assessment tools. For example: certain court appointed cases or cases of delirium
+status.  
+
+**Numerator**  
+Patients screened for clinical depression on the date of the encounter, using an age appropriate standardized tool AND if positive, a follow-up plan is documented on the date of the positive screen.   
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, Records to Display Below, Only use qualifying encounter codes, and Include Transcriptions
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/depression_chart_2019.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
+        meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
+        date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Depression-Screening.pdf> 
 
 ### Developmental Screening in the First 36 months of Life
 **Measure Description**   
 Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.  
+**2019 Measure Benchmark**  
+80.0%; from Metrics and Scoring Committee consensus  
+**Denominator**  
+Children who turn 1, 2, or 3 years of age in the measurement year and had continuous enrollment in a CCO for the 12 months prior to their birthdate in the measurement year, regardless if they had a medical/clinical visit or not in the measurement year. See Core Set of Children’s Health Care Quality Measures for details.   
+**Numerator**  
+Children in the denominator who had a claim with CPT code 96110 in the 12 months preceding the birthday in the measurement year. See new Clarification section below.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/developmental_chart_2019.png)  
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Developmental-Screening.pdf> 
 
 ### Diabetes: HbA1c Poor Control
 **Measure Description**  
 Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
+**2019 Measure Benchmark**  
+21.7% 2018 national Commercial 90th percentile.  
+**Denominator**  
+Patients 18-75 years of age who had a diagnosis of diabetes during the measurement period and who received a qualifying outpatient service during the measurement period.  
+**Required exclusions for denominator**    
+Patients who were in hospice care during the measurement year  
+**Numerator**  
+Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+**Custom Modifications**  
+Most recent BMI and blood pressure readings in date_of_service_bmi, bmi, date_of_service_bp, bp_systolic, and bp_diastolic columns.  
+**Example Output**  
+![](pictures/diabetes_chart_2019.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Diabetes-HbA1c-Poor-Control.pdf>
+
+### Emergency Department Utilization for Individuals Experiencing Mental Illness
+**Measure Description**   
+Rate of visits to an emergency department among adult members experiencing mental illness.  
+**2019 Measure Benchmark**  
+87.7 / 1,000 member months; 2017 CCO 90th percentile.  
+**Denominator**  
+ Estimated 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
+**Numerator**  
+Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay.  
+**Required exclusions for numerator**  
+Mental health and chemical dependency services are excluded.   
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+Export all ED Visits by MPID CSV Download, OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Custom Modifications**  
+'Unengaged' column indicates whether or not a patient has not had outpatient visit for more than 24 months. Ability to export all ED visits for each patient showing date of service and record type the visit came from in date_of_service_num and record_type columns.  
+**Example Output**  
+![](pictures/ed_utilization_mi_2019.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
 
 ### Effective contraceptive use among women at risk of unintended pregnancy
 **Measure Description**   
 Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.   
+**2019 Measure Benchmark**  
+53.9%. 2017 CCO 90th percentile.  
+**Denominator**  
+All women ages 15-50 as of December 31 of the measurement year who were continuously enrolled in a CCO for the 12-month measurement period.  
+Note: OHA will also be measuring and reporting on adolescent and adult women separately, by ages 15-
+17 and ages 18-50. The all-age rate (age 15-50) will be tied to the CCO’s incentive payment.  
+**Required exclusions for denominator**   
+Remove from the denominator any women with history through December 31 of the measurement year for the following: Hysterectomy; Bilateral oophorectomy; Other female reproductive system removal, destruction, resection related to hysterectomy; natural menopause; premature menopause due to survey, radiation, or other factors; Congenital anomalies of female genital organs; Female infertility.  
+Among women in the denominator who were not numerator compliant, exclude those with a pregnancy claim from the measurement year.         
+**Numerator**  
+Women in the denominator with evidence of female sterilization anytime throughout the claims history in OHA’s system, or one of the following methods of contraception during the measurement year: IUD, implant, contraception injection, contraceptive pills, patch, ring, or diaphragm using the OHA Numerator Code Table, and the National Drug Codes (NDC) table (posted online separately).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Custom Modifications**  
+Individual long-acting reversible contraceptives from numerator hits are identified in sterlization, iud, hormonal_implant, injectable, oral_contraceptive, patch, vaginal_ring, diaphragm, surveillance, and unspecified columns.  
+**Example Output**  
+![](pictures/contraceptive_chart_2018.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Effective-Contraceptive-Use.pdf> 
 
 ### Oral Evaluation for Adults with Diabetes  
 **Measure Description**  
 Percentage of adult CCO members identified as having diabetes who received at least one dental service within the reporting year.  
+**2019 Measure Benchmark**  
+28.0%, 2017 CCO 75th percentile.  
+**Denominator**  
+Unduplicated members age 18 and above as of December 31 of the measurement year with diabetes identified from claim/encounter data or pharmacy data, during the measurement year or the year prior to the measurement year: (qualify for any one of the following criteria occurring over both years)  
+* At least two outpatient visits (Outpatient Value Set), observation visits (Observation Value Set), ED visits (ED Value Set), or nonacute inpatient encounters (Nonacute Inpatient Value Set) on different dates of service, with a diagnosis of diabetes (Diabetes Value Set). Visit type need not be the same for the two visits.  
+* At least one acute inpatient encounter (Acute Inpatient Value Set) with a diagnosis of diabetes (Diabetes Value Set).  
+* Dispensed insulin or hypoglycemics/antihyperglycemics on an ambulatory basis (Diabetes Medications List).  
+
+**Required exclusions for denominator**   
+DQA requires exclusion for members identified with gestational diabetes or steroid-induced diabetes (HEDIS 2019 Diabetes Exclusions Value Set), but who do not have a diagnosis of diabetes (HEDIS 2019 Diabetes Value Set) in any care settings. This is originally an optional exclusion for the HEDIS Comprehensive Diabetes Care measure, and DQA adopts the logic as a required denominator exclusion.  
+**Numerator**  
+Number of unduplicated member in the denominator who received a comprehensive, periodic or periodontal oral evaluation in the measurement year, identified by any of the following CDT codes: D0120, D0150, or D0180.  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below   
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/oral_eval_2019.png)  
+**Column Headings**  
+`mpid | patient_name | patient_date_of_birth | sex | medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num provider_name | measurement_period_begin | measurement_period_end`  
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Oral-Evaluation-Adults-Diabetes.pdf>  
 
 ### Timeliness of Prenatal and Postpartum Care  
 **Measure Description**   
 Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.  
+**2019 Prenatal Care Benchmark**  
+90.8%; 2018 national Medicaid 90th percentile (hybrid).  
+**2019 Postpartum Care Benchmark**   
+69.3%; 2018 national Medicaid 75th percentile (hybrid).  
+**Denominator**  
+All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria.
+**Required exclusions for denominator**   
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
+**Numerator**  
+A prenatal visit in the first trimester. Reliance Insight does not currently have the necessary data elements to perform enrollment logic.
+**Required exclusions for numerator**
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratios (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/cco_prenatal_postpartum_chart.png)    
+**Column Headings**  
+`mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | meets_denominator | sending_facility_delivery | delivery_date | first_trimester_end | non_live_birth | sending_facility_num | prenatal_visit_provider | date_of_service_num | pregnancy_dx | meets_prenatal_numerator | sending_facility_pp | postpartum_visit_provider | meets_postpartum_numerator | measurement_period_begin | measurement_period_end`
+
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Timeliness-Prenatal-Postpartum-Care.pdf>  
+
 
 ### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
 **Measure Description**   
 Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported: 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation,  2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity, 3. Percentage of patients with counseling for physical activity.   
+**2019 Measure Benchmark**  
+32.7%, using a simple average across all 3 reported rates (MIPS 2018 benchmark— Decile 8, 70th percentile).  
+**Denominator**  
+Patients 3-17 years of age with at least one outpatient visit with a primary care physician (PCP) or an obstetrician/gynecologist (OB/GYN) during the measurement period.    
+**Required exclusions for denominator**   
+ Patients who have a diagnosis of pregnancy during the measurement period or who were in hospice care during the measurement year.         
+**Numerator**  
+* Numerator 1: Patients who had a height, weight and body mass index (BMI) percentile recorded during the measurement period.
+* Numerator 2: Patients who had counseling for nutrition during a visit that occurs during the measurement period.
+* Numerator 3: Patients who had counseling for physical activity during a visit that occurs during the measurement period.  
+
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below     
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
+**Example Output**  
+![](pictures/cco_adolescent_bmi_followup_chart.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Weight-Assessment-Counseling.pdf>  
 
 
 ## OHA 2018 CCO Incentive and Performance Reports  
@@ -235,7 +666,7 @@ OHA Format CSV Download and All Data CSV Download (contains all column headings 
 
 **Example Output**  
 ![](pictures/awc_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -260,12 +691,12 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/ed_utilization.png)  
 
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/Ambulatory-Care-Outpatient-ED-2018.pdf>  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Ambulatory-Care-Outpatient-ED-Utilization.pdf>  
 
 ### Childhood Immunization Status  
 **Measure Description**
@@ -287,7 +718,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/childimms_chart.png)
 
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
         sending_facility | date_of_service_denom | meets_denominator | 
         date_of_service_dtap |dtap_num | dtap count |
@@ -338,7 +769,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/smoking_prevalence_chart.png)  
 
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
         date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
         meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
@@ -366,8 +797,8 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/colorectal_chart_2018.png)  
 
-**Column headings**  
-`mpid_VHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Colorectal-Cancer-Screening.pdf>  
@@ -392,7 +823,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/hypertension_chart.png)  
 
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -422,7 +853,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/depression_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
         meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
@@ -446,7 +877,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/developmental_chart_2018.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -471,7 +902,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/diabetes_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -495,7 +926,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/ed_utilization_mi.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -523,7 +954,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/contraceptive_chart_2018.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -550,7 +981,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/cco_adolescent_bmi_followup_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -576,7 +1007,7 @@ Total denominator hits, total numerator hits, measure ratios (total numerator hi
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/cco_prenatal_postpartum_chart.png)    
-**Column headings**  
+**Column Headings**  
 `mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | meets_denominator | sending_facility_delivery | delivery_date | first_trimester_end | non_live_birth | sending_facility_num | prenatal_visit_provider | date_of_service_num | pregnancy_dx | meets_prenatal_numerator | sending_facility_pp | postpartum_visit_provider | meets_postpartum_numerator | measurement_period_begin | measurement_period_end`
 
 
@@ -604,7 +1035,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/qcdr_diabetes.png)  
-**Column headings**  
+**Column Headings**  
 ` mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | HbA1c | organization | provider_name | ordering_provider | race | ethnicity | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end `  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms122v5>  
@@ -627,7 +1058,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/qcdr_breast_cancer.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | organization | provider_name | meets_denominator | meets_numerator | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -654,7 +1085,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/qcdr_colorectal.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms130v5>  
@@ -686,7 +1117,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/qcdr_bmi.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
@@ -710,7 +1141,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/qcdr_ivd.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | organization | provider_name | meets_denominator | meets_numerator | meets_denominator_exclusion | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms164v5>  
@@ -733,7 +1164,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/qcdr_tobacco.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | provider_name | date_of_service_denom | meets_denominator | date_of_service_num | meets_numerator | smoker_status | date_of_service_cessation | smoke_cessation | meets_exception | measurement_period_begin | date_of_service_exception | measurement_period_end`  
 **Link to Measure Specifications**  
 <https://ecqi.healthit.gov/ecqm/measures/cms138v5>  
@@ -758,7 +1189,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/qcdr_hypertension.png)  
 
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -788,7 +1219,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/qcdr_cervical.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -814,7 +1245,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/flu_18.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
@@ -835,7 +1266,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/flu_65.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | sending_facility_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`  
 **Link to Measure Specifications**  
 See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
@@ -864,7 +1295,7 @@ All Data CSV Download (contains all column headings below) and Immunization DOS 
 **Example Output**  
 ![](pictures/cms_childimms_chart.png)
 
-**Column headings**  
+**Column Headings**  
 `mpid | patient_date_of_birth | sex | patient_medicaid_id | 
         sending_facility | date_of_service_denom | meets_denominator |
         date_of_service_dtap |dtap_num | dtap count | dtap_dx |
@@ -910,7 +1341,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/uds_bmi_followup_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
@@ -935,7 +1366,7 @@ All Data CSV Download (contains all column headings below).
 **Example Output**  
 ![](pictures/uds_asthma_chart.png)  
 ![](pictures/uds_asthma.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | patient_mrn | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_exclusion | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`  
 
 **Link to Measure Specifications**  
@@ -962,7 +1393,7 @@ Total denominator hits, total numerator hits, measure ratio (total numerator hit
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/uds_adolescent_bmi_followup_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -984,7 +1415,7 @@ List of current patients or only Medicaid patients if Medicaid Only checkbox is 
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/current_patients.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | medicaid_id | patient_first_name | patient_last_name | patient_sex | patient_date_of_birth | provider_name`
 
 ### Hepatitis C Diagnosis and Hepatic Labs  
@@ -1002,7 +1433,7 @@ List of patients that meet diagnosis criteria and their demographic and lab info
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/hepC_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | DX sending facility | hiv_positive | type2_dx | APRI | order date | result date of service | lab sending facility |lab description |LOINC code | lab result | measurement_period_begin | measurement_period_end`
 
 
@@ -1027,7 +1458,7 @@ Type I and Type II All Data CSV (contains all column headings below), Type I Dia
 **Example Output**  
 ![](pictures/type1_diabetes.png)  
 ![](pictures/type2_diabetes.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | patient_date_of_birth | patient_current_age | sex | patient_medicaid_id | sending_facility | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator_type1 | meets_numerator_type1 | meets_denominator_type2 | meets_numerator_type2 | measurement_period_begin | measurement_period_end`  
 
 
@@ -1043,7 +1474,7 @@ List of patients with a diagnosis of pregnancy.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/pregnancy_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid_CHR | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 
@@ -1060,7 +1491,7 @@ List of patients with a potential indication of homelessness.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/homeless_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_full_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 
@@ -1077,7 +1508,7 @@ List of patients with a potential indication of food insecurity.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/food_insecurity_chart.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 ### Sexual Orientation and Gender Identity
@@ -1093,7 +1524,7 @@ List of patients with their gender identity and a list of patients with their se
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/sexual_preference_gender_identity.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ## Notification Reports  
@@ -1112,7 +1543,7 @@ List of patients aged 12 and older that received appropriate SBIRT for alcohol o
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/sbirt_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 
@@ -1129,7 +1560,7 @@ List of patients aged 13 and older that screened as tobacco users during the sta
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/tobacco_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Diabetes Management
@@ -1145,7 +1576,7 @@ List of patients aged 18-75 with an HbA1c > 9.0%
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/diabetes_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | last_HbA1c | attending | ordering`
 
 ### Homeless
@@ -1161,7 +1592,7 @@ List of patients that have indications of homeless.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/homeless_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_street_address | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Hypertension
@@ -1177,7 +1608,7 @@ List of patients 18-85 years of age whose blood pressure exceeded 125/90mmHg.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/hypertension_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | bp_systolic | bp_diastolic | attending`
 
 ### Depression Screen
@@ -1193,7 +1624,7 @@ List of patients aged 12 and older screened for clinical depression using an age
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/depression_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service_pos | meets_num_pos_fol`
 
 ### ED Visits
@@ -1211,7 +1642,7 @@ List of patients that have visited the emergency department.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/ed_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | admit_time | chief_complaint | mental_illness_indicated | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending | count`
 
 ### >30 day re-admit
@@ -1227,7 +1658,7 @@ List of readmissions that occured less than 30 days before last discharge from a
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/readmit_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | index_time | index_facility | readmission_time | readmission_facility | days_since_discharge | attending`
 
 ### Positive Pregnancy
@@ -1241,7 +1672,7 @@ Start Date, End Date, and Records to Display Below
 List of patients that have indications of pregnancy.
 
 All Data CSV Download (contains all column headings below)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Pregnancy with opioid abuse
@@ -1257,7 +1688,7 @@ List of patients that have indications of pregnancy with opioid abuse diagnosis.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/opioidpregnancy_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Lab results
@@ -1273,7 +1704,7 @@ List of patients that have results available.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/results_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | result_name | result_status | result_type | attending | ordering`
 
 ### Opioid abuse
@@ -1289,7 +1720,7 @@ List of patients that have indications of an opioid abuse diagnosis.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/opioid_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### HIV
@@ -1305,7 +1736,7 @@ List of patients that have indications of an opioid abuse diagnosis.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/hiv_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
 ### Hospital Discharge
@@ -1322,7 +1753,7 @@ List of patients that have been discharged from and emergency or inpatient visit
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 ![](pictures/discharge_notification.png)  
-**Column headings**  
+**Column Headings**  
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_street_address | patient_age | patient_sex | discharge_time | diagnosis_info | attending_provider | primary_care_provider'`
 
 
