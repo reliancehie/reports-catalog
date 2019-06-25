@@ -589,7 +589,7 @@ Percentage of pregnant women who received a prenatal care visit within the first
 **2019 Postpartum Care Benchmark**   
 69.3%; 2018 national Medicaid 75th percentile (hybrid).  
 **Denominator**  
-All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria.
+All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria.  
 **Required exclusions for denominator**   
 Members in hospice are excluded from this measure. These members are identified using HEDIS 2019 Hospice Value Set, with claims within the measurement year. (See HEDIS 2019 General Guideline 17 for detail.)  
 **Numerator**  
