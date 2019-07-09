@@ -1731,7 +1731,7 @@ ADTs, CCDs, LABs, TRANs, Claims and Encounters
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-List of patients that have indications of an opioid abuse diagnosis.
+List of patients that have indications of an HIV diagnosis.
 
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
