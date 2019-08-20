@@ -300,7 +300,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Column Headings**  
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
-        date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
+        date_of_service_qual_visit | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
         meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
@@ -364,7 +364,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/hypertension_chart_2019.png)  
 
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_qual_visit | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Controlling-High-Blood-Pressure.pdf>  
@@ -427,14 +427,14 @@ Patients screened for clinical depression on the date of the encounter, using an
 **Data Sources**  
 ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
 **Input Parameters**  
-Start Date, End Date, Records to Display Below, Only use qualifying encounter codes, and Include Transcriptions
+Start Date, End Date, Records to Display Below, Only use qualifying encounter codes, and Include Transcriptions  
 **Output**  
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/depression_chart_2019.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_qual_visit | 
         meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
 
@@ -488,7 +488,7 @@ Most recent BMI and blood pressure readings in date_of_service_bmi, bmi, date_of
 **Example Output**  
 ![](pictures/diabetes_chart_2019.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_qual_visit | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Diabetes-HbA1c-Poor-Control.pdf>
@@ -636,7 +636,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/cco_adolescent_bmi_followup_chart.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_qual_visit | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Weight-Assessment-and-Counseling.pdf>  
