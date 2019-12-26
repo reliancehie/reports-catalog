@@ -201,13 +201,11 @@ Start Date, End Date, and Records to Display Below
 **Output**  
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Custom Modifications**  
-'Unengaged' column indicates whether or not a patient has not had outpatient visit for more than 24 months.  
 **Example Output**  
 ![](pictures/ed_utilization_2019.png)  
 
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Ambulatory-Care-Outpatient-ED-Utilization.pdf>  
@@ -511,12 +509,10 @@ Start Date, End Date, and Records to Display Below
 **Output**  
 Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 Export all ED Visits by MPID CSV Download, OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Custom Modifications**  
-'Unengaged' column indicates whether or not a patient has not had outpatient visit for more than 24 months. Ability to export all ED visits for each patient showing date of service and record type the visit came from in date_of_service_num and record_type columns.  
 **Example Output**  
 ![](pictures/ed_utilization_mi_2019.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
@@ -686,13 +682,13 @@ ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements (and also whether they are 'unengnaged', defined by whether they have not had an outpatient visit for more than 24 months).  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/ed_utilization.png)  
 
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
@@ -922,12 +918,12 @@ ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below   
 **Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements (and also whether they are 'unengnaged', defined by whether they have not had an outpatient visit for more than 24 months).  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
 OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/ed_utilization_mi.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | unengaged | measurement_period_begin | measurement_period_end`
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
