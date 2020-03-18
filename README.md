@@ -3,9 +3,17 @@
 # Reliance Insight Report Catalog
 
 ### NOTICE ###
-In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released the first report in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus. The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities), available to all Reliance data contributors in the Notifications Dashboard, identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities. The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community. We welcome feedback and suggestions to improve the usefulness of this report and other reporting we can produce. Please direct any questions or comments to the helpdesk@reliancehie.org
+In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released the first report in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus. The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities), available to all Reliance data contributors in the Notifications Dashboard, identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities. The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
+We will to continue to rapidly iterate on this reporting as we receive input and perform additional data validation. Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
 
+* viral test status (COVID-19 specific, rapid flu, PCR respiratory panel)
+* social risk factor status such as indications of housing or food insecurity
+* referral for COVID-19 testing
+* indications of quarantine order
+* aggregated or deidentified views for public health usage
+* timeseries trending
 
+ We welcome feedback and suggestions to prioritize our efforts and to improve the usefulness of our data. Please direct any questions or comments to the helpdesk@reliancehie.org  
 
 ## Table of Contents
 **A. [OHA 2019 CCO Incentive and Performance Reports](#a-oha-2019-cco-incentive-and-performance-reports)**  
