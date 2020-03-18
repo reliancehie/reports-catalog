@@ -131,7 +131,7 @@ In response to the COVID-19 crisis, Reliance is working to help our stakeholders
 ## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
+| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate screening, brief intervention, and referral to treatment (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
 | [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c greater than the user defined threshold (Default: 7.0%). |
 | [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
@@ -144,7 +144,7 @@ In response to the COVID-19 crisis, Reliance is working to help our stakeholders
 | [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
-| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is "inpatient" or "Emergency" to identify patient discharges.  |
+| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is inpatient or Emergency to identify patient discharges.  |
 
 ## [I. Appendix](#appendix)
 [Community Health Record](#community-health-record)  
@@ -1227,7 +1227,7 @@ All Data CSV Download (contains all column headings below)
 <https://ecqi.healthit.gov/ecqm/measures/cms124v5> 
 
 ## HEDIS Reports
-HEDIS is a tool used by more than 90 percent of America's health plans to measure performance on important dimensions of care and service. Because so many plans collect HEDIS data, and because the measures are so specifically defined, HEDIS makes it possible to compare the performance of health plans on an "apples-to-apples" basis. Health plans also use HEDIS results themselves to see where they need to focus their improvement efforts.  
+HEDIS is a tool used by more than 90 percent of America's health plans to measure performance on important dimensions of care and service. Because so many plans collect HEDIS data, and because the measures are so specifically defined, HEDIS makes it possible to compare the performance of health plans on an apples-to-apples basis. Health plans also use HEDIS results themselves to see where they need to focus their improvement efforts.  
 See <http://www.ncqa.org/hedis-quality-measurement> for details.  
 
 ### Flu Vaccinations for Adults Ages 18-64
@@ -1481,7 +1481,7 @@ All Data CSV Download (contains all column headings below)
 
 ### Homeless
 **Measure Description**  
-Patients that present with clinical codes and text phrases (eg "lives in car") associated with homelessness.   
+Patients that present with clinical codes and text phrases (eg lives in car) associated with homelessness.   
 **Data Sources**  
 ADTs, CCDs, LABs, Transcriptions, Claims and Encounters   
 **Input Parameters**   
@@ -1535,7 +1535,11 @@ These reports are to be included for all ADT contributors with access to the Rel
 **Measure Description**  
 Identifies patients with symptoms related to COVID-19, along with useful demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following (two year lookback from end of measurement range) comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease.  
 **Symptom and Other COVID-19 Related Codes Used to Identify Patients**  
-  
+SNOMED CODES: 840539006, 840534001, 840544004, 840536004, 840535000, 840533007, 840546002  
+ICD-10 CODES: U07.1, B34.2, B97.29, H67.9, I40.0, J06.9, J12.89, J16.8, J18.0, J18.8, J18.9, J22, J80, R68.89, Z20.828  
+LOINC CODES: 94309-2, 94306-8, 94307-6, 94308-4, 91312-6, 94310-0, 94311-8, 94313-4, 94313-4, 94313-2, 94315-9, 94316-7  
+EPIC CUSTOM CODES: 598375, 72701, 341841  
+HRV CODES: 1990, 1988  
 **Data Sources**  
 ADTs, CCDs, LABs, Claims and Encounters   
 **Input Parameters**   
@@ -1549,7 +1553,7 @@ All Data CSV Download (contains all column headings below)
 
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**  
-Provides a list of patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse.  
+Provides a list of patients aged 12 and older who received appropriate screening, brief intervention, and referral to treatment (SBIRT) for alcohol or other substance abuse.  
 **Data Sources**  
 ADTs, CCDs, LABs, Claims and Encounters   
 **Input Parameters**   
@@ -1759,7 +1763,7 @@ All Data CSV Download (contains all column headings below)
 ### Hospital Discharge
 **Measure Description**  
 The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event 
-and patient class is "Inpatient" or "Emergency" to identify patient discharges.  
+and patient class is Inpatient or Emergency to identify patient discharges.  
 **Data Sources**  
 ADTs 
 **Input Parameters**   
