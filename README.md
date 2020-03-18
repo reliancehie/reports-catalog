@@ -2,6 +2,11 @@
 
 # Reliance Insight Report Catalog
 
+### NOTICE ###
+In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released the first report in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus. The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities), available to all Reliance data contributors in the Notifications Dashboard, identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities. The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community. We welcome feedback and suggestions to improve the usefulness of this report and other reporting we can produce. Please direct any questions or comments to the helpdesk@reliancehie.org
+
+
+
 ## Table of Contents
 **A. [OHA 2019 CCO Incentive and Performance Reports](#a-oha-2019-cco-incentive-and-performance-reports)**  
 **B. [OHA 2018 CCO Incentive and Performance Reports](#b-oha-2018-cco-incentive-and-performance-reports)**  
@@ -1524,7 +1529,23 @@ All Data CSV Download (contains all column headings below)
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ## Notification Reports  
-These reports are to be included for all ADT contributors with access to the Reliance Community Health Record.  
+These reports are to be included for all ADT contributors with access to the Reliance Community Health Record. 
+
+### COVID-19 Symptoms with Comorbidities
+**Measure Description**  
+Identifies patients with symptoms related to COVID-19, along with useful demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following (two year lookback from end of measurement range) comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease.  
+**Symptom and Other COVID-19 Related Codes Used to Identify Patients**  
+  
+**Data Sources**  
+ADTs, CCDs, LABs, Claims and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+ 
+All Data CSV Download (contains all column headings below)  
+
+**Column Headings**  
+`mpid | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | patient_street_address,patient_city | patient_state | patient_zip,patient_county,date_of_service | sending_facility | record_type | temperature_reading | admit_reason | covid_related_code | diabetes_dx | htn_dx,vascular_dx | respiratory_failure | pulmonary_dx`
+
 
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**  
