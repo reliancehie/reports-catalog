@@ -3,14 +3,26 @@
 # Reliance Insight Report Catalog
 
 ### NOTICE ###
-In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released the first report in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus. The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities), available to all Reliance data contributors in the Notifications Dashboard, identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities. The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
-We will continue to rapidly iterate on this reporting as we receive input and perform additional data validation. Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
+In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released two reports, available to all Reliance data contributors in the Notifications Dashboard, in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus.  
+
+The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities) identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities.   
+  
+The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab results specific to COVID-19 infection. The report searches the Reliance dataset for relevant results regardless of whether infection is detected or otherwise. Patient demographics and test information are included for each result. Report filters are also included for:  
+
+* Result Type (LAB, MICRO, BLB, PTH, RAD)
+* COVID19 Result Status (ALL RESULTS, DETECTED, NOT DETECTED)
+* Final Status (FINAL, PRELIMINARY, CORRECTED, INCOMPLETE, UNMAPPED)
+* State (ALL STATES and states by 2 letter abbreviation)
+* Inlcude Transcriptions (checkbox)
+  
+The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
+We will continue to rapidly iterate on this reporting as we receive input and perform additional data validation. For examples of what other [SHIEC](https://strategichie.com/) HIEs nationally are doing click [here](https://strategichie.com/wp-content/uploads/2020/03/SHIEC_COVID-19_one-pager-Ppt-12-Merged-3-27-20-FINAL-1.pdf). Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
 
 * viral test status (COVID-19 specific, rapid flu, PCR respiratory panel)
 * social risk factor status such as indications of housing or food insecurity
 * referral for COVID-19 testing
 * indications of quarantine order
-* aggregated or deidentified views for public health usage
+* aggregated or deidentified views for public health usage (including maps)
 * timeseries trending
 
  We welcome feedback and suggestions to prioritize our efforts and to improve the usefulness of our data. Please direct any questions or comments to the helpdesk@reliancehie.org  
@@ -1558,6 +1570,27 @@ All Data CSV Download (contains all column headings below)
 **Column Headings**  
 `mpid | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | patient_street_address,patient_city | patient_state | patient_zip,patient_county,date_of_service | sending_facility | record_type | temperature_reading | admit_reason | covid_related_code | diabetes_dx | htn_dx,vascular_dx | respiratory_failure | pulmonary_dx`
 
+### COVID-19 Lab Results
+**Measure Description**  
+Identifies lab results specific to COVID-19, along with useful demographic information. *NOTE: the report currently pulls all test results and may include mulitple results for the same patient, test, and result on the same date of service. Users that wish to aggregate and produce summary statistics may want to download the data and deduplicate according to their needs.*  
+
+**COVID-19 Result Codes Used to Identify Patients**  
+LOINC CODES: 41000-1, 50219-5, 75325-1 , 94309-2, 94500-6, 94531-1, 19145-2, 91312-6, 94307-6, 94308-4, 94309-2, 94310-0, 94311-8, 94313-2, 94313-4, 94315-9, 94316-7
+CUSTOM RESULT CODES: 106, 12305003, 1231500384, 12536, 1627867, 4439, 4520, L951.1333   
+**Data Sources**  
+LABs and TRANSCRIBED Results  
+**Input Parameters**    
+* Start Date, End Date
+* Result Type (LAB, MICRO, BLB, PTH, RAD)
+* COVID19 Result Status (ALL RESULTS, DETECTED, NOT DETECTED)
+* Final Status (FINAL, PRELIMINARY, CORRECTED, INCOMPLETE, UNMAPPED)
+* State (ALL STATES and states by 2 letter abbreviation)
+* Inlcude Transcriptions (checkbox)
+ 
+All Data CSV Download (contains all column headings below)  
+
+**Column Headings**  
+`mpid | sending_facility | medicaid_id |  patient_name | patient_date_of_birth | patient_age | patient_sex,patient_city,patient_state,patient_zip | date_of_service | lab_results_rawname | lab_results_normalized | result_name | result_status | result_type | attending | ordering`
 
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**  
