@@ -7,21 +7,21 @@ In response to the COVID-19 crisis, Reliance is working to help our stakeholders
 
 The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities) identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities.   
   
-The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab results specific to COVID-19 infection. The report searches the Reliance dataset for relevant results regardless of whether infection is detected or otherwise. Patient demographics and test information are included for each result. Report filters are also included for:  
+The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab results specific to COVID-19 infection. The report searches the Reliance dataset for relevant results regardless of whether an infection is detected or otherwise. Patient demographics and test information are included for each result. Report filters are also included for:  
 
 * Result Type (LAB, MICRO, BLB, PTH, RAD)
 * COVID19 Result Status (ALL RESULTS, DETECTED, NOT DETECTED)
 * Final Status (FINAL, PRELIMINARY, CORRECTED, INCOMPLETE, UNMAPPED)
 * State (ALL STATES and states by 2 letter abbreviation)
-* Inlcude Transcriptions (checkbox)
+* Include Transcriptions (checkbox)
   
 The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
 We will continue to rapidly iterate on this reporting as we receive input and perform additional data validation. For examples of what other [SHIEC](https://strategichie.com/) HIEs nationally are doing click [here](https://strategichie.com/wp-content/uploads/2020/03/SHIEC_COVID-19_one-pager-Ppt-12-Merged-3-27-20-FINAL-1.pdf). Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
 
 * viral test status (COVID-19 specific, rapid flu, PCR respiratory panel)
-* social risk factor status such as indications of housing or food insecurity
+* social risk factor statuses such as indications of housing or food insecurity
 * referral for COVID-19 testing
-* indications of quarantine order
+* indications of a quarantine order
 * aggregated or deidentified views for public health usage (including maps)
 * timeseries trending
 
@@ -1823,7 +1823,7 @@ All Data CSV Download (contains all column headings below)
 
 
 ### Community Health Record  
-The Community Health Record (CHR) is a tool that allows users to more easily access patient records.  The CHR gives users access to to their entire patient population and facilities a patient has visited across the entire health information exchange. The CHR consists of following main sections: Patient Lookup, the initial patient search that must be completed before viewing a patient.  Lastname or Medical Record Number (MRN) are required to search for a patient.  A combination of Lastname and minimum first three letters of a patient name is also allowed; Patient Info, patient demographics only if the patient is not a member of the users organization or patient demographics and a list of providers, problems, medications, allergies, procedures, and medical insurance information;  Patient Summary, a quick overview of the patient with the five most recent Admits/Discharges/Registrations, Labs, Radiology, Transcribed Reports, Medications List, and Filled Medication messages; Admits/Discharges/Registrations, all ADT messages associated with a patient; Labs, all lab messages associated with a patient; Transcribed Reports, all transcription messages associated with a patient; Radiology, all radiology messages associated with a patient; CCDs, all Continuity of Care Documents (CCDs) associated with a patient; Medications List, all medications associated with a patient from either HL7 or CCD messages; Filled Medications, all filled medications associated with a patient from National Council for Prescription Drug Programs (NCPDP) messages; Observation/Vitals, all vitals associated with a patient; and All, a combination of all HL7 and CCD messages associated with a patient.  
+The Community Health Record (CHR) is a tool that allows users to more easily access patient records. The CHR gives users access to to their entire patient population and facilities a patient has visited across the entire health information exchange. The CHR consists of following main sections: Patient Lookup, the initial patient search that must be completed before viewing a patient.  Lastname or Medical Record Number (MRN) are required to search for a patient.  A combination of Lastname and minimum first three letters of a patient name is also allowed; Patient Info, patient demographics only if the patient is not a member of the users organization or patient demographics and a list of providers, problems, medications, allergies, procedures, and medical insurance information;  Patient Summary, a quick overview of the patient with the five most recent Admits/Discharges/Registrations, Labs, Radiology, Transcribed Reports, Medications List, and Filled Medication messages; Admits/Discharges/Registrations, all ADT messages associated with a patient; Labs, all lab messages associated with a patient; Transcribed Reports, all transcription messages associated with a patient; Radiology, all radiology messages associated with a patient; CCDs, all Continuity of Care Documents (CCDs) associated with a patient; Medications List, all medications associated with a patient from either HL7 or CCD messages; Filled Medications, all filled medications associated with a patient from National Council for Prescription Drug Programs (NCPDP) messages; Observation/Vitals, all vitals associated with a patient; and All, a combination of all HL7 and CCD messages associated with a patient.  
 Note that all grids and sections in the CHR are displayed in reverse chronological order.  All tabs display information for the last two years, but this can be changes by clicking the filter icon to search for any date range.  
 
 ### Glossary 
