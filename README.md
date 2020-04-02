@@ -14,6 +14,10 @@ The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab result
 * Final Status (FINAL, PRELIMINARY, CORRECTED, INCOMPLETE, UNMAPPED)
 * State (ALL STATES and states by 2 letter abbreviation)
 * Include Transcriptions (checkbox)
+
+Having the most current contact information for patients and members is especially critical during the outbreak. 
+
+The [*Patient Contact Info Report*](#patient-contact-info), now available on all Insight dashboards, searches the Reliance dataset for the latest contact information available for patients such as primary address and phone, next of kin phone, and email. For each data element, the date of service from the source is also listed so users understand how contemporary the information is.
   
 The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
 We will continue to rapidly iterate on this reporting as we receive input and perform additional data validation. For examples of what other [SHIEC](https://strategichie.com/) HIEs nationally are doing click [here](https://strategichie.com/wp-content/uploads/2020/03/SHIEC_COVID-19_one-pager-Ppt-12-Merged-3-27-20-FINAL-1.pdf). Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
@@ -140,6 +144,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 ## [G. Custom Reports](#custom-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
+| [Patient Contact Info](#patient-contact-info) | This report returns a list of each patient's latest contact information, their most common address, and their most common phone number present in Reliance data. The patient list is based on the user's patient population for their specific security set (see [current patient](#current-patient-list) list below). |
 | [Current Patient List](#current-patient-list) | Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients. |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
 | [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
@@ -1424,15 +1429,28 @@ All Data CSV Download (contains all column headings below).
 ## Custom Reports  
 These reports of interest do not conform to one of the major reporting programs like CMS eCQMs, CCO Incentive Metrics, or HEDIS. In addition, Reliance Insight offers the tools necessary to allow users to develop their own queries and reports to meet the business needs of the organization.  For those that have more complex reporting needs or prefer to rely on the expertise of Reliance, the Insight Team provides consultation and report building and works with the organization to validate the data and reporting outputs to ensure the accuracy and completeness of the data.  
 
+### Patient Contact Info
+**Measure Description**  
+This report returns a list of each patient's latest contact information, their most common address, and their most common phone number present in Reliance data. The patient list is based on the user's patient population for their specific security set (see current patient list below). The date that each data element was updated at its source is also shared.  
+**Data Sources**  
+ADTs, CCDs, LABs, Transcriptions, and Claims   
+**Input Parameters**  
+Start Date, End Date, and Records to Display Below  
+**Output**  
+List of current patients with contact information fields
+All Data CSV Download (contains all column headings below).  
+**Column Headings**  
+`mpid | medicaid_id | patient_full_name | date_of_service | patient_street_address | patient_city | patient_state | patient_zip | latest_phone_date | patient_phone | patient_alt_phone_date | patient_alt_phone | next_of_kin_phone_date | next_of_kin_phone | patient_email_date | patient_email | address_mode (most common) | phone_mode (most common)`
+  
 ### Current Patient List  
 **Measure Description**  
 Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients.   
 **Data Sources**  
-Reliance Patient Summary store or Medicaid Patient store   
+Reliance Patient Summary store or Medicaid Patient store  
 **Input Parameters**  
-Records to Display Below and Medicaid Only checkbox   
+Records to Display Below and Medicaid Only checkbox  
 **Output**  
-List of current patients or only Medicaid patients if Medicaid Only checkbox is checked.  
+List of current patients with contact information fields
 All Data CSV Download (contains all column headings below).  
 **Example Output**  
 ![](pictures/current_patients.png)  
