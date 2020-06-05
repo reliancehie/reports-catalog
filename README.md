@@ -44,19 +44,36 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 
 ### Click on a report name below for a detailed description 
 
+## [A. OHA 2020 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Alcohol and Drug Misuse: Screening, Brief Intervention and Referral for Treatment (SBIRT)](#alcohol-and-drug-misuse-screening-brief-intervention-and-referral-for-treatment-sbirt-todo)        | **IN PROGRESS** <br/> Percentage of patients ages 12 years and older who have had a qualifying outpatient visit or home visit during the measurement year with one or more screening, brief intervention, and referral to treatment services.         |
+| [Childhood immunization status](#childhood-immunization-status)        | Percentage of children that turned 2 years old during the measurement year and had the Dtap, IPV, MMR, HiB, HepB, and VZV vaccines by their second birthday.         |
+| [Cigarette smoking prevalence ](#cigarette-smoking-prevalence-todo)        | **IN PROGRESS** <br/> Percentage of Medicaid members ages 13 and older who currently smoke cigarettes or use other tobacco products.         |
+| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
+| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness-todo)        | **IN PROGRESS** <br/> Rate of visits to an emergency department among adult members experiencing mental illness.         |
+| [Immunizations for Adolescents](#immunizations-for-adolescents)        | Percentage of adolescents that turned 13 years old during the measurement year and had the meningococcal, Tdap, and HPV vaccines by their 13th birthday.         |
+| [Initiation and Engagement of Alcohol and Other Drug Abuse or Dependence Treatment](#initiation-and-engagement-of-alcohol-and-other-drug-abuse-or-dependence-treatment-todo)        | **IN PROGRESS** <br/> Percentage of adolescent and adult patients with a new episode of alcohol or other drug (AOD) dependence who (1) initiated treatment through an inpatient AOD admission, outpatient visit, intensive outpatient encounter or partial hospitalization within 14 days of the diagnosis and (2) who initiated treatment and who had two or more additional services with a diagnosis of AOD within 34 days of the initiation visit.         |
+| [Members Receiving Preventive Dental Services, ages 1-5 (kindergarten readiness) and 6-14](#members-receiving-preventive-dental-services-ages-1-5-kingergarten-readiness-todo)        | **IN PROGRESS** <br/> Percentage of enrolled children ages 1-5 (kindergarten readiness) and 6-14 who received a preventive dental service during the measurement year.         |
+| [Mental and Physical Health and Oral Health Assessment Within 60 Days for Children in DHS Custody](#mental-and-physical-health-and-oral-health-assessment-within-60-days-for-children-in-dhs-custody-todo)        | **IN PROGRESS** <br/> Percentage of children ages 0-17 who received a physical health assessment, children ages 1-17 who received a dental health assessment, and children ages 4-17 who received a mental health assessment within 60 days of the state notifying CCOs that the children were placed into custody with the Department of Human Services (foster care)        |
+| [Oral Evaluation for Adults with Diabetes](#oral-evaluation-for-adults-with-diabetes-todo)        | **IN PROGRESS** <br/> Percentage of adults with diabetes who received at least one oral evaluation within the reporting year.         |
+| [Prenatal Postpartum Care](#prenatal-postpartum-care)        | **IN PROGRESS** <br/> Percentage of deliveries of live births between November 6 of the year prior to the measurement year and November 5 of the measurement year that had a postpartum visit on or between 21 and 56 days after delivery.         |
+| [Screening for Clinical Depression and Follow-Up Plan](#screening-for-clinical-depression-and-follow-up-plan-todo)        | **IN PROGRESS** <br/> Percentage of patients aged 12 years and older screened for clinical depression on the date of the encounter using an age appropriate standardized depression screening tool AND if positive, a follow up plan is documented on the date of the positive screen.         |
+| [Well-Child Visits in the 3rd, 4th, 5th, and 6th Years of Life (kindergarten readiness)](#well-child-visits-in-the-3rd-4th-5th-and-6th-years-of-life-kindergarten-readiness-todo)        | **IN PROGRESS** <br/> Percentage of children ages 3 to 6 that had one or more wellchild visits with a PCP during the measurement year.        |
+
 ## [B. OHA 2019 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Adolescent well-care visits](#adolescent-well-care-visits)        | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization)        | Rate of patient visits to an emergency department.         |
-| [Childhood immunization status](#childhood-immunization-status)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
+| [Childhood immunization status](#childhood-immunization-status-1)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
 | [Cigarette smoking prevalence ](#cigarette-smoking-prevalence)        | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee.         |
 | [Colorectal cancer screening](#colorectal-cancer-screening)        | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.         |
 | [Controlling high blood pressure](#controlling-high-blood-pressure)        | Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.         |
 | [Dental Sealants on Permanent Molars for Children](#dental-sealants-on-permanent-molars-for-children)        | Percentage of children ages 6-14 who received a dental sealant during the measurement year.         |
 | [Depression screening and follow up plan](#depression-screening-and-follow-up-plan)        | Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.         |
 | [Developmental screening in the first 36 months of life](#developmental-screening-in-the-first-36-months-of-life)        | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
-| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
+| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control-1)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
 | [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
 | [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Oral Evaluation for Adults with Diabetes](#oral-evaluation-for-adults-with-diabetes)        | Percentage of adult CCO members identified as having diabetes who received at least one dental service within the reporting year.         |
@@ -158,6 +175,135 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
  
+
+## OHA 2020 CCO Incentive and Performance Reports  
+The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
+<http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
+The default measurement period for the following reports is Calendar Year 2020, but the user can choose a measurement period of their choice.
+
+### Childhood Immunization Status  
+**Measure Description**
+Percentage of children that turned 2 years old during the measurement year and had the Dtap, IPV, MMR, HiB, HepB, and VZV vaccines by their second birthday.  
+**2020 Measure Benchmark**  
+TBD  
+**Denominator**  
+Children who turn 2 years of age during the measurement year.  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2020 Hospice Encounter Value Set and Hospice Intervention Value Set, with claims within the measurement year. (See HEDIS 2020 General Guideline 17 for detail.)  
+OHA does not apply any optional exclusions to this measure.  
+**Numerator**  
+OHA is using HEDIS® 2020 Combination 2 for the CCO incentive and State Quality measure: The number of children who turned 2 years of age in the measurement year and had all the following specified vaccinations. (minimum threshold in brackets): DTaP (4), IPV (3), MMR (1), HiB (3), HepB (3), VZV (1).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)  
+**Custom Modifications**  
+Indications of alternative schedule or vaccination refusal in date_of_service_alt_schedule, alternative_schedule, date_of_service_refusal, and vaccination_refusal columns.  
+Alternative Schedule Clinical Codes:  
+ICD-10-CM: Z28.1,Z28.21,Z28.82 HCPCS: G8483,G8866  
+Vaccination Refusal Clinical Codes:  
+ICD-10-CM: Z91.89 ICD-9-CM: V15.89 SNOMED: 140571000119108  
+Record type of denominator hit in denom_record_type column. Records types include HL7 messages (ADTs and Transcriptions), CCDs, and Claims.  
+CSV export of all immunizations per patient by date of service. This export includes the sending facility of the immunization received and whether the immunization came from clinical data, claims data, or both. Filtering by yes in the from_both column will indicate an immunization that has both clinical and claims data for the same immunization on the same date of service.  
+**Example Output**  
+![](pictures/childimms_chart_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
+        meets_denominator_exclusion | 
+        date_of_service_dtap |dtap_num | dtap count |
+        date_of_service_ipv | ipv_num | ipv count |
+        date_of_service_mmr | mmr_num | mmr count |
+        date_of_service_hib | hib_num | hib count |
+        date_of_service_hepb | hepb_num | hepB count |hepb_dx |
+        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
+        all_vacs |provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Childhood-Immunization-Status-specifications-final.pdf>
+
+### Immunizations for Adolescents  
+**Measure Description**
+Percentage of adolescents that turned 13 years old during the measurement year and had the meningococcal, Tdap, and HPV vaccines by their 13th birthday.  
+**2020 Measure Benchmark**  
+IMA Combo 1: 86.4%  
+IMA Combo 2: 40.4%  
+**Denominator**  
+Adolescents who turn 13 years of age during the measurement year.  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2020 Hospice Encounter Value Set and Hospice Intervention Value Set, with claims within the measurement year. (See HEDIS 2020 General Guideline 17 for detail.)  
+OHA does not apply any optional exclusions to this measure.  
+**Numerator**  
+The number of adolescents who turned 13 years of age in the measurement year and had all the following specified vaccinations. (minimum threshold in brackets): Meningococcal (1), Tdap (1), HPV (2)  
+Combination 1: Adolescents who are numerator compliant for both the meningococcal conjugate and Tdap
+indicators.  
+Combination 2: Adolescents who are numerator compliant for all three indicators (meningococcal, Tdap, and HPV).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)  
+**Custom Modifications**  
+Indications of alternative schedule or vaccination refusal in date_of_service_alt_schedule, alternative_schedule, date_of_service_refusal, and vaccination_refusal columns.  
+Alternative Schedule Clinical Codes:  
+ICD-10-CM: Z28.1,Z28.21,Z28.82 HCPCS: G8483,G8866  
+Vaccination Refusal Clinical Codes:  
+ICD-10-CM: Z91.89 ICD-9-CM: V15.89 SNOMED: 140571000119108  
+Record type of denominator hit in denom_record_type column. Records types include HL7 messages (ADTs and Transcriptions), CCDs, and Claims.  
+CSV export of all immunizations per patient by date of service. This export includes the sending facility of the immunization received and whether the immunization came from clinical data, claims data, or both. Filtering by yes in the from_both column will indicate an immunization that has both clinical and claims data for the same immunization on the same date of service.  
+**Example Output**  
+![](pictures/adol_imms_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
+        meets_denominator_exclusion | 
+        date_of_service_meningococcal |meningococcal_num | meningococcal count |
+        date_of_service_tdap | tdap_num | tdap count |
+        date_of_service_hpv | hpv_num | hpv count |
+        combo_1 | combo_2 | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Immunizations-for-Adolescents-specifications-final.pdf>
+
+### Diabetes: HbA1c Poor Control
+**Measure Description**  
+Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
+**2019 Measure Benchmark**  
+23.4%  
+**Denominator**  
+Patients 18-75 years of age with diabetes with a visit during the measurement period.  
+**Required exclusions for denominator**    
+Patients whose hospice care overlaps the measurement period  
+Patients 66 and older who are living long term in an institution for more than 90 days during the measurement period.  
+Patients 66 and older with advanced illness and frailty because it is unlikely that patients will benefit from the services being measured.  
+**Numerator**  
+Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+**Custom Modifications**  
+Most recent BMI and blood pressure readings in date_of_service_bmi, bmi, date_of_service_bp, bp_systolic, and bp_diastolic columns.  
+**Example Output**  
+![](pictures/diabetes_chart_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_qual_visit | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Diabetes-Poor-Control-specifications-final.pdf>
+
 ## OHA 2019 CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
 <http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
