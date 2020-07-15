@@ -40,7 +40,8 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 **F. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#f-certified-community-behavioral-health-clinics-ccbhc-measures)**  
 **G. [Custom Reports](#g-custom-reports)**  
 **H. [Notification Reports](#h-notification-reports)**  
-**I. [Appendix](#i-appendix)**  	
+**I. [Social Determinants of Health (SDOH) Reports](#i-social-determinants-of-health-reports)**  
+**J. [Appendix](#j-appendix)**  	
 
 ### Click on a report name below for a detailed description 
 
@@ -171,7 +172,13 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
 | [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is inpatient or Emergency to identify patient discharges.  |
 
-## [I. Appendix](#appendix)
+## [I. Social Determinants of Health Reports](#notification-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [SDOH Code Prevalence](#sdoh-code-prevalence) | Outputs the prevalence of SDOH-related codes (as defined by the latest SIREN compendium) within the measurement period as defined by Date of Service. |
+| [SDOH Disparities](#sdoh-disparities) | Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity) |
+
+## [J. Appendix](#appendix)
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
  
@@ -1836,6 +1843,47 @@ All Data CSV Download (contains all column headings below)
 **Column Headings**  
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_street_address | patient_age | patient_sex | discharge_time | diagnosis_info | attending_provider | primary_care_provider'`
 
+## Social Determinants of Health Reports 
+As more providers and EHR vendors are able to encode social risk factor information Reliance is able to extract SDOH concepts from HL7, CCDA, and claims data. Our dataset continues to grow and enrich with SDOH data types and sources. 
+
+### SDOH Code Prevelance
+**Measure Description**  
+This report outputs the prevalence of SDOH-related [codes](#clinical-codes-for-sdoh-code-prevalence-report) (as defined by the [latest SIREN compendium](https://sirenetwork.ucsf.edu/tools-resources/resources/compendium-medical-terminology-codes-social-risk-factors)) within the measurement period as defined by Date of Service:  
+* Total Patients With SDOH-related codes.  
+*  Total Clinical Msgs With SDOH-related codes.  
+*  Unique Patients and Number of Clinical Msgs with SDOH-related codes by Month.  
+*  Top 25 Breakdown of Messages with SDOH Codes by Sending Facility.  
+*  Breakdown of Messages with SDOH Codes By Record Type.  
+*  Top 25 Breakdown of Messages with SDOH Codes By Patient Zip.  
+*  Detailed table of all clinical messages with SDOH codes.  
+**Data Sources**  
+ADTs, Labs, CCDs 
+**Input Parameters**   
+Show Patient Level Detail (checkbox), Start Date (DOS), End Date (DOS), and Records to Display Below  
+**Output**  
+List of patient records with an SDOH code present.  
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+**Column Headings**  
+`mpid_CHR | patient_full_name | sending_facility | msgid | record_type | patient_zip | date_of_service_denom'`  
+
+### SDOH Disparities  
+**Measure Description**  
+Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity). Returns the sending facility, date of service, and numerator status (1 or 0) among several SDOH risk domains: financial, housing, food, transportation, and social. The report looks only for specific ICD-10 and SNOMED codes that have been identified by SIREN to encode SDOH risk factors.
+ 
+**Data Sources**  
+ADTs, Labs, CCDs 
+**Input Parameters**   
+Start Date (DOS), End Date (DOS), Show Patient Level Detail (checkbox), Records to Display Below  
+**Output**  
+List of patients in the initial population and their numerator status per social risk factor.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**  
+**Column Headings**  
+`'mpid | patient_name | medicaid_id | patient_date_of_birth | patient_current_age | sex','race','ethnicity','patient_language','marital status','patient_street_address','patient_city','patient_state | patient_zip | provider_name | sending_facility_financial','date_of_service_financial | financial_numerator | sending_facility_food | date_of_service_food','food_numerator','sending_facility_housing','date_of_service_housing','housing_numerator | sending_facility_transportation | date_of_service_transportation','transportation_numerator | sending_facility_social | date_of_service_social','social_numerator','measurement_period_begin | measurement_period_end'`  
+
 
 ## Appendix
 
@@ -1843,6 +1891,14 @@ All Data CSV Download (contains all column headings below)
 ### Community Health Record  
 The Community Health Record (CHR) is a tool that allows users to more easily access patient records. The CHR gives users access to to their entire patient population and facilities a patient has visited across the entire health information exchange. The CHR consists of following main sections: Patient Lookup, the initial patient search that must be completed before viewing a patient.  Lastname or Medical Record Number (MRN) are required to search for a patient.  A combination of Lastname and minimum first three letters of a patient name is also allowed; Patient Info, patient demographics only if the patient is not a member of the users organization or patient demographics and a list of providers, problems, medications, allergies, procedures, and medical insurance information;  Patient Summary, a quick overview of the patient with the five most recent Admits/Discharges/Registrations, Labs, Radiology, Transcribed Reports, Medications List, and Filled Medication messages; Admits/Discharges/Registrations, all ADT messages associated with a patient; Labs, all lab messages associated with a patient; Transcribed Reports, all transcription messages associated with a patient; Radiology, all radiology messages associated with a patient; CCDs, all Continuity of Care Documents (CCDs) associated with a patient; Medications List, all medications associated with a patient from either HL7 or CCD messages; Filled Medications, all filled medications associated with a patient from National Council for Prescription Drug Programs (NCPDP) messages; Observation/Vitals, all vitals associated with a patient; and All, a combination of all HL7 and CCD messages associated with a patient.  
 Note that all grids and sections in the CHR are displayed in reverse chronological order.  All tabs display information for the last two years, but this can be changes by clicking the filter icon to search for any date range.  
+
+### Clinical Codes For SDOH Code Prevalence Report  
+**ICD10 Codes:**   
+(E63.9, F43.9, O9A.3, O9A.31, O9A.311, O9A.312, O9A.313, O9A.319, O9A.32, O9A.33, O9A.4, O9A.41, O9A.411, O9A.412, O9A.413, O9A.419, O9A.42, O9A.43, O9A.5, O9A.51, O9A.511, O9A.512, O9A.513, O9A.519, O9A.52, O9A.53, R45.8, R45.89, R46.8, R46.89, T74.02, T74.1, T74.11, T74.12, T74.2, T74.21, T74.22, T74.3, T74.31, T74.32, T74.9, T74.91, T74.92, T76.02, T76.1, T76.11, T76.12, T76.2, T76.21, T76.22, T76.3, T76.31, T76.32, T76.9, T76.91, X58, Z55.0, Z55.1, Z55.2, Z55.3, Z55.4, Z55.8, Z55.9, Z56.0, Z56.1, Z56.2, Z56.3, Z56.4, Z56.5, Z56.6, Z56.8, Z56.82, Z56.89, Z56.9, Z59.0, Z59.1, Z59.4, Z59.5, Z59.6, Z59.7, Z59.8, Z60.2, Z60.3, Z60.4, Z60.5, Z60.8, Z60.9, Z62.8, Z62.81, Z62.9, Z63.0, Z63.3, Z63.31, Z63.5, Z63.7, Z63.71, Z63.79, Z63.8, Z63.9, Z65.0, Z65.1, Z65.2, Z65.3, Z65.4, Z65.5, Z65.9, Z72.8, Z72.89, Z73.2, Z73.3, Z73.4, Z73.8, Z73.89, Z73.9, Z75.3, Z75.9, Z77.011, Z77.120, Z91.120, Z91.4, Z91.41, Z91.410, Z91.411, Z91.412, Z91.419, Z91.8, Z91.82, Z91.89)  
+**CPT Codes:**   
+(98960, 98961, 98962, 98966, 98967, 98968, 99082, 99401, 99402, 99403, 99404, 99411, 99412)  
+**SNOMED Codes:**  
+(1602006, 2658000, 7584007, 9629004, 9906005, 10139004, 10586006, 12347001, 13117000, 13834002, 16071307, 18676001, 22575004, 22759000, 23996006, 31332003, 33758007, 36877009, 37216006, 37240003, 41905003, 41920009, 44943004, 46017004, 49919000, 55539008, 64299003, 64816001, 65421000, 66615003, 67197000, 71099008, 74715005, 77565007, 79365001, 80123004, 85483007, 87852001, 95925006, 95926007, 102497008, 105411000, 105412007, 105413002, 105414008, 105418006, 105422001, 105423006, 105477005, 105486000, 105491004, 105492006, 105495008, 105497000, 105508004, 105514006, 105526001, 105527005, 105532006, 105535008, 105536009, 105568001, 105577008, 110480002, 129698004, 129891007, 134280000, 160686000, 160687009, 160690003, 160695008, 160696009, 160700001, 160702009, 160703004, 160706007, 160715000, 160716004, 160725005, 160729004, 160752000, 160753005, 160754004, 160788005, 160791005, 160802003, 160810002, 160825002, 160848007, 160860008, 160862000, 160863005, 160875000, 160899000, 160900005, 160902002, 160903007, 160904001, 160909006, 160933000, 160935007, 160936008, 160937004, 160941000, 160942007, 160943002, 161022007, 161023002, 161036002, 161051006, 161062006, 161112004, 161114003, 161131005, 161132003, 161133008, 161140009, 161147007, 161148002, 161154001, 161155000, 162218007, 170996007, 171001002, 171002009, 171004005, 182891003, 183103000, 183349001, 183351002, 183353004, 183418007, 183421009, 183681001, 185955000, 185955000, 185956004, 185956004, 185957008, 185957008, 185960001, 185961002, 213012007, 213013002, 217634009, 217635005, 223433009, 224166006, 224169004, 224170003, 224171004, 224172006, 224174007, 224175008, 224176009, 224177000, 224187001, 224188006, 224190007, 224191006, 224199008, 224226001, 224229008, 224231004, 224232006, 224233001, 224234007, 224239002, 224241001, 224248007, 224251000, 224252007, 224253002, 224254008, 224256005, 224257001, 224258006, 224259003, 224260008, 224262000, 224271009, 224290001, 224291002, 224294005, 224295006, 224313002, 224321008, 224325004, 224332008, 224333003, 224336006, 224339004, 224340002, 224342005, 224357003, 224358008, 224365000, 224368003, 224375002, 224376001, 224381005, 224382003, 224384002, 224385001, 224386000, 224402001, 224459001, 224461005, 224462003, 224465001, 224467009, 224468004, 224471007, 224474004, 224780008, 224897008, 225322005, 225329001, 225422009, 225521004, 225806000, 225828000, 226060000, 228136006, 228137002, 228138007, 228140002, 228615008, 228647003, 228651001, 229062007, 242039002, 243067002, 243070003, 243071004, 243071004, 243747004, 248052004, 248164005, 266935003, 266936002, 266939009, 266940006, 266944002, 266957005, 267076002, 275643002, 276050006, 276059007, 276065007, 276069001, 276070000, 276073003, 276074009, 276074009, 276075005, 276075005, 276091008, 276092001, 276096003, 276103000, 276104006, 276125006, 276126007, 276127003, 276128008, 276129000, 278838006, 281576008, 281662004, 281663009, 284477001, 285134002, 285840007, 286441005, 286442003, 286443008, 286444002, 286445001, 301029007, 301719009, 301720003, 301721004, 301722006, 301723001, 302124002, 302153001, 302256002, 302807005, 304639001, 306090001, 306151002, 306240005, 306366006, 306367002, 306977006, 307109002, 307110007, 309251006, 309252004, 309630000, 309683008, 310207003, 312051009, 312386004, 312616000, 312618004, 312619007, 312635000, 312651008, 313069005, 313070006, 313072003, 313073008, 313080005, 313082002, 313083007, 315043002, 315245004, 315594003, 315595002, 315600006, 361063004, 370881007, 370883005, 370884004, 370974004, 370975003, 370982004, 371006005, 371779005, 372058001, 372067001, 384743009, 384811003, 385721005, 385722003, 385723008, 385724002, 385726000, 385727009, 385759002, 385761006, 385766001, 385767005, 385877003, 385878008, 385879000, 385894001, 385983001, 385985008, 385990006, 386287001, 386306006, 386323002, 386442002, 386453008, 386458004, 386497007, 386498002, 390790000, 395094003, 397660003, 397756006, 397864009, 401333005, 404189009, 405187002, 405188007, 405189004, 405190008, 406130004, 406132007, 406133002, 406542000, 408364003, 408992000, 409059003, 409062000, 409065003, 410102001, 410235003, 410236002, 410237006, 410279000, 410287004, 410288009, 410292002, 410293007, 410296004, 410297008, 410300003, 410304007, 410314003, 410315002, 410318000, 410319008, 410320002, 410327004, 410328009, 410332003, 410333008, 410340009, 410341008, 410344000, 410351009, 410353007, 410363004, 410364005, 410365006, 410377001, 410381001, 410382008, 410387002, 410388007, 410391007, 410392000, 410395003, 410408009, 410414002, 410418004, 410422009, 410423004, 412732008, 413288008, 413301003, 413309001, 413323004, 413330005, 413332002, 413457006, 414418009, 414936000, 415185004, 415271004, 416142000, 416625007, 416898003, 416936003, 417427001, 418150003, 418635006, 419024006, 419482003, 419951006, 420066004, 420180008, 422423006, 422491004, 422551000, 422611005, 422649009, 422651008, 422716006, 422722002, 422761005, 422766000, 422786001, 422865007, 422869001, 422883004, 422913006, 422941005, 423049000, 423079007, 423115005, 423147000, 423170008, 423174004, 423238001, 423344000, 423402005, 423528005, 423593006, 423706007, 423785008, 423797009, 423798004, 423824003, 423859003, 423899000, 424029000, 424085009, 424300006, 424393004, 424423005, 424466003, 424509006, 424553001, 424573006, 424582000, 424629004, 424673000, 424673000, 424739004, 424839007, 424858003, 424860001, 424994000, 425022003, 425111004, 425203001, 425209002, 425275009, 425726009, 428632006, 431027007, 431719007, 432527004, 438772002, 439908001, 441879005, 442084003, 442244004, 442347009, 443314009, 445075008, 445272000, 446497005, 446654005, 449892005, 473453008, 473462005, 697949003, 697950003, 697951004, 698631004, 698631004, 699230004, 700254002, 700506009, 702526004, 702562003, 702579009, 702954001, 703521002, 704103001, 704300009, 704372000, 704400005, 704421005, 704489009, 704658004, 706875005, 706879004, 706892001, 707087005, 707842005, 707843000, 709753004, 709758008, 709764001, 710127000, 710149006, 710156000, 710351004, 710742009, 710769005, 710822009, 710897005, 710910007, 710911006, 710913009, 710921003, 710924006, 710925007, 710962009, 710998001, 711080006, 711115006, 711281004, 712739009, 712991000, 713059005, 713109004, 713458007, 713820002, 714852007, 714854008, 714858006, 714859003, 716421004, 716470000, 716565009, 716730006, 716736000, 718532008, 720025009, 720428004, 720684005, 720741001, 720823003, 733423003, 733817003, 741062008, 5311000175103, 5371000175108, 5491000175103, 5501000175107, 5521000175101, 5731000175109, 53521000124104, 61601000119107, 125161000119103, 149141000119102, 166491000119100, 166491000119100, 207871000119100, 237461000119103, 288441000119106, 288521000119101, 288561000119106, 288671000119101, 288681000119103, 289431000119109, 428481000124106, 432681000124109, 441151000124104, 445061000124103, 445071000124105, 445081000124108, 445091000124106, 445281000124101, 450011000124105, 450901000124108, 451601000124109, 451611000124107, 452801000124103, 453151000124103, 453161000124101, 453181000124106, 453531000124101, 453681000124101, 453761000124102, 453771000124109, 453821000124101, 454061000124102, 454181000124108, 454681000124103, 454861000124109, 10756261000119102, 10756301000119105, 10760941000119102, 10760981000119107, 10761021000119102, 10761061000119107, 10987541000119104, 12242871000119109, 12399131000119105, 12399291000119101, 15936461000119100, 15936461000119100, 16305561000119106, 19260001000004109, 19270001000004103)  
 
 ### Glossary 
 __Denominator__    
