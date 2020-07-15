@@ -175,7 +175,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 ## [I. Social Determinants of Health Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
-| [SDOH Code Prevalence](#sdoh-code-prevalence) | Outputs the prevalence of SDOH-related codes (as defined by the latest SIREN compendium) within the measurement period as defined by Date of Service. |
+| [SDOH Code Prevalence](#sdoh-code-prevelance) | Outputs the prevalence of SDOH-related codes (as defined by the latest SIREN compendium) within the measurement period as defined by Date of Service. |
 | [SDOH Disparities](#sdoh-disparities) | Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity) |
 
 ## [J. Appendix](#appendix)
@@ -1622,7 +1622,7 @@ List of patient records with an SDOH code present.
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 **Column Headings**  
-`mpid_CHR | patient_full_name | sending_facility | msgid | record_type | patient_zip | date_of_service_denom'`  
+`mpid_CHR | patient_full_name | sending_facility | msgid | record_type | patient_zip | date_of_service_denom`  
 
 ### SDOH Disparities  
 **Measure Description**  
@@ -1638,7 +1638,7 @@ List of patients in the initial population and their numerator status per social
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
 **Column Headings**  
-`'mpid | patient_name | medicaid_id | patient_date_of_birth | patient_current_age | sex','race','ethnicity','patient_language','marital status','patient_street_address','patient_city','patient_state | patient_zip | provider_name | sending_facility_financial','date_of_service_financial | financial_numerator | sending_facility_food | date_of_service_food','food_numerator','sending_facility_housing','date_of_service_housing','housing_numerator | sending_facility_transportation | date_of_service_transportation','transportation_numerator | sending_facility_social | date_of_service_social','social_numerator','measurement_period_begin | measurement_period_end'`  
+`mpid | patient_name | medicaid_id | patient_date_of_birth | patient_current_age | sex | race | ethnicity | patient_language | marital status | patient_street_address | patient_city | patient_state | patient_zip | provider_name | sending_facility_financial | date_of_service_financial | financial_numerator | sending_facility_food | date_of_service_food | food_numerator | sending_facility_housing | date_of_service_housing | housing_numerator | sending_facility_transportation | date_of_service_transportation | transportation_numerator | sending_facility_social | date_of_service_social | social_numerator | measurement_period_begin | measurement_period_end`  
 
 
 ## Appendix
@@ -1648,7 +1648,7 @@ All Data CSV Download (contains all column headings below)
 The Community Health Record (CHR) is a tool that allows users to more easily access patient records. The CHR gives users access to to their entire patient population and facilities a patient has visited across the entire health information exchange. The CHR consists of following main sections: Patient Lookup, the initial patient search that must be completed before viewing a patient.  Lastname or Medical Record Number (MRN) are required to search for a patient.  A combination of Lastname and minimum first three letters of a patient name is also allowed; Patient Info, patient demographics only if the patient is not a member of the users organization or patient demographics and a list of providers, problems, medications, allergies, procedures, and medical insurance information;  Patient Summary, a quick overview of the patient with the five most recent Admits/Discharges/Registrations, Labs, Radiology, Transcribed Reports, Medications List, and Filled Medication messages; Admits/Discharges/Registrations, all ADT messages associated with a patient; Labs, all lab messages associated with a patient; Transcribed Reports, all transcription messages associated with a patient; Radiology, all radiology messages associated with a patient; CCDs, all Continuity of Care Documents (CCDs) associated with a patient; Medications List, all medications associated with a patient from either HL7 or CCD messages; Filled Medications, all filled medications associated with a patient from National Council for Prescription Drug Programs (NCPDP) messages; Observation/Vitals, all vitals associated with a patient; and All, a combination of all HL7 and CCD messages associated with a patient.  
 Note that all grids and sections in the CHR are displayed in reverse chronological order.  All tabs display information for the last two years, but this can be changes by clicking the filter icon to search for any date range.  
 
-### Clinical Codes For SDOH Code Prevalence Report  
+### Clinical Codes Utilized in SDOH Code Prevalence Report  
 **ICD10 Codes:**   
 (E63.9, F43.9, O9A.3, O9A.31, O9A.311, O9A.312, O9A.313, O9A.319, O9A.32, O9A.33, O9A.4, O9A.41, O9A.411, O9A.412, O9A.413, O9A.419, O9A.42, O9A.43, O9A.5, O9A.51, O9A.511, O9A.512, O9A.513, O9A.519, O9A.52, O9A.53, R45.8, R45.89, R46.8, R46.89, T74.02, T74.1, T74.11, T74.12, T74.2, T74.21, T74.22, T74.3, T74.31, T74.32, T74.9, T74.91, T74.92, T76.02, T76.1, T76.11, T76.12, T76.2, T76.21, T76.22, T76.3, T76.31, T76.32, T76.9, T76.91, X58, Z55.0, Z55.1, Z55.2, Z55.3, Z55.4, Z55.8, Z55.9, Z56.0, Z56.1, Z56.2, Z56.3, Z56.4, Z56.5, Z56.6, Z56.8, Z56.82, Z56.89, Z56.9, Z59.0, Z59.1, Z59.4, Z59.5, Z59.6, Z59.7, Z59.8, Z60.2, Z60.3, Z60.4, Z60.5, Z60.8, Z60.9, Z62.8, Z62.81, Z62.9, Z63.0, Z63.3, Z63.31, Z63.5, Z63.7, Z63.71, Z63.79, Z63.8, Z63.9, Z65.0, Z65.1, Z65.2, Z65.3, Z65.4, Z65.5, Z65.9, Z72.8, Z72.89, Z73.2, Z73.3, Z73.4, Z73.8, Z73.89, Z73.9, Z75.3, Z75.9, Z77.011, Z77.120, Z91.120, Z91.4, Z91.41, Z91.410, Z91.411, Z91.412, Z91.419, Z91.8, Z91.82, Z91.89)  
 **CPT Codes:**   
