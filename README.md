@@ -32,8 +32,8 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
  We welcome feedback and suggestions to prioritize our efforts and to improve the usefulness of our data. Please direct any questions or comments to the helpdesk@reliancehie.org  
 
 ## Table of Contents
-**A. [OHA 2019 CCO Incentive and Performance Reports](#a-oha-2019-cco-incentive-and-performance-reports)**  
-**B. [OHA 2018 CCO Incentive and Performance Reports](#b-oha-2018-cco-incentive-and-performance-reports)**  
+**A. [OHA 2020 CCO Incentive and Performance Reports](#a-oha-2020-cco-incentive-and-performance-reports)**  
+**B. [OHA 2019 CCO Incentive and Performance Reports](#a-oha-2019-cco-incentive-and-performance-reports)**  
 **C. [QCDR Reports](#c-qcdr-reports)**  
 **D. [HEDIS Reports](#d-hedis-reports)**  
 **E. [Uniform Data System (UDS) Reports](#e-uniform-data-system-uds-reports)**  
@@ -45,42 +45,42 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 
 ### Click on a report name below for a detailed description 
 
-## [A. OHA 2019 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
+## [A. OHA 2020 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
+| Report Name    | Description               |
+| -------------  |-------------              |
+| [Alcohol and Drug Misuse: Screening, Brief Intervention and Referral for Treatment (SBIRT)](#alcohol-and-drug-misuse-screening-brief-intervention-and-referral-for-treatment-sbirt-todo)        | **IN PROGRESS** <br/> Percentage of patients ages 12 years and older who have had a qualifying outpatient visit or home visit during the measurement year with one or more screening, brief intervention, and referral to treatment services.         |
+| [Childhood immunization status](#childhood-immunization-status)        | Percentage of children that turned 2 years old during the measurement year and had the Dtap, IPV, MMR, HiB, HepB, and VZV vaccines by their second birthday.         |
+| [Cigarette smoking prevalence ](#cigarette-smoking-prevalence-todo)        | **IN PROGRESS** <br/> Percentage of Medicaid members ages 13 and older who currently smoke cigarettes or use other tobacco products.         |
+| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
+| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness-todo)        | **IN PROGRESS** <br/> Rate of visits to an emergency department among adult members experiencing mental illness.         |
+| [Immunizations for Adolescents](#immunizations-for-adolescents)        | Percentage of adolescents that turned 13 years old during the measurement year and had the meningococcal, Tdap, and HPV vaccines by their 13th birthday.         |
+| [Initiation and Engagement of Alcohol and Other Drug Abuse or Dependence Treatment](#initiation-and-engagement-of-alcohol-and-other-drug-abuse-or-dependence-treatment-todo)        | **IN PROGRESS** <br/> Percentage of adolescent and adult patients with a new episode of alcohol or other drug (AOD) dependence who (1) initiated treatment through an inpatient AOD admission, outpatient visit, intensive outpatient encounter or partial hospitalization within 14 days of the diagnosis and (2) who initiated treatment and who had two or more additional services with a diagnosis of AOD within 34 days of the initiation visit.         |
+| [Members Receiving Preventive Dental Services, ages 1-5 (kindergarten readiness) and 6-14](#members-receiving-preventive-dental-services-ages-1-5-kingergarten-readiness-todo)        | **IN PROGRESS** <br/> Percentage of enrolled children ages 1-5 (kindergarten readiness) and 6-14 who received a preventive dental service during the measurement year.         |
+| [Mental and Physical Health and Oral Health Assessment Within 60 Days for Children in DHS Custody](#mental-and-physical-health-and-oral-health-assessment-within-60-days-for-children-in-dhs-custody-todo)        | **IN PROGRESS** <br/> Percentage of children ages 0-17 who received a physical health assessment, children ages 1-17 who received a dental health assessment, and children ages 4-17 who received a mental health assessment within 60 days of the state notifying CCOs that the children were placed into custody with the Department of Human Services (foster care)        |
+| [Oral Evaluation for Adults with Diabetes](#oral-evaluation-for-adults-with-diabetes-todo)        | **IN PROGRESS** <br/> Percentage of adults with diabetes who received at least one oral evaluation within the reporting year.         |
+| [Prenatal Postpartum Care](#prenatal-postpartum-care)        | **IN PROGRESS** <br/> Percentage of deliveries of live births between November 6 of the year prior to the measurement year and November 5 of the measurement year that had a postpartum visit on or between 21 and 56 days after delivery.         |
+| [Screening for Clinical Depression and Follow-Up Plan](#screening-for-clinical-depression-and-follow-up-plan-todo)        | **IN PROGRESS** <br/> Percentage of patients aged 12 years and older screened for clinical depression on the date of the encounter using an age appropriate standardized depression screening tool AND if positive, a follow up plan is documented on the date of the positive screen.         |
+| [Well-Child Visits in the 3rd, 4th, 5th, and 6th Years of Life (kindergarten readiness)](#well-child-visits-in-the-3rd-4th-5th-and-6th-years-of-life-kindergarten-readiness-todo)        | **IN PROGRESS** <br/> Percentage of children ages 3 to 6 that had one or more wellchild visits with a PCP during the measurement year.        |
+
+## [B. OHA 2019 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Adolescent well-care visits](#adolescent-well-care-visits)        | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
 | [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization)        | Rate of patient visits to an emergency department.         |
-| [Childhood immunization status](#childhood-immunization-status)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
+| [Childhood immunization status](#childhood-immunization-status-1)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
 | [Cigarette smoking prevalence ](#cigarette-smoking-prevalence)        | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee.         |
 | [Colorectal cancer screening](#colorectal-cancer-screening)        | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.         |
 | [Controlling high blood pressure](#controlling-high-blood-pressure)        | Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.         |
 | [Dental Sealants on Permanent Molars for Children](#dental-sealants-on-permanent-molars-for-children)        | Percentage of children ages 6-14 who received a dental sealant during the measurement year.         |
 | [Depression screening and follow up plan](#depression-screening-and-follow-up-plan)        | Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.         |
 | [Developmental screening in the first 36 months of life](#developmental-screening-in-the-first-36-months-of-life)        | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
-| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
+| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control-1)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
 | [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
 | [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
 | [Oral Evaluation for Adults with Diabetes](#oral-evaluation-for-adults-with-diabetes)        | Percentage of adult CCO members identified as having diabetes who received at least one dental service within the reporting year.         |
 | [Timeliness of Prenatal and Postpartum Care](#timeliness-of-prenatal-and-postpartum-care)        | Percentage of women with live births who received a prenatal care visit within the first trimester and percentage of women receiving postpartum care within 21-56 days of delivery.         |
 | [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
 
-
-## [B. OHA 2018 CCO Incentive and Performance Reports](#oha-2018-cco-incentive-and-performance-reports)
-| Report Name    | Description               |
-| -------------  |-------------              |
-| [Adolescent well-care visits](#adolescent-well-care-visits-1)        | Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.         |
-| [Ambulatory Care: Emergency Department utilization](#ambulatory-care-emergency-department-utilization-1)        | Rate of patient visits to an emergency department.         |
-| [Childhood immunization status](#childhood-immunization-status-1)        | Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.         |
-| [Cigarette smoking prevalence ](#cigarette-smoking-prevalence-1)        | Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence: 1) Meeting minimum cessation benefit requirements 2) Submitting EHR-based cigarette smoking and tobacco prevalence data according to data submission requirements 3) Meeting benchmark or improvement target established by the Metrics & Scoring Committee.         |
-| [Colorectal cancer screening](#colorectal-cancer-screening-1)        | Percent of adult members (ages 50-75) who had appropriate screening for colorectal cancer.         |
-| [Controlling high blood pressure](#controlling-high-blood-pressure-1)        | Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.         |
-| [Depression screening and follow up plan](#depression-screening-and-follow-up-plan-1)        | Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.         |
-| [Developmental screening in the first 36 months of life](#developmental-screening-in-the-first-36-months-of-life-1)        | Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.         |
-| [Diabetes: HbA1c Poor Control](#diabetes-hba1c-poor-control-1)        | Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c ˃ 9.0% during the measurement period.         |
-| [Disparity measure: Emergency department utilization among members with mental illness](#emergency-department-utilization-for-individuals-experiencing-mental-illness)        | Rate of visits to an emergency department among adult members experiencing mental illness.         |
-| [Effective contraceptive use among women at risk of unintended pregnancy](#effective-contraceptive-use-among-women-at-risk-of-unintended-pregnancy-1)        | Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.         |
-| [Weight assessment and counseling in children and adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-1)        | Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity         |
-| [Timeliness of Prenatal and Postpartum Care](#timeliness-of-prenatal-and-postpartum-care-1)        | Percentage of women with live births who received a prenatal care visit within the first trimester and percentage of women receiving postpartum care within 21-56 days of delivery.         |
 
 ## [C. QCDR Reports](#qcdr-reports)
 | Report Name    | Description               |
@@ -182,6 +182,135 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
  
+
+## OHA 2020 CCO Incentive and Performance Reports  
+The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
+<http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
+The default measurement period for the following reports is Calendar Year 2020, but the user can choose a measurement period of their choice.
+
+### Childhood Immunization Status  
+**Measure Description**
+Percentage of children that turned 2 years old during the measurement year and had the Dtap, IPV, MMR, HiB, HepB, and VZV vaccines by their second birthday.  
+**2020 Measure Benchmark**  
+TBD  
+**Denominator**  
+Children who turn 2 years of age during the measurement year.  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2020 Hospice Encounter Value Set and Hospice Intervention Value Set, with claims within the measurement year. (See HEDIS 2020 General Guideline 17 for detail.)  
+OHA does not apply any optional exclusions to this measure.  
+**Numerator**  
+OHA is using HEDIS® 2020 Combination 2 for the CCO incentive and State Quality measure: The number of children who turned 2 years of age in the measurement year and had all the following specified vaccinations. (minimum threshold in brackets): DTaP (4), IPV (3), MMR (1), HiB (3), HepB (3), VZV (1).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)  
+**Custom Modifications**  
+Indications of alternative schedule or vaccination refusal in date_of_service_alt_schedule, alternative_schedule, date_of_service_refusal, and vaccination_refusal columns.  
+Alternative Schedule Clinical Codes:  
+ICD-10-CM: Z28.1,Z28.21,Z28.82 HCPCS: G8483,G8866  
+Vaccination Refusal Clinical Codes:  
+ICD-10-CM: Z91.89 ICD-9-CM: V15.89 SNOMED: 140571000119108  
+Record type of denominator hit in denom_record_type column. Records types include HL7 messages (ADTs and Transcriptions), CCDs, and Claims.  
+CSV export of all immunizations per patient by date of service. This export includes the sending facility of the immunization received and whether the immunization came from clinical data, claims data, or both. Filtering by yes in the from_both column will indicate an immunization that has both clinical and claims data for the same immunization on the same date of service.  
+**Example Output**  
+![](pictures/childimms_chart_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
+        meets_denominator_exclusion | 
+        date_of_service_dtap |dtap_num | dtap count |
+        date_of_service_ipv | ipv_num | ipv count |
+        date_of_service_mmr | mmr_num | mmr count |
+        date_of_service_hib | hib_num | hib count |
+        date_of_service_hepb | hepb_num | hepB count |hepb_dx |
+        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
+        all_vacs |provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Childhood-Immunization-Status-specifications-final.pdf>
+
+### Immunizations for Adolescents  
+**Measure Description**
+Percentage of adolescents that turned 13 years old during the measurement year and had the meningococcal, Tdap, and HPV vaccines by their 13th birthday.  
+**2020 Measure Benchmark**  
+IMA Combo 1: 86.4%  
+IMA Combo 2: 40.4%  
+**Denominator**  
+Adolescents who turn 13 years of age during the measurement year.  
+**Required exclusions for denominator**  
+Members in hospice are excluded from this measure. These members are identified using HEDIS 2020 Hospice Encounter Value Set and Hospice Intervention Value Set, with claims within the measurement year. (See HEDIS 2020 General Guideline 17 for detail.)  
+OHA does not apply any optional exclusions to this measure.  
+**Numerator**  
+The number of adolescents who turned 13 years of age in the measurement year and had all the following specified vaccinations. (minimum threshold in brackets): Meningococcal (1), Tdap (1), HPV (2)  
+Combination 1: Adolescents who are numerator compliant for both the meningococcal conjugate and Tdap
+indicators.  
+Combination 2: Adolescents who are numerator compliant for all three indicators (meningococcal, Tdap, and HPV).  
+**Data Sources**  
+ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)  
+**Custom Modifications**  
+Indications of alternative schedule or vaccination refusal in date_of_service_alt_schedule, alternative_schedule, date_of_service_refusal, and vaccination_refusal columns.  
+Alternative Schedule Clinical Codes:  
+ICD-10-CM: Z28.1,Z28.21,Z28.82 HCPCS: G8483,G8866  
+Vaccination Refusal Clinical Codes:  
+ICD-10-CM: Z91.89 ICD-9-CM: V15.89 SNOMED: 140571000119108  
+Record type of denominator hit in denom_record_type column. Records types include HL7 messages (ADTs and Transcriptions), CCDs, and Claims.  
+CSV export of all immunizations per patient by date of service. This export includes the sending facility of the immunization received and whether the immunization came from clinical data, claims data, or both. Filtering by yes in the from_both column will indicate an immunization that has both clinical and claims data for the same immunization on the same date of service.  
+**Example Output**  
+![](pictures/adol_imms_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
+        sending_facility | date_of_service_denom | meets_denominator | 
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
+        meets_denominator_exclusion | 
+        date_of_service_meningococcal |meningococcal_num | meningococcal count |
+        date_of_service_tdap | tdap_num | tdap count |
+        date_of_service_hpv | hpv_num | hpv count |
+        combo_1 | combo_2 | provider_name | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Immunizations-for-Adolescents-specifications-final.pdf>
+
+### Diabetes: HbA1c Poor Control
+**Measure Description**  
+Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
+**2019 Measure Benchmark**  
+23.4%  
+**Denominator**  
+Patients 18-75 years of age with diabetes with a visit during the measurement period.  
+**Required exclusions for denominator**    
+Patients whose hospice care overlaps the measurement period  
+Patients 66 and older who are living long term in an institution for more than 90 days during the measurement period.  
+Patients 66 and older with advanced illness and frailty because it is unlikely that patients will benefit from the services being measured.  
+**Numerator**  
+Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Encounters   
+**Input Parameters**   
+Start Date, End Date, and Records to Display Below  
+**Output**  
+Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
+OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
+**Custom Modifications**  
+Most recent BMI and blood pressure readings in date_of_service_bmi, bmi, date_of_service_bp, bp_systolic, and bp_diastolic columns.  
+**Example Output**  
+![](pictures/diabetes_chart_2020.png)  
+**Column Headings**  
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_qual_visit | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
+
+**Link to Measure Specifications**  
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2020-Diabetes-Poor-Control-specifications-final.pdf>
+
 ## OHA 2019 CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
 <http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
@@ -673,379 +802,6 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 
 **Link to Measure Specifications**  
 <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Weight-Assessment-and-Counseling.pdf>  
-
-
-## OHA 2018 CCO Incentive and Performance Reports  
-The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
-<http://www.oregon.gov/OHA/HPA/ANALYTICS/Pages/CCO-Baseline-Data.aspx>  
-The default measurement period for the following reports is Calendar Year 2018, but the user can choose a measurement period of their choice.
-
-### Adolescent Well Care Visits
-**Measure Description**  
-Percentage of adolescents and young adults (ages 12-21) who had at least one well-care visit during the measurement year.  
-**Denominator**  
-Members age 12-21 years as of December 31 of the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
-**Required exclusions for denominator:**  
-Patients with more than one gap in continuous enrollment of up to 45 days during the measurement year.  
-**Numerator**  
-At least one comprehensive well-care visit during the measurement year. See HEDIS® 2017 Technical Specifications for Health Plans (Volume 2) for details.  
-**Data Sources**  
-ADTs, CCDs, LABs, and Encounters   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
-
-**Example Output**  
-![](pictures/awc_chart.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom |sending_facility_num | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Adolescent-Well-Care-Visits.pdf>
-
-### Ambulatory care: Emergency Department utilization  
-**Measure Description**   
-Rate of patient visits to an emergency department.  
-**Denominator**  
-Estimated 1,000 member month of the adult members enrolled with the organization. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
-**Numerator**  
-Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
-**Required exclusions for numerator**  
-Mental health and chemical dependency services are excluded.     
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/ed_utilization.png)  
-
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | estimated_enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf> 
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Ambulatory-Care-Outpatient-ED-Utilization.pdf>  
-
-### Childhood Immunization Status  
-**Measure Description**
-Percentage of children who received recommended vaccines (DTaP, IPV, MMR, HiB, Hepatitis B, VZV) before their second birthday.  
-**Denominator**  
-Children who turn 2 years of age during the measurement year. See HEDIS® 2017 Technical Specification for Health Plans (Volume 2) for details.  
-**Required exclusions for denominator**  
-Patients with more than one gap in continuous enrollment of up to 45 days during the 12 months prior to child's 2nd birthday.  
-**Numerator**  
-OHA is using HEDIS® 2017 Combination 2 for the state performance measure: The number of children who turned 2 years of age in the measurement year and had all of the following specified vaccinations (minimum threshold in brackets): DTaP (4), IPV (3), MMR (1), HiB (3), HepB (3), VZV (1).  
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each immunization and overall, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below) and Immunization DOS CSV (every immunizatons and DOS for each patient)
-
-**Example Output**  
-![](pictures/childimms_chart.png)
-
-**Column Headings**  
-`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
-        sending_facility | date_of_service_denom | meets_denominator | 
-        date_of_service_dtap |dtap_num | dtap count |
-        date_of_service_ipv | ipv_num | ipv count |
-        date_of_service_mmr | mmr_num | mmr count |
-        date_of_service_hib | hib_num | hib count |
-        date_of_service_hepb | hepb_num | hepB count |hepb_dx |
-        date_of_service_vzv | vzv_num | vzv count | vzv_dx |
-        all_vacs |provider_name | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Childhood-Immunization-Status.pdf>
-
-### Cigarette Smoking Prevalence  
-**Measure Description**  
-Bundled measure is intended to address both cessation benefits offered by CCOs and cigarette smoking prevalence.  
-
-**Rate 1**  
-**Denominator**  
-Unique Medicaid members 13 years old or older by the beginning of the measurement year, who had a qualifying visit with the provider during the measurement period.  
-**Numerator**  
-Unique members age 13 years or older who had a qualifying visit with the provider during the measurement period, who have their smoking and/or tobacco use status recorded as structured data. 
-
-**Rate 2**   
-**Denominator**  
-Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
-**Numerator**  
-Of patients in the Rate 2 denominator, those who are cigarette smokers. See below for additional information on identifying cigarette smoking in the numerator.  
-
-**Rate 3**  
-**Denominator**  
-Unique Medicaid members age 13 years or older who had a qualifying visit with the provider during the measurement period and who have their smoking and/or tobacco use status recorded as structured data (Rate 1 numerator).  
-**Numerator**  
-Of patients in the Rate 3 denominator, those who are cigarette smokers and/or tobacco users. See below for additional information on identifying tobacco use in the numerator.   
-
-**Required exclusions for numerator**  
-Members with missing smoking or tobacco use status will be excluded from rates 2 and 3. Note that e-cigarettes and marijuana (medical or recreational) should be excluded from both
-the cigarette smoking rate and the broader tobacco use rate.  In addition, the measure is focused on cigarette and tobacco use, not nicotine use.
-
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio for each rate, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-
-**Example Output**  
-![](pictures/smoking_prevalence_chart.png)  
-
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
-        date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
-        meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Cigarette-Smoking-Prevalence-Bundle.pdf>  
-
-### Colorectal Cancer Screening
-**Measure Description**   
-Percent of adult members (ages 51-75) who had appropriate screening for colorectal cancer.  
-**Denominator**  
-Medicaid enrollees age 51-75 years as of December 31st of the measurement year.  
-**Numerator**  
-Unique number of individuals receiving at least one of the approved screenings for colorectal cancer either during the measurement year or years prior to the measurement year.  
-**Required exclusions for denominator**  
-Either of the following any time during the member’s history through December 31 of the measurement year: Colorectal Cancer Value Set or Total Colectomy Value Set.  
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-
-**Example Output**  
-![](pictures/colorectal_chart_2018.png)  
-
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | meets_denominator | meets_denominator_exclusion | date_of_service_denom_excl | meets_numerator | date_of_service_num | FOBT | DOS_FOBT | flexible_sigmoidoscopy | DOS_FS | colonoscopy | DOS_colonoscopy | colonography | DOS_colonography | FIT-DNA | DOS_FITDNA | provider_name | measurement_period_begin | measurement_period_end`  
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Colorectal-Cancer-Screening.pdf>  
-
-### Controlling High Blood Pressure
-**Measure Description**   
-Percentage of adult members (ages 18–85) with a diagnosis of hypertension (high blood pressure) whose condition was adequately controlled.  
-**Denominator**  
-Patients 18-85 years of age who had a diagnosis of essential hypertension within the first six months of the measurement period or any time prior to the measurement period and who received a qualifying outpatient service during the measurement period.  
-**Numerator**  
-Patients whose blood pressure at the most recent visit is adequately controlled (systolic blood pressure <140 mmHg and diastolic blood pressure <90 mmHg) during the measurement period.    
-**Required exclusions for denominator**  
-Patients with evidence of end stage renal disease, chronic kidney disease (Stage 5), dialysis or renal transplant before or during the measurement period, diagnosis of pregnancy during the measurement period, in hospice care during the measurement period.  
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, Include Transcriptions, Include Urgent (DX and BPs from urgent care settings), and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-
-**Example Output**  
-![](pictures/hypertension_chart.png)  
-
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | qual_visit_sending_facility | date_of_service_denom | date_of_service_dx | date_of_service_num | sending_facility_num | bp_systolic | bp_diastolic | bp_from_urgent | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Controlling-High-Blood-Pressure.pdf>  
-
-### Depression screening and follow up plan
-**Measure Description**   
-Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.
-**Denominator**  
-All patients aged 12 years and older1 before the beginning of the measurement period, with at least one eligible encounter during the measurement period. Eligible encounters are identified through the Depression Screening Encounter Codes Grouping Value Set (2.16.840.1.113883.3.600.1916).  
-**Required exclusions for denominator**   
-Patients with active diagnosis for depression or diagnosis of bipolar disorder.  
-**Denominator Exceptions**  
-Any of the following criteria also remove patients from the denominator: 
-* Patient reasons: Patient refuses to participate
-* Medical Reasons: Patient is in an urgent or emergent situation where time is of the essence and to delay treatment would jeopardize the patient’s health OR situations where the patient's functional capacity or motivation to improve may impact the accuracy of results of standardized depression assessment tools. For example: certain court appointed cases or cases of delirium
-status.  
-
-**Numerator**  
-Patients screened for clinical depression on the date of the encounter, using an age appropriate standardized tool AND if positive, a follow-up plan is documented on the date of the positive screen.   
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**  
-Start Date, End Date, Records to Display Below, Only use qualifying encounter codes, and Include Transcriptions
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/depression_chart.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_denom | 
-        meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
-        date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Depression-Screening.pdf> 
-
-### Developmental Screening in the First 36 months of Life
-**Measure Description**   
-Percentage of children who were screened for risks of developmental, behavioral and social delays using standardized screening tools in the 12 months preceding their first, second or third birthday.  
-**Denominator**  
-Children who turn 1, 2, or 3 years of age in the measurement year and had continuous enrollment in a CCO for the 12 months prior to their birthdate in the measurement year, regardless if they had a medical/clinical visit or not in the measurement year. See Core Set of Children’s Health Care Quality Measures for details.   
-**Numerator**  
-Children in the denominator who had a claim with CPT code 96110 in the 12 months preceding the birthday in the measurement year. See new Clarification section below.  
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**  
-Start Date, End Date, and Records to Display Below   
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/developmental_chart_2018.png)  
-**Column Headings**  
-`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Developmental-Screening.pdf> 
-
-### Diabetes: HbA1c Poor Control
-**Measure Description**  
-Percentage of patients 18-75 years of age with diabetes who had hemoglobin A1c > 9.0% during the measurement period.   
-OHA 2017 Benchmark Measure Ratio (total numerator hits/total denominator hits) is 19%.  
-**Denominator**  
-Patients 18-75 years of age who had a diagnosis of diabetes during the measurement period and who received a qualifying outpatient service during the measurement period.  
-**Required exclusions for denominator**    
-Patients who were in hospice care during the measurement year  
-**Numerator**  
-Patients whose most recent HbA1c level (performed during the measurement period) is >9.0%.  
-**Data Sources**  
-ADTs, CCDs, LABs, and Encounters   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, distribution plot of HbA1c values in denominator population, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download and All Data CSV Download (contains all column headings below)  
-**Example Output**  
-![](pictures/diabetes_chart.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_dx | date_of_service_denom | sending_facility_num | date_of_service_num | HbA1c | provider_name | ordering_provider | meets_denominator | meets_numerator | date_of_service_bmi | bmi | date_of_service_bp | bp_systolic | bp_diastolic | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Diabetes-HbA1c-Poor-Control.pdf>
-
-### Emergency Department Utilization for Individuals Experiencing Mental Illness
-**Measure Description**   
-Rate of visits to an emergency department among adult members experiencing mental illness.  
-**Denominator**  
- Estimated 1,000 member month of the adult members enrolled with the organization, who are identified as having experienced mental illness. The adult members are identified as age 18 or older at the end of the measurement year. OHA uses claims with a 36-month rolling look back period, and the members who had two or more visits1 with any of the principal diagnoses in the Members Experiencing Mental Illness Value Set are identified for inclusion in the denominator. *Note: estimated enrollment months are calculated from patients' 2018 enrollment rate (member months/measurement months) mutiplied by 36 months.*  
-**Numerator**  
-Number of emergency department visits when the member is enrolled with the organization. Count each visit to an ED that does not result in an inpatient encounter once; count multiple ED visits on the same date of service as one visit. Do not include ED visits that result in an inpatient stay. See HEDIS® 2017 Technical Specifications for Health Plans (Volume2) and [Value Set workbook](http://ihpsocal.org/wp-content/uploads/2015/12/HEDIS-2017-Volume-2-Technical-Specifications-Final-Update-201610.pdf) for details.  
-**Required exclusions for numerator**  
-Mental health and chemical dependency services are excluded.   
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below   
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/ed_utilization_mi.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
-
-### Effective contraceptive use among women at risk of unintended pregnancy
-**Measure Description**   
-Percentage of women (ages 15-50) with evidence of one of the most effective or moderately effective contraceptive methods during the measurement year: IUD, implant, contraception injection, contraceptive pills, sterilization, patch, ring, or diaphragm.   
-**Denominator**  
-All women ages 15-50 as of December 31 of the measurement year who were continuously enrolled in a CCO for the 12-month measurement period.  
-Note: OHA will also be measuring and reporting on adolescent and adult women separately, by ages 15-
-17 and ages 18-50. The all-age rate (age 15-50) will be tied to the CCO’s incentive payment.  
-**Required exclusions for denominator**   
-Remove from the denominator any women with history through December 31 of the measurement year for the following: Hysterectomy; Bilateral oophorectomy; Other female reproductive system removal, destruction, resection related to hysterectomy; natural menopause; premature menopause due to survey, radiation, or other factors; Congenital anomalies of female genital organs; Female infertility.  
-Among women in the denominator who were not numerator compliant, exclude those with a pregnancy
-claim from the measurement year.       
-**Numerator**  
-Women in the denominator with evidence of female sterilization anytime throughout the claims history in OHA’s system, or one of the following methods of contraception during the measurement year: IUD, implant, contraception injection, contraceptive pills, patch, ring, or diaphragm using the OHA Numerator Code Table, and the National Drug Codes (NDC) table (posted online separately).  
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**  
-Start Date, End Date, and Records to Display Below   
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/contraceptive_chart_2018.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Effective-Contraceptive-Use.pdf> 
-
-### Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents
-**Measure Description**   
-Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported: 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation,  2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity, 3. Percentage of patients with counseling for physical activity.   
-**Denominator**  
-Patients 3-17 years of age with at least one outpatient visit with a primary care physician (PCP) or an obstetrician/gynecologist (OB/GYN) during the measurement period.    
-**Required exclusions for denominator**   
- Patients who have a diagnosis of pregnancy during the measurement period or who were in hospice care during the measurement year.         
-**Numerator**  
-* Numerator 1: Patients who had a height, weight and body mass index (BMI) percentile recorded during the measurement period.
-* Numerator 2: Patients who had counseling for nutrition during a visit that occurs during the measurement period.
-* Numerator 3: Patients who had counseling for physical activity during a visit that occurs during the measurement period.  
-
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**  
-Start Date, End Date, and Records to Display Below     
-**Output**  
-Total denominator hits, total numerator hits, measure ratio (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/cco_adolescent_bmi_followup_chart.png)  
-**Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | date_of_service_exclusion | meets_denominator | meets_numerator1 | meets_numerator2 | meets_numerator3 | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Weight-Assessment-Counseling.pdf>  
-
-
-### Timeliness of Prenatal and Postpartum Care  
-**Measure Description**   
-Percentage of pregnant women who received a prenatal care visit within the first trimester or within 42 days of enrollment in Medicaid.  
-**Denominator**  
-All live birth deliveries between November 6 of the year prior to the measurement year, and November 5 of the measurement year, and the members of the organization who meet the continuous enrollment criteria.
-**Required exclusions for denominator**   
-See HEDIS® 2018 Technical Specifications for Health Plans (Volume 2) for details.  
-**Numerator**  
-A prenatal visit in the first trimester. Reliance Insight does not currently have the necessary data elements to perform enrollment logic.
-**Required exclusions for numerator**
-**Data Sources**  
-ADTs, CCDs, LABs, Encounters, Transcriptions, and Claims   
-**Input Parameters**  
-Start Date, End Date, and Records to Display Below     
-**Output**  
-Total denominator hits, total numerator hits, measure ratios (total numerator hits/total denominator hits), stacked bar chart of measure ratio, list of patients that meet denominator and numerator requirements.  
-OHA Format CSV Download, All Data CSV Download (contains all column headings below).  
-**Example Output**  
-![](pictures/cco_prenatal_postpartum_chart.png)    
-**Column Headings**  
-`mpid | patient_name | patient_date_of_birth | sex | patient_medicaid_id | meets_denominator | sending_facility_delivery | delivery_date | first_trimester_end | non_live_birth | sending_facility_num | prenatal_visit_provider | date_of_service_num | pregnancy_dx | meets_prenatal_numerator | sending_facility_pp | postpartum_visit_provider | meets_postpartum_numerator | measurement_period_begin | measurement_period_end`
-
-
-**Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Timeliness-Prenatal-Postpartum-Care.pdf>  
 
 ## QCDR Reports
 The Centers for Medicare & Medicaid Services (CMS) has accepted Reliance’s application to provide Qualified Clinical Data Registry (QCDR) for the 2018 performance period of the Merit-based Incentive Payment System (MIPS).   As the only authorized QCDR in Oregon, Reliance provides you with additional opportunities to optimize your EHR interface with Reliance and maximize your revenue.  
