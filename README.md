@@ -1612,15 +1612,16 @@ This report outputs the prevalence of SDOH-related [codes](#clinical-codes-for-s
 *  Breakdown of Messages with SDOH Codes By Record Type.  
 *  Top 25 Breakdown of Messages with SDOH Codes By Patient Zip.  
 *  Detailed table of all clinical messages with SDOH codes.  
+
 **Data Sources**  
-ADTs, Labs, CCDs 
+ADTs, Labs, CCDs   
 **Input Parameters**   
 Show Patient Level Detail (checkbox), Start Date (DOS), End Date (DOS), and Records to Display Below  
 **Output**  
 List of patient records with an SDOH code present.  
 
 All Data CSV Download (contains all column headings below)  
-**Example Output**  
+
 **Column Headings**  
 `mpid_CHR | patient_full_name | sending_facility | msgid | record_type | patient_zip | date_of_service_denom`  
 
@@ -1629,14 +1630,14 @@ All Data CSV Download (contains all column headings below)
 Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity). Returns the sending facility, date of service, and numerator status (1 or 0) among several SDOH risk domains: financial, housing, food, transportation, and social. The report looks only for specific ICD-10 and SNOMED codes that have been identified by SIREN to encode SDOH risk factors.
  
 **Data Sources**  
-ADTs, Labs, CCDs 
+ADTs, Labs, CCDs   
 **Input Parameters**   
 Start Date (DOS), End Date (DOS), Show Patient Level Detail (checkbox), Records to Display Below  
 **Output**  
 List of patients in the initial population and their numerator status per social risk factor.
 
 All Data CSV Download (contains all column headings below)  
-**Example Output**  
+
 **Column Headings**  
 `mpid | patient_name | medicaid_id | patient_date_of_birth | patient_current_age | sex | race | ethnicity | patient_language | marital status | patient_street_address | patient_city | patient_state | patient_zip | provider_name | sending_facility_financial | date_of_service_financial | financial_numerator | sending_facility_food | date_of_service_food | food_numerator | sending_facility_housing | date_of_service_housing | housing_numerator | sending_facility_transportation | date_of_service_transportation | transportation_numerator | sending_facility_social | date_of_service_social | social_numerator | measurement_period_begin | measurement_period_end`  
 
