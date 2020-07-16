@@ -1604,7 +1604,7 @@ As more providers and EHR vendors are able to encode social risk factor informat
 
 ### SDOH Code Prevelance
 **Measure Description**  
-This report outputs the prevalence of SDOH-related [codes](#clinical-codes-for-sdoh-code-prevalence-report) (as defined by the [latest SIREN compendium](https://sirenetwork.ucsf.edu/tools-resources/resources/compendium-medical-terminology-codes-social-risk-factors)) within the measurement period as defined by Date of Service:  
+This report outputs the prevalence of SDOH-related [codes](#clinical-codes-utilized-in-sdoh-code-prevalence-report) (as defined by the [latest SIREN compendium](https://sirenetwork.ucsf.edu/tools-resources/resources/compendium-medical-terminology-codes-social-risk-factors)) within the measurement period as defined by Date of Service:  
 * Total Patients With SDOH-related codes.  
 *  Total Clinical Msgs With SDOH-related codes.  
 *  Unique Patients and Number of Clinical Msgs with SDOH-related codes by Month.  
