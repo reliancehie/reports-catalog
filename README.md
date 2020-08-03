@@ -158,21 +158,25 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | Report Name    | Description               |
 | -------------  |-------------              |
 | COVID19 Antibody Results | COVID19 Antibody Results	Aggregates COVID19-specific antibody testing results in the Reliance data set. |
-|[COVID19 Symptoms & Comorbidities](#covid-19-symptoms-with-comorbidities)| COVID19 Symptoms & Comorbidities Identifies patients with symptoms related to COVID-19, along with demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease. |
-| [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate screening, brief intervention, and referral to treatment (SBIRT) for alcohol or other substance abuse. |
-| [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
-| [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c greater than the user defined threshold (Default: 7.0%). |
-| [Homeless](#homeless-1) | This report generates a list of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship and variations of text and standard code set identification extracted from transcribed clinical records. |
-| [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure is greater than the user defined threshold (Default: 125/90mmHg).. |
-| [Depression Screen](#depression-screen) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
-| [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> |
-| [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
-| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |
-| [Opioid Use + Positive Pregnancy](#pregnancy-with-opioid-abuse) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
-| [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
-| [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
+| [COVID19 Symptoms & Comorbidities](#covid-19-symptoms-with-comorbidities)| Identifies patients with symptoms related to COVID-19, along with demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease. |
+| [COVID19 Lab Results](#covid-19-lab-results)|Lab results specific to COVID-19, along with demographic information.  |
+| [Current Patient List](#current-patient-list) | Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients. |
+| [Depression Screen](#depression-screen) | Patients aged 12 and older screened for clinical depression using an age-appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
+| [Diabetes Management](#diabetes-management) | Patients 18-75 years of age who had hemoglobin A1c greater than the user-defined threshold (Default: 7.0%). |
+| [ED visits](#ed-visits) | List of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED.|
 | [HIV](#hiv) | This report identifies patients that may be HIV positive. UMLS coding concept: 2.16.840.1.113883.3.464.1003.120.12.1003 |
-| [Hospital Discharge](#hospital-discharge) | The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and patient class is inpatient or Emergency to identify patient discharges.  |
+| [Homeless](#homeless-1) | List of potentially homeless patients identified by annotations made by healthcare providers, a given home addresses of a hospital, homeless shelter or place of worship, and variations of text and standard code set identification extracted from transcribed clinical records. |
+| [Hospital Discharge](#hospital-discharge) | Hospital Discharge	Identifies patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event and the patient class is "inpatient" or "Emergency" to identify patient discharges.  |
+| [Hypertension](#hypertension) | Patients 18-85 years of age whose blood pressure is greater than the user-defined threshold (Default: 125/90mmHg).|
+| [Lab results](#lab-results) | Identifies if patient results are available for viewing. |
+| [Patient Contact Info](#patient-contact-info) | This report returns a list of each patient's latest contact information, their most common address, and their most common phone number present in Reliance data. The patient list is based on the user's patient population for their specific security set (see [current patient](#current-patient-list) list below). |
+| [Positive Pregnancy](#positive-pregnancy) | Real-time identification of pregnant population |
+| [Positive Pregnancy w/Opioid Dx](#pregnancy-with-opioid-abuse) | Provides a list of patients with a positive pregnancy screening and a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 |
+| [Opioid Use](#opioid-abuse) | Identifies patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
+| [Readmissions](#30-day-re-admit) | List of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
+| [SBIRT](#alcohol-and-drug-misuse-sbirt) | Patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
+| [Tobacco](#tobacco) | Patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
+
 
 ## [I. Social Determinants of Health Reports](#notification-reports)
 | Report Name    | Description               |
