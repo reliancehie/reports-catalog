@@ -6,7 +6,7 @@
 In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released two reports, available to all Reliance data contributors in the Notifications Dashboard, in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus.  
 
 The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities) identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities.   
-  
+
 The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab results specific to COVID-19 infection. The report searches the Reliance dataset for relevant results regardless of whether an infection is detected or otherwise. Patient demographics and test information are included for each result. Report filters are also included for:  
 
 * Result Type (LAB, MICRO, BLB, PTH, RAD)
@@ -15,10 +15,10 @@ The [*COVID-19 Lab Results Report*](#covid-19-lab-results) identifies lab result
 * State (ALL STATES and states by 2 letter abbreviation)
 * Include Transcriptions (checkbox)
 
-Having the most current contact information for patients and members is especially critical during the outbreak. 
+Having the most current contact information for patients and members is especially critical during the outbreak.
 
 The [*Patient Contact Info Report*](#patient-contact-info), now available on all Insight dashboards, searches the Reliance dataset for the latest contact information available for patients such as primary address and phone, next of kin phone, and email. For each data element, the date of service from the source is also listed so users understand how contemporary the information is.
-  
+
 The Reliance Team would like to re-emphasize that COVID-19 situation is rapidly evolving, along with the quantity and content of clinical data we are receiving from the community.
 We will continue to rapidly iterate on this reporting as we receive input and perform additional data validation. For examples of what other [SHIEC](https://strategichie.com/) HIEs nationally are doing click [here](https://strategichie.com/wp-content/uploads/2020/03/SHIEC_COVID-19_one-pager-Ppt-12-Merged-3-27-20-FINAL-1.pdf). Here are some additional data elements we are planning or considering (either in the current report or in other views/reports):
 
@@ -43,7 +43,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 **I. [Social Determinants of Health (SDOH) Reports](#i-social-determinants-of-health-reports)**  
 **J. [Appendix](#j-appendix)**  	
 
-### Click on a report name below for a detailed description 
+### Click on a report name below for a detailed description
 
 ## [A. OHA 2020 CCO Incentive and Performance Reports](#oha-2019-cco-incentive-and-performance-reports)
 | Report Name    | Description               |
@@ -114,7 +114,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | Report Name    | Description               |
 | -------------  |-------------              |
 | [Cervical Cancer Screening](#) |	**IN PROGRESS** <br/> Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 1) Women age 21-64 who had cervical cytology performed every 3 years 2) Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  |
-| [Childhood Immunization Status](#childhood-immunization-status-cms) |  Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  | 
+| [Childhood Immunization Status](#childhood-immunization-status-cms) |  Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP); three polio (IPV), one measles, mumps and rubella (MMR); three H influenza type B (HiB); three hepatitis B (Hep B); one chicken pox (VZV); four pneumococcal conjugate (PCV); one hepatitis A (Hep A); two or three rotavirus (RV); and two influenza (flu) vaccines by their second birthday.  |
 | [Colorectal Cancer Screening](#) | **IN PROGRESS** <br/> Percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer. |  
 | [Controlling High Blood Pressure](#) | **IN PROGRESS** <br/> Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period |  
 | [Coronary Artery Disease (CAD): Lipid Therapy (in progress) ](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy   |  
@@ -136,7 +136,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan](#preventive-care-and-screening-body-mass-index-bmi-screening-and-follow-up-plan-2) | Percentage of patients aged 18 years and older with BMI documented during the most recent visit or within the previous six months to that visit and when the BMI is outside of normal parameters, a follow-up plan is documented during the visit or during the previous six months of that visit |  
 | [Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents](#weight-assessment-and-counseling-for-nutrition-and-physical-activity-for-children-and-adolescents-3)      |	**IN PROGRESS** <br/> Percentage of patients (age 3-17) who had an outpatient visit with a PCP or OB/GYN and who had evidence of the following during the measurement period. Three rates are reported. 1. Percentage of patients with height, weight, and body mass index (BMI) percentile documentation 2. Percentage of patients with counseling for nutrition 3. Percentage of patients with counseling for physical activity        |
 | [Controlling High Blood Pressure](#) | **IN PROGRESS** <br/> Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (<140/90mmHg) during the measurement period || [Deaths by Suicide ](#) | Percentage of consumers aged 12 years and older who died by suicide during the measurement year  |
-| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. | 
+| [Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention](#) | **IN PROGRESS** <br/> Percentage of patients aged 18 and older who were screened for tobacco use one or more times within 24 months and who received cessation counseling intervention if defined as a tobacco user. |
 | [Screening for Clinical Depression and Follow-Up Plan](#screening-for-clinical-depression-and-follow-up-plan)      |  Percentage of members (ages 12 and older) who had appropriate screening and follow-up planning for major depression.        |
 | [Suicide Attempts](#) | The percentage of consumers aged 12 years and older who attempted suicide during the measurement year, where the suicide attempt resulted in injury requiring medical services  |
 | [Follow-Up After Emergency Department Visit for Mental Health](#) | **IN PROGRESS** <br/> The percentage of emergency department (ED) visits for consumers 6 years of age and older with a primary diagnosis of mental illness, who had an outpatient visit, an intensive outpatient encounter or a partial hospitalization for mental illness. Two rates are reported: 1. The percentage of ED visits for which the consumer received follow-up within 30 days of the ED visit. 2. The percentage of ED visits for which the consumer received follow-up within 7 days of the ED visit.  |
@@ -148,8 +148,8 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Patient Contact Info](#patient-contact-info) | This report returns a list of each patient's latest contact information, their most common address, and their most common phone number present in Reliance data. The patient list is based on the user's patient population for their specific security set (see [current patient](#current-patient-list) list below). |
 | [Current Patient List](#current-patient-list) | Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients. |
 | [Hepatitis C Diagnosis and Hepatic Labs](#hepatitis-c-diagnosis-and-hepatic-labs) | Returns all patients with a diagnosis of Hepatitis C. Includes HIV status, most recent liver panel lab results, most recent fibrosis lab results, and calculated AST to Platelet Ratio Index (APRI Score).  |
-| [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  | 
-| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
+| [Diabetes by Type](#diabetes-by-type) | This report displays two outputs.  The first output is percentage of patients with type 1 diabetes who had hemoglobin A1c > 9.0% during the measurement period. The second output is percentage of patients with type 2 diabetes who had hemoglobin A1c > 9.0% during the measurement period.  |
+| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |
 | [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
 | [Sexual Orientation and Gender Identity](#sexual-orientation-and-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
@@ -157,6 +157,8 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 ## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
 | -------------  |-------------              |
+| COVID19 Antibody Results | COVID19 Antibody Results	Aggregates COVID19-specific antibody testing results in the Reliance data set. |
+|[COVID19 Symptoms & Comorbidities](#covid-19-symptoms-with-comorbidities)| COVID19 Symptoms & Comorbidities Identifies patients with symptoms related to COVID-19, along with demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease. |
 | [Alcohol and Drug Misuse (SBIRT)](#alcohol-and-drug-misuse-sbirt) | Provides a list of patients aged 12 and older who received appropriate screening, brief intervention, and referral to treatment (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | This report provides a list of patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
 | [Diabetes Management](#diabetes-management) | Patients 18-75 years of age with who had hemoglobin A1c greater than the user defined threshold (Default: 7.0%). |
@@ -165,7 +167,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Depression Screen](#depression-screen) | This report identifies patients aged 12 and older who were screened for clinical depression using an age appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
 | [ED visits](#ed-visits) | This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2018-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> |
 | [>30 day re-admit](#30-day-re-admit) | This report generates a list of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
-| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population | 
+| [Positive Pregnancy](#positive-pregnancy) | Real time identification of pregnant population |
 | [Opioid Use + Positive Pregnancy](#pregnancy-with-opioid-abuse) | The purpose of this report is to identify patients with a positive pregnancy screening and have a diagnosis of opioid abuse. UMLS coding concepts: 2.16.840.1.113883.3.666.5.1595 | 2.16.840.1.113883.3.464.1003.106.12.1004 |
 | [Alerts for lab results](#lab-results) | The purpose of this report is to identify if patient results are available for viewing. |
 | [Opioid Use](#opioid-abuse) | The purpose of this report is to identify patients with a diagnosis of opioid abuse. UMLS coding concept: 2.16.840.1.113883.3.464.1003.106.12.1004 |
@@ -181,7 +183,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 ## [J. Appendix](#appendix)
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
- 
+
 
 ## OHA 2020 CCO Incentive and Performance Reports  
 The Oregon Health Authority (OHA) uses quality health metrics to show how well Coordinated Care Organizations (CCOs) are improving care, making quality care accessible, eliminating health disparities, and curbing the rising cost of health care. These outcome and quality measures are developed by the OHA Metrics and Scoring Committee and can be found here:   
@@ -218,11 +220,11 @@ CSV export of all immunizations per patient by date of service. This export incl
 **Example Output**  
 ![](pictures/childimms_chart_2020.png)  
 **Column Headings**  
-`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
-        sending_facility | date_of_service_denom | meets_denominator | 
-        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
-        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
-        meets_denominator_exclusion | 
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id |
+        sending_facility | date_of_service_denom | meets_denominator |
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule |
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion |
+        meets_denominator_exclusion |
         date_of_service_dtap |dtap_num | dtap count |
         date_of_service_ipv | ipv_num | ipv count |
         date_of_service_mmr | mmr_num | mmr count |
@@ -268,11 +270,11 @@ CSV export of all immunizations per patient by date of service. This export incl
 **Example Output**  
 ![](pictures/adol_imms_2020.png)  
 **Column Headings**  
-`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
-        sending_facility | date_of_service_denom | meets_denominator | 
-        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
-        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
-        meets_denominator_exclusion | 
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id |
+        sending_facility | date_of_service_denom | meets_denominator |
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule |
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion |
+        meets_denominator_exclusion |
         date_of_service_meningococcal |meningococcal_num | meningococcal count |
         date_of_service_tdap | tdap_num | tdap count |
         date_of_service_hpv | hpv_num | hpv count |
@@ -408,11 +410,11 @@ CSV export of all immunizations per patient by date of service. This export incl
 ![](pictures/childimms_chart_2019.png)
 
 **Column Headings**  
-`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | 
-        sending_facility | date_of_service_denom | meets_denominator | 
-        | denom_record_type | date_of_service_alt_schedule | alternative_schedule | 
-        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion | 
-        meets_denominator_exclusion | 
+`mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id |
+        sending_facility | date_of_service_denom | meets_denominator |
+        | denom_record_type | date_of_service_alt_schedule | alternative_schedule |
+        date_of_service_refusal | vaccination_refusal | date_of_service_exclusion |
+        meets_denominator_exclusion |
         date_of_service_dtap |dtap_num | dtap count |
         date_of_service_ipv | ipv_num | ipv count |
         date_of_service_mmr | mmr_num | mmr count |
@@ -433,7 +435,7 @@ Bundled measure is intended to address both cessation benefits offered by CCOs a
 **Denominator**  
 Unique Medicaid members 13 years old or older by the beginning of the measurement year, who had a qualifying visit with the provider during the measurement period.  
 **Numerator**  
-Unique members age 13 years or older who had a qualifying visit with the provider during the measurement period, who have their smoking and/or tobacco use status recorded as structured data. 
+Unique members age 13 years or older who had a qualifying visit with the provider during the measurement period, who have their smoking and/or tobacco use status recorded as structured data.
 
 **Rate 2**   
 **Denominator**  
@@ -463,7 +465,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 ![](pictures/smoking_prevalence_chart_2019.png)  
 
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility | 
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id |sending_facility |
         date_of_service_qual_visit | date_of_service_num1 | date_of_service_num2 | date_of_service_num3 | provider_name | meets_smoke_denominator,
         meets_numerator | meets_numerator_status_1 | meets_numerator_status_2 | measurement_period_begin | measurement_period_end`
 
@@ -581,7 +583,7 @@ All patients aged 12 years and older before the beginning of the measurement per
 **Required exclusions for denominator**   
 Patients with active diagnosis for depression or diagnosis of bipolar disorder.  
 **Denominator Exceptions**  
-Any of the following criteria also remove patients from the denominator: 
+Any of the following criteria also remove patients from the denominator:
 * Patient reasons: Patient refuses to participate
 * Medical Reasons: Patient is in an urgent or emergent situation where time is of the essence and to delay treatment would jeopardize the patient’s health OR situations where the patient's functional capacity or motivation to improve may impact the accuracy of results of standardized depression assessment tools. For example: certain court appointed cases or cases of delirium
 status.  
@@ -598,12 +600,12 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 **Example Output**  
 ![](pictures/depression_chart_2019.png)  
 **Column Headings**  
-`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_qual_visit | 
-        meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen | 
+`mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | provider_name | date_of_service_qual_visit |
+        meets_denominator | meets_denominator_exclusions_active | meets_denominator_exclusions_bipolar | meets_denominator_exceptions | date_of_service_screen |numerator_screen |
         date_of_service_pos |meets_num_pos | date_of_service_pos_fol | meets_num_pos_fol | meets_numerator | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Depression-Screening.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Depression-Screening.pdf>
 
 ### Developmental Screening in the First 36 months of Life
 **Measure Description**   
@@ -627,7 +629,7 @@ OHA Format CSV Download, All Data CSV Download (contains all column headings bel
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator | meets_numerator | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Developmental-Screening.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Developmental-Screening.pdf>
 
 ### Diabetes: HbA1c Poor Control
 **Measure Description**  
@@ -681,7 +683,7 @@ Export all ED Visits by MPID CSV Download, OHA Format CSV Download, All Data CSV
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | provider_name | enrollment_months | ED_count | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Disparity-Measures-ED-Utilization-Among-Members-Experiencing-Mental-Illness.pdf>
 
 ### Effective contraceptive use among women at risk of unintended pregnancy
 **Measure Description**   
@@ -712,7 +714,7 @@ Individual long-acting reversible contraceptives from numerator hits are identif
 `mpid_CHR | patient_name | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | meets_denominator |meets_denominator_exclusion | meets_numerator | meets_numerator_exclusion | provider_name | sterilization | iud | hormonal_implant | injectable | oral_contraceptive | patch | vaginal_ring | diaphragm | surveillance | unspecified | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Effective-Contraceptive-Use.pdf> 
+<https://www.oregon.gov/oha/HPA/ANALYTICS/CCOMetrics/2019-Effective-Contraceptive-Use.pdf>
 
 ### Oral Evaluation for Adults with Diabetes  
 **Measure Description**  
@@ -889,7 +891,7 @@ Patients who are pregnant; or receiving palliative carem; or who refuse measurem
 **Denominator Exceptions**  
 
 Patients with a documented Medical Reason:  
-* Elderly Patients (65 or older) for whom weight reduction/weight gain would complicate other underlying health conditions such as the following examples: 
+* Elderly Patients (65 or older) for whom weight reduction/weight gain would complicate other underlying health conditions such as the following examples:
      * Illness or physical disability
      * Mental illness, dementia, confusion
      * Nutritional deficiency, such as Vitamin/mineral deficiency
@@ -986,8 +988,8 @@ All Data CSV Download (contains all column headings below).
 
 ### Cervical Cancer Screening
 **Measure Description**
-Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: 
-* Women age 21-64 who had cervical cytology performed every 3 years 
+Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria:
+* Women age 21-64 who had cervical cytology performed every 3 years
 * Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years  
 
 **Denominator**  
@@ -1012,7 +1014,7 @@ All Data CSV Download (contains all column headings below)
 `mpid_CHR | patient_date_of_birth | sex | patient_medicaid_id | sending_facility | date_of_service_denom | date_of_service_num | date_of_service_denom_excl | meets_denominator | meets_numerator | meets_denominator_exclusion | provider_name | measurement_period_begin | measurement_period_end`
 
 **Link to Measure Specifications**  
-<https://ecqi.healthit.gov/ecqm/measures/cms124v5> 
+<https://ecqi.healthit.gov/ecqm/measures/cms124v5>
 
 ## HEDIS Reports
 HEDIS is a tool used by more than 90 percent of America's health plans to measure performance on important dimensions of care and service. Because so many plans collect HEDIS data, and because the measures are so specifically defined, HEDIS makes it possible to compare the performance of health plans on an apples-to-apples basis. Health plans also use HEDIS results themselves to see where they need to focus their improvement efforts.  
@@ -1085,7 +1087,7 @@ All Data CSV Download (contains all column headings below) and Immunization DOS 
 ![](pictures/cms_childimms_chart.png)
 
 **Column Headings**  
-`mpid | patient_date_of_birth | sex | patient_medicaid_id | 
+`mpid | patient_date_of_birth | sex | patient_medicaid_id |
         sending_facility | date_of_service_denom | meets_denominator |
         date_of_service_dtap |dtap_num | dtap count | dtap_dx |
         date_of_service_ipv | ipv_num | ipv count | ipv_dx |
@@ -1113,7 +1115,7 @@ Patients who are pregnant; or receiving palliative carem; or who refuse measurem
 **Denominator Exceptions**  
 
 Patients with a documented Medical Reason:  
-* Elderly Patients (65 or older) for whom weight reduction/weight gain would complicate other underlying health conditions such as the following examples: 
+* Elderly Patients (65 or older) for whom weight reduction/weight gain would complicate other underlying health conditions such as the following examples:
      * Illness or physical disability
      * Mental illness, dementia, confusion
      * Nutritional deficiency, such as Vitamin/mineral deficiency
@@ -1204,7 +1206,7 @@ List of current patients with contact information fields
 All Data CSV Download (contains all column headings below).  
 **Column Headings**  
 `mpid | medicaid_id | patient_full_name | date_of_service | patient_street_address | patient_city | patient_state | patient_zip | latest_phone_date | patient_phone | patient_alt_phone_date | patient_alt_phone | next_of_kin_phone_date | next_of_kin_phone | patient_email_date | patient_email | address_mode (most common) | phone_mode (most common)`
-  
+
 ### Current Patient List  
 **Measure Description**  
 Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients.   
@@ -1266,7 +1268,7 @@ Type I and Type II All Data CSV (contains all column headings below), Type I Dia
 
 ### Positive Pregnancy
 **Measure Description**  
-Patients that present with any sort of pregnancy diagnosis. Diagnosis set is defined by UMLS (2.16.840.1.113883.3.600.1.1623). Pregnancy terminations, miscarriages and live birth are excluded. 
+Patients that present with any sort of pregnancy diagnosis. Diagnosis set is defined by UMLS (2.16.840.1.113883.3.600.1.1623). Pregnancy terminations, miscarriages and live birth are excluded.
 **Data Sources**  
 ADTs, CCDs, LABs, and Encounters   
 **Input Parameters**   
@@ -1330,7 +1332,7 @@ All Data CSV Download (contains all column headings below)
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ## Notification Reports  
-These reports are to be included for all ADT contributors with access to the Reliance Community Health Record. 
+These reports are to be included for all ADT contributors with access to the Reliance Community Health Record.
 
 ### COVID-19 Symptoms with Comorbidities
 **Measure Description**  
@@ -1345,7 +1347,7 @@ HRV CODES: 1990, 1988
 ADTs, CCDs, LABs, Claims and Encounters   
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
- 
+
 All Data CSV Download (contains all column headings below)  
 
 **Column Headings**  
@@ -1367,7 +1369,7 @@ LABs and TRANSCRIBED Results
 * Final Status (FINAL, PRELIMINARY, CORRECTED, INCOMPLETE, UNMAPPED)
 * State (ALL STATES and states by 2 letter abbreviation)
 * Inlcude Transcriptions (checkbox)
- 
+
 All Data CSV Download (contains all column headings below)  
 
 **Column Headings**  
@@ -1446,7 +1448,7 @@ ADTs, CCDs, LABs, TRANs, Claims and Encounters
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
-List of patients 18-85 years of age whose blood pressure exceeded 125/90mmHg. 
+List of patients 18-85 years of age whose blood pressure exceeded 125/90mmHg.
 
 All Data CSV Download (contains all column headings below)  
 **Example Output**  
@@ -1473,7 +1475,7 @@ All Data CSV Download (contains all column headings below)
 ### ED Visits
 **Measure Description**  
 This report provides a list of patients that have visited the Emergency Department. The output shows how many times a patient has visited the ED and provides a column to show if a patient has any indication of mental illness. Mental illness is defined according to the Oregon Health Authority Members Experiencing Mental Illness Value Set that is defined here:  <https://www.oregon.gov/oha/HPA/ANALYTICS/CCOData/disparity-ED-utilization-mental-illness-2018.pdf>  
-  
+
 The output of this report is ordered by patients with the most ED visits and most recent admit times.  
 **Data Sources**  
 ADTs, CCDs, LABs, TRANs, Claims and Encounters   
@@ -1584,10 +1586,10 @@ All Data CSV Download (contains all column headings below)
 
 ### Hospital Discharge
 **Measure Description**  
-The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event 
+The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event
 and patient class is Inpatient or Emergency to identify patient discharges.  
 **Data Sources**  
-ADTs 
+ADTs
 **Input Parameters**   
 Start Date, End Date, and Records to Display Below  
 **Output**  
@@ -1599,8 +1601,8 @@ All Data CSV Download (contains all column headings below)
 **Column Headings**  
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_street_address | patient_age | patient_sex | discharge_time | diagnosis_info | attending_provider | primary_care_provider'`
 
-## Social Determinants of Health Reports 
-As more providers and EHR vendors are able to encode social risk factor information Reliance is able to extract SDOH concepts from HL7, CCDA, and claims data. Our dataset continues to grow and enrich with SDOH data types and sources. 
+## Social Determinants of Health Reports
+As more providers and EHR vendors are able to encode social risk factor information Reliance is able to extract SDOH concepts from HL7, CCDA, and claims data. Our dataset continues to grow and enrich with SDOH data types and sources.
 
 ### SDOH Code Prevelance
 **Measure Description**  
@@ -1628,7 +1630,7 @@ All Data CSV Download (contains all column headings below)
 ### SDOH Disparities  
 **Measure Description**  
 Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity). Returns the sending facility, date of service, and numerator status (1 or 0) among several SDOH risk domains: financial, housing, food, transportation, and social. The report looks only for specific ICD-10 and SNOMED codes that have been identified by SIREN to encode SDOH risk factors.
- 
+
 **Data Sources**  
 ADTs, Labs, CCDs   
 **Input Parameters**   
@@ -1657,7 +1659,7 @@ Note that all grids and sections in the CHR are displayed in reverse chronologic
 **SNOMED Codes:**  
 (1602006, 2658000, 7584007, 9629004, 9906005, 10139004, 10586006, 12347001, 13117000, 13834002, 16071307, 18676001, 22575004, 22759000, 23996006, 31332003, 33758007, 36877009, 37216006, 37240003, 41905003, 41920009, 44943004, 46017004, 49919000, 55539008, 64299003, 64816001, 65421000, 66615003, 67197000, 71099008, 74715005, 77565007, 79365001, 80123004, 85483007, 87852001, 95925006, 95926007, 102497008, 105411000, 105412007, 105413002, 105414008, 105418006, 105422001, 105423006, 105477005, 105486000, 105491004, 105492006, 105495008, 105497000, 105508004, 105514006, 105526001, 105527005, 105532006, 105535008, 105536009, 105568001, 105577008, 110480002, 129698004, 129891007, 134280000, 160686000, 160687009, 160690003, 160695008, 160696009, 160700001, 160702009, 160703004, 160706007, 160715000, 160716004, 160725005, 160729004, 160752000, 160753005, 160754004, 160788005, 160791005, 160802003, 160810002, 160825002, 160848007, 160860008, 160862000, 160863005, 160875000, 160899000, 160900005, 160902002, 160903007, 160904001, 160909006, 160933000, 160935007, 160936008, 160937004, 160941000, 160942007, 160943002, 161022007, 161023002, 161036002, 161051006, 161062006, 161112004, 161114003, 161131005, 161132003, 161133008, 161140009, 161147007, 161148002, 161154001, 161155000, 162218007, 170996007, 171001002, 171002009, 171004005, 182891003, 183103000, 183349001, 183351002, 183353004, 183418007, 183421009, 183681001, 185955000, 185955000, 185956004, 185956004, 185957008, 185957008, 185960001, 185961002, 213012007, 213013002, 217634009, 217635005, 223433009, 224166006, 224169004, 224170003, 224171004, 224172006, 224174007, 224175008, 224176009, 224177000, 224187001, 224188006, 224190007, 224191006, 224199008, 224226001, 224229008, 224231004, 224232006, 224233001, 224234007, 224239002, 224241001, 224248007, 224251000, 224252007, 224253002, 224254008, 224256005, 224257001, 224258006, 224259003, 224260008, 224262000, 224271009, 224290001, 224291002, 224294005, 224295006, 224313002, 224321008, 224325004, 224332008, 224333003, 224336006, 224339004, 224340002, 224342005, 224357003, 224358008, 224365000, 224368003, 224375002, 224376001, 224381005, 224382003, 224384002, 224385001, 224386000, 224402001, 224459001, 224461005, 224462003, 224465001, 224467009, 224468004, 224471007, 224474004, 224780008, 224897008, 225322005, 225329001, 225422009, 225521004, 225806000, 225828000, 226060000, 228136006, 228137002, 228138007, 228140002, 228615008, 228647003, 228651001, 229062007, 242039002, 243067002, 243070003, 243071004, 243071004, 243747004, 248052004, 248164005, 266935003, 266936002, 266939009, 266940006, 266944002, 266957005, 267076002, 275643002, 276050006, 276059007, 276065007, 276069001, 276070000, 276073003, 276074009, 276074009, 276075005, 276075005, 276091008, 276092001, 276096003, 276103000, 276104006, 276125006, 276126007, 276127003, 276128008, 276129000, 278838006, 281576008, 281662004, 281663009, 284477001, 285134002, 285840007, 286441005, 286442003, 286443008, 286444002, 286445001, 301029007, 301719009, 301720003, 301721004, 301722006, 301723001, 302124002, 302153001, 302256002, 302807005, 304639001, 306090001, 306151002, 306240005, 306366006, 306367002, 306977006, 307109002, 307110007, 309251006, 309252004, 309630000, 309683008, 310207003, 312051009, 312386004, 312616000, 312618004, 312619007, 312635000, 312651008, 313069005, 313070006, 313072003, 313073008, 313080005, 313082002, 313083007, 315043002, 315245004, 315594003, 315595002, 315600006, 361063004, 370881007, 370883005, 370884004, 370974004, 370975003, 370982004, 371006005, 371779005, 372058001, 372067001, 384743009, 384811003, 385721005, 385722003, 385723008, 385724002, 385726000, 385727009, 385759002, 385761006, 385766001, 385767005, 385877003, 385878008, 385879000, 385894001, 385983001, 385985008, 385990006, 386287001, 386306006, 386323002, 386442002, 386453008, 386458004, 386497007, 386498002, 390790000, 395094003, 397660003, 397756006, 397864009, 401333005, 404189009, 405187002, 405188007, 405189004, 405190008, 406130004, 406132007, 406133002, 406542000, 408364003, 408992000, 409059003, 409062000, 409065003, 410102001, 410235003, 410236002, 410237006, 410279000, 410287004, 410288009, 410292002, 410293007, 410296004, 410297008, 410300003, 410304007, 410314003, 410315002, 410318000, 410319008, 410320002, 410327004, 410328009, 410332003, 410333008, 410340009, 410341008, 410344000, 410351009, 410353007, 410363004, 410364005, 410365006, 410377001, 410381001, 410382008, 410387002, 410388007, 410391007, 410392000, 410395003, 410408009, 410414002, 410418004, 410422009, 410423004, 412732008, 413288008, 413301003, 413309001, 413323004, 413330005, 413332002, 413457006, 414418009, 414936000, 415185004, 415271004, 416142000, 416625007, 416898003, 416936003, 417427001, 418150003, 418635006, 419024006, 419482003, 419951006, 420066004, 420180008, 422423006, 422491004, 422551000, 422611005, 422649009, 422651008, 422716006, 422722002, 422761005, 422766000, 422786001, 422865007, 422869001, 422883004, 422913006, 422941005, 423049000, 423079007, 423115005, 423147000, 423170008, 423174004, 423238001, 423344000, 423402005, 423528005, 423593006, 423706007, 423785008, 423797009, 423798004, 423824003, 423859003, 423899000, 424029000, 424085009, 424300006, 424393004, 424423005, 424466003, 424509006, 424553001, 424573006, 424582000, 424629004, 424673000, 424673000, 424739004, 424839007, 424858003, 424860001, 424994000, 425022003, 425111004, 425203001, 425209002, 425275009, 425726009, 428632006, 431027007, 431719007, 432527004, 438772002, 439908001, 441879005, 442084003, 442244004, 442347009, 443314009, 445075008, 445272000, 446497005, 446654005, 449892005, 473453008, 473462005, 697949003, 697950003, 697951004, 698631004, 698631004, 699230004, 700254002, 700506009, 702526004, 702562003, 702579009, 702954001, 703521002, 704103001, 704300009, 704372000, 704400005, 704421005, 704489009, 704658004, 706875005, 706879004, 706892001, 707087005, 707842005, 707843000, 709753004, 709758008, 709764001, 710127000, 710149006, 710156000, 710351004, 710742009, 710769005, 710822009, 710897005, 710910007, 710911006, 710913009, 710921003, 710924006, 710925007, 710962009, 710998001, 711080006, 711115006, 711281004, 712739009, 712991000, 713059005, 713109004, 713458007, 713820002, 714852007, 714854008, 714858006, 714859003, 716421004, 716470000, 716565009, 716730006, 716736000, 718532008, 720025009, 720428004, 720684005, 720741001, 720823003, 733423003, 733817003, 741062008, 5311000175103, 5371000175108, 5491000175103, 5501000175107, 5521000175101, 5731000175109, 53521000124104, 61601000119107, 125161000119103, 149141000119102, 166491000119100, 166491000119100, 207871000119100, 237461000119103, 288441000119106, 288521000119101, 288561000119106, 288671000119101, 288681000119103, 289431000119109, 428481000124106, 432681000124109, 441151000124104, 445061000124103, 445071000124105, 445081000124108, 445091000124106, 445281000124101, 450011000124105, 450901000124108, 451601000124109, 451611000124107, 452801000124103, 453151000124103, 453161000124101, 453181000124106, 453531000124101, 453681000124101, 453761000124102, 453771000124109, 453821000124101, 454061000124102, 454181000124108, 454681000124103, 454861000124109, 10756261000119102, 10756301000119105, 10760941000119102, 10760981000119107, 10761021000119102, 10761061000119107, 10987541000119104, 12242871000119109, 12399131000119105, 12399291000119101, 15936461000119100, 15936461000119100, 16305561000119106, 19260001000004109, 19270001000004103)  
 
-### Glossary 
+### Glossary
 __Denominator__    
 The lower part of a fraction used to calculate a rate, proportion, or ratio. The denominator is associated with a given patient population that may be counted as eligible to meet a measure’s inclusion requirements.  The denominator is a subset of the initial patient population (IPP) and might be the same as the IPP.  
 __Exceptions__    
@@ -1672,5 +1674,3 @@ __Numerator__
 A subset of the Denominator. The numerator criteria are the processes or outcomes expected for each patient, procedure, or other unit of measurement defined in the denominator.    
 __Performance Ratio__    
 Performance Ratio = Numerator Count / (Denominator Count – Exclusion Count – Exception Count)  
-
-
