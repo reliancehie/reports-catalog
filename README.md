@@ -1337,18 +1337,18 @@ All Data CSV Download (contains all column headings below)
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ### Encounters Report
-**Measure Description**  
-This report shows a patient's primary care provider changes based on the input time parameters.
-**Data Sources**  
-ADTs, CCDs, Claims and Encounters
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-List of patients sorted by encounter date, showing the primary care provider on record
+**Measure Description**   
+This report shows a patient's primary care provider changes based on the input time parameters.    
+**Data Sources**   
+ADTs, CCDs, Claims and Encounters    
+**Input Parameters**    
+Start Date, End Date, and Records to Display Below     
+**Output**    
+List of patients sorted by encounter date, showing the primary care provider on record     
 
-All Data CSV Download   
+All Data CSV Download     
  
-**Column Headings**  
+**Column Headings**     
 `mpid_CHR	| patient_first_name |	patient_last_name |	record_primary_care_provider	| record_primary_care_provider_id	| diagnosis_info	| sending_facility	| record_type	date_of_service	| assigned_location	| visit_number	| patient_class |	provider_name |	patient_local_id |	patient_date_of_birth |	patient_sex |	patient_city |	patient_street_address | patient_zip	uri`
 
 ## Notification Reports  
