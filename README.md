@@ -153,7 +153,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Homeless](#homeless) | Real time identification of homeless population based on clinical codes and text search |
 | [Food Insecurity](#food-insecurity) | Real time identification of population with indications of food insecurity based on clinical codes and text search |
 | [Sexual Orientation and Gender Identity](#sexual-orientation-and-gender-identity) | The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. |
-| [Encounters Report](#encounters-report) | This report shows a patient's primary care provider changes based on the input time parameters. |
+| [Encounters Report](#encounters-report) | This report shows patient encounters and primary care provider changes for a user's population based on the input time parameters. |
 
 ## [H. Notification Reports](#notification-reports)
 | Report Name    | Description               |
@@ -1338,7 +1338,7 @@ All Data CSV Download (contains all column headings below)
 
 ### Encounters Report
 **Measure Description**   
-This report shows a patient's primary care provider changes based on the input time parameters.    
+This report shows patient encounters and primary care provider changes for a user's population based on the input time parameters.   
 **Data Sources**   
 ADTs, CCDs, Claims and Patient Summary    
 **Input Parameters**    
