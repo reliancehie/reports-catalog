@@ -1340,7 +1340,7 @@ All Data CSV Download (contains all column headings below)
 **Measure Description**   
 This report shows a patient's primary care provider changes based on the input time parameters.    
 **Data Sources**   
-ADTs, CCDs, Claims and Encounters    
+ADTs, CCDs, Claims and Patient Summary    
 **Input Parameters**    
 Start Date, End Date, and Records to Display Below      
 **Output**     
