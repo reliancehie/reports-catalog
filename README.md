@@ -1321,19 +1321,19 @@ All Data CSV Download (contains all column headings below)
 `mpid | sending_facility | patient_date_of_birth | sex | patient_medicaid_id | patient_name | patient_phone | provider_name | date_of_service | measurement_period_begin | measurement_period_end`
 
 ### Sexual Orientation and Gender Identity
-**Measure Description**  
-The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. Please note this report only returns patients that have reported their preferences in their medical records.
-**Data Sources**  
-ADTs, CCDs
-**Input Parameters**   
-Start Date, End Date, and Records to Display Below  
-**Output**  
-List of patients with their gender identity and a list of patients with their sexual orientation.
+**Measure Description**    
+The purpose of this report is to identify patients sexual orientation and or gender identity. We use a combination of text, diagnosis, loinc and snomed codes searches to identify preferences. Please note this report only returns patients that have reported their preferences in their medical records.    
+**Data Sources**    
+ADTs, CCDs   
+**Input Parameters**      
+Start Date, End Date, and Records to Display Below      
+**Output**     
+List of patients with their gender identity and a list of patients with their sexual orientation.      
 
-All Data CSV Download (contains all column headings below)  
-**Example Output**  
-![](pictures/sexual_preference_gender_identity.png)  
-**Column Headings**  
+All Data CSV Download (contains all column headings below)    
+**Example Output**     
+![](pictures/sexual_preference_gender_identity.png)     
+**Column Headings**      
 `mpid | sending_facility | medicaid_id | patient_name | patient_date_of_birth | patient_age | patient_sex | sexual_orientation | date_of_service`
 
 ### Encounters Report
@@ -1346,7 +1346,7 @@ Start Date, End Date, and Records to Display Below
 **Output**    
 List of patients sorted by encounter date, showing the primary care provider on record     
 
-All Data CSV Download     
+All Data CSV Download (contains column headings below sorted by patient)    
  
 **Column Headings**     
 `mpid_CHR	| patient_first_name |	patient_last_name |	record_primary_care_provider	| record_primary_care_provider_id	| diagnosis_info	| sending_facility	| record_type	date_of_service	| assigned_location	| visit_number	| patient_class |	provider_name |	patient_local_id |	patient_date_of_birth |	patient_sex |	patient_city |	patient_street_address | patient_zip	uri`
