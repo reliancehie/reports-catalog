@@ -3,7 +3,9 @@
 # Reliance Insight Report Catalog
 
 ### NOTICE ###
-In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released two reports, available to all Reliance data contributors in the Notifications Dashboard, in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus.  
+In response to the COVID-19 crisis, Reliance is working to help our stakeholders with actionable data. We have released several reports, available to all Reliance data contributors in the Notifications Dashboard, in the hopes that accurate data can help coordinate care to those in need and help slow the spread of the virus.  
+
+The [*COVID-19 Vaccinations Report*](#covid-19-vaccinations) aggregates COVID-19 vaccinations within the Reliance Clinical Data Repository. The report utilizes near-real-time data from our [EHR data sources](https://reliancehie.org/data-contributors/) (not ALERT-IIS) and the [Patient Centered Data Home](https://strategichie.com/patient-centered-data-home/) PCDH program (for out-of-state vaccination data). The report utilizes a combination of Procedure (CPT) and Immunization (CVX) codes to identify vaccinations. One of the goals of the report is to help with vaccination prioritization decision making by returning helpful demographic, medical risk factor, and social risk factor information.  
 
 The [*COVID-19 Symptoms and Comorbidities Report*](#covid-19-symptoms-with-comorbidities) identifies patients who have symptoms (or other coded concepts) that qualify them as potentially afflicted with the COVID-19 disease. The report is meant to be a “wide-net” identification report to help Reliance stakeholders aggregate data from the community and see in one view who may have COVID-19. It then appends useful data about those patients to coordinate appropriate care. Some examples of those additional data elements are: demographic information including address, clinical message info (date of service, record type, sending facility, encounter temperature reading if available, COVID-19 related DX code), and whether the patient has a previous diagnosis of several known comorbidities.   
 
@@ -161,6 +163,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | COVID19 Antibody Results | COVID19 Antibody Results	Aggregates COVID19-specific antibody testing results in the Reliance data set. |
 | [COVID19 Symptoms & Comorbidities](#covid-19-symptoms-with-comorbidities)| Identifies patients with symptoms related to COVID-19, along with demographic information, and the relevant DX code found in the record. For each of those identified patients, it also looks back in the longitudinal record for whether the patient has a diagnosis of the following comorbidities: diabetes, hypertension, vascular disease, respiratory failure, and pulmonary disease. |
 | [COVID19 Lab Results](#covid-19-lab-results)|Lab results specific to COVID-19, along with demographic information.  |
+| [COVID19 Vaccinations](#vaccination) | COVID19 vaccinations in the Reliance Clinical Data Repository. |
 | [Current Patient List](#current-patient-list) | Identifies current patient population for the user's specific security set and may also be subset to report only currently eligible Medicaid patients. |
 | [Depression Screen](#depression-screen) | Patients aged 12 and older screened for clinical depression using an age-appropriate standardized depression screening tool but were missing follow-up on the date of the positive screen. |
 | [Diabetes Management](#diabetes-management) | Patients 18-75 years of age who had hemoglobin A1c greater than the user-defined threshold (Default: 7.0%). |
@@ -177,7 +180,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Readmissions](#30-day-re-admit) | List of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
 | [SBIRT](#alcohol-and-drug-misuse-sbirt) | Patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | Patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
-| [Vaccination](#vaccination) | COVID19 vaccination in the Reliance Clinical Data Repository. |
+
 
 
 ## [I. Social Determinants of Health Reports](#notification-reports)
@@ -1394,7 +1397,22 @@ LABs and TRANSCRIBED Results
 All Data CSV Download (contains all column headings below)  
 
 **Column Headings**  
-`mpid | sending_facility | medicaid_id |  patient_name | patient_date_of_birth | patient_age | patient_sex,patient_city,patient_state,patient_zip | date_of_service | lab_results_rawname | lab_results_normalized | result_name | result_status | result_type | attending | ordering`
+`mpid | sending_facility | medicaid_id |  patient_name | patient_date_of_birth | patient_age | patient_sex,patient_city,patient_state,patient_zip | date_of_service | lab_results_rawname | lab_results_normalized | result_name | result_status | result_type | attending | ordering`  
+
+### COVID-19 Vaccinations   
+**Measure Description**    
+This report aggregates COVID-19 vaccinations in the Reliance Clinical Data Repository.    
+**Data Sources**   
+ADTs, CCDs, Persona, Patient Summary  
+**Input Parameters**    
+Start Date, End Date, Include Medical Risk Factors, Include Social Risk Factors, and Records to Display Below    
+**Output**    
+List of COVID-19 vaccinations during the start and end date given. Each report row includes patient level and encounter data for the vaccination event. Optional outputs: 1) Medical Risk Factors (cancer, diabetes, hypertension, COPD, asthma, smoking, kidney, vascular disease, immunocompromised) and 2) Social Risk Factors (Financial, Food, Housing, Transportation, Social Insecurity)
+
+All Data CSV Download (contains all column headings below)    
+ 
+**Column Headings**    
+`mpid | patient_first_name | patient_last_name | plan_id | patient_local_id | patient_date_of_birth | patient_sex   | patient_ethnic_group | patient_race | patient_language | immunization_count | immunization_date | sending_facility | record_type   manufacturer | imm_procedure_code | immunization_code | primary_care_provider_id | primary_care_provider_record | patient_city | patient_street_address | patient_zip | uri`   
 
 ### Alcohol and Drug Misuse (SBIRT)
 **Measure Description**  
@@ -1427,22 +1445,7 @@ All Data CSV Download (contains all column headings below)
 **Example Output**  
 ![](pictures/tobacco_notification.png)  
 **Column Headings**  
-`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
-
-### Vaccination   
-**Measure Description**    
-This report aggregates COVID19 vaccinations in the Reliance Clinical Data Repository.    
-**Data Sources**   
-ADTs, CCDs, Persona, Patient Summary  
-**Input Parameters**    
-Start Date, End Date, Include Medical Risk Factors, Include Social Risk Factors, and Records to Display Below    
-**Output**    
-List of patients with associating reports indicating vaccination during the start and end date given.    
-
-All Data CSV Download (contains all column headings below)    
- 
-**Column Headings**    
-`mpid_CHR |	patient_first_name	| patient_last_name	| plan_id	| patient_local_id |	patient_date_of_birth	| patient_sex	| patient_ethnic_group	| patient_race	| patient_language	| immunization_count	| immunization_date	| sending_facility	| record_type	manufacturer	| imm_procedure_code	| immunization_code	| primary_care_provider_id |	primary_care_provider_record	| patient_city	| patient_street_address	| patient_zip	uri`   
+`mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`  
 
 ### Diabetes Management
 **Measure Description**  
