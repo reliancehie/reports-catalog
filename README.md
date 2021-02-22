@@ -177,6 +177,7 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [Readmissions](#30-day-re-admit) | List of readmissions within the measurement period that occurred less than 30 days before last discharge from a hospital. |
 | [SBIRT](#alcohol-and-drug-misuse-sbirt) | Patients aged 12 and older who received appropriate "screening, brief intervention, and referral to treatment" (SBIRT) for alcohol or other substance abuse. |
 | [Tobacco](#tobacco) | Patients aged 13 and older screened and positive for cigarette smoking and/or tobacco use. |
+| [Vaccination](#vaccination) | COVID19 vaccination in the Reliance Clinical Data Repository. |
 
 
 ## [I. Social Determinants of Health Reports](#notification-reports)
@@ -1427,6 +1428,21 @@ All Data CSV Download (contains all column headings below)
 ![](pictures/tobacco_notification.png)  
 **Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
+
+### Vaccinations
+**Measure Description**  
+This report aggregates COVID19 vaccinations in the Reliance Clinical Data Repository.  
+**Data Sources**  
+ADTs, CCDs, Persona, Patient Summary
+**Input Parameters**   
+Start Date, End Date, Include Medical Risk Factors, Include Social Risk Factors, and Records to Display Below  
+**Output**  
+List of patients with associating reports indicating vaccination during the start and end date given.  
+
+All Data CSV Download (contains all column headings below)  
+ 
+**Column Headings**  
+`mpid_CHR |	patient_first_name	| patient_last_name	| plan_id	| patient_local_id |	patient_date_of_birth	| patient_sex	| patient_ethnic_group	| patient_race	| patient_language	| immunization_count	| immunization_date	| sending_facility	| record_type	manufacturer	| imm_procedure_code	| immunization_code	| primary_care_provider_id |	primary_care_provider_record	| patient_city	| patient_street_address	| patient_zip	uri`
 
 ### Diabetes Management
 **Measure Description**  
