@@ -42,8 +42,10 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 **F. [Certified Community Behavioral Health Clinics (CCBHC) Measures](#f-certified-community-behavioral-health-clinics-ccbhc-measures)**  
 **G. [Custom Reports](#g-custom-reports)**  
 **H. [Notification Reports](#h-notification-reports)**  
-**I. [Social Determinants of Health (SDOH) Reports](#i-social-determinants-of-health-reports)**  
-**J. [Appendix](#j-appendix)**  	
+**I. [Social Determinants of Health (SDOH) Reports](#i-social-determinants-of-health-reports)** 
+
+**J. [Beta Testing](#j-beta-testing)**
+**K. [Appendix](#k-appendix)**  	
 
 ### Click on a report name below for a detailed description
 
@@ -189,7 +191,15 @@ We will continue to rapidly iterate on this reporting as we receive input and pe
 | [SDOH Code Prevalence](#sdoh-code-prevelance) | Outputs the prevalence of SDOH-related codes (as defined by the latest SIREN compendium) within the measurement period as defined by Date of Service. |
 | [SDOH Disparities](#sdoh-disparities) | Outputs the members in the population with a social risk factor code with the measurement period. Data is subset along common classifations used to identify disparities (gender, race, ethnicity) |
 
-## [J. Appendix](#appendix)
+## [J. Beta Testing](#beta-testing)
+
+| Report Name                             | Description                                                  |
+| --------------------------------------- | ------------------------------------------------------------ |
+| [Sleep Disorder](#sdoh-code-prevelance) | Outputs the patients within a week range, by default, that have reported having a condition related to sleep disorder. |
+|                                         |                                                              |
+
+## [K. Appendix](#appendix)
+
 [Community Health Record](#community-health-record)  
 [Glossary](#glossary)
 
@@ -1351,7 +1361,7 @@ Start Date, End Date, and Records to Display Below
 List of patients sorted by encounter date displaying patient movement.     
 
 All Data CSV Download (contains column headings below sorted by mpid_CHR)     
- 
+
 **Column Headings**     
 `mpid_CHR	| patient_first_name |	patient_last_name |	record_primary_care_provider	| record_primary_care_provider_id	| diagnosis_info	| sending_facility	| record_type	date_of_service	| assigned_location	| visit_number	| patient_class |	provider_name |	patient_local_id |	patient_date_of_birth |	patient_sex |	patient_city |	patient_street_address | patient_zip	uri`
 
@@ -1410,7 +1420,7 @@ Start Date, End Date, Include Medical Risk Factors, Include Social Risk Factors,
 List of COVID-19 vaccinations during the start and end date given. Each report row includes patient level and encounter data for the vaccination event. Optional outputs: 1) Medical Risk Factors (cancer, diabetes, hypertension, COPD, asthma, smoking, kidney, vascular disease, immunocompromised) and 2) Social Risk Factors (Financial, Food, Housing, Transportation, Social Insecurity)
 
 All Data CSV Download (contains all column headings below)    
- 
+
 **Column Headings**    
 `mpid | patient_first_name | patient_last_name | plan_id | patient_local_id | patient_date_of_birth | patient_sex   | patient_ethnic_group | patient_race | patient_language | immunization_count | immunization_date | sending_facility | record_type   manufacturer | imm_procedure_code | immunization_code | primary_care_provider_id | primary_care_provider_record | patient_city | patient_street_address | patient_zip | uri`   
 
@@ -1623,7 +1633,29 @@ All Data CSV Download (contains all column headings below)
 **Column Headings**  
 `mpid | sending_facility | patient_date_of_birth | patient_age | patient_sex | patient_medicaid_id | patient_name | date_of_service | attending`
 
+### Sleep Disorder
+
+**Measure Description**  
+The purpose of this report is to identify patients that have a diagnosis of conditions related to sleep disorder.  
+**Data Sources**  
+ADTs, CCDs, LABs, and Claims    
+**Input Parameters**   
+Start Date, End Date, Records to Display Below, and Limit the Number of Records to Download   
+**Output**  
+List of patients that have indications of an sleep disorder diagnosis.
+
+All Data CSV Download (contains all column headings below)  
+**Example Output**
+
+
+
+![](pictures/notifications-sleep-disorder.png)
+
+**Column Headings**  
+`mpid | sending_facility | attending | patient_name | patient_date_of_birth | patient_age | patient_sex | date_of_service | record_type`
+
 ### Hospital Discharge
+
 **Measure Description**  
 The purpose of this report is to identify patients that have been discharged from an emergency or inpatient hospital visit. This report uses the ADT A03 trigger event
 and patient class is Inpatient or Emergency to identify patient discharges.  
@@ -1681,6 +1713,8 @@ All Data CSV Download (contains all column headings below)
 
 **Column Headings**  
 `mpid | patient_name | medicaid_id | patient_date_of_birth | patient_current_age | sex | race | ethnicity | patient_language | marital status | patient_street_address | patient_city | patient_state | patient_zip | provider_name | sending_facility_financial | date_of_service_financial | financial_numerator | sending_facility_food | date_of_service_food | food_numerator | sending_facility_housing | date_of_service_housing | housing_numerator | sending_facility_transportation | date_of_service_transportation | transportation_numerator | sending_facility_social | date_of_service_social | social_numerator | measurement_period_begin | measurement_period_end`  
+
+
 
 
 ## Appendix
